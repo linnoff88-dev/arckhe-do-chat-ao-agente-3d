@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Como a casa foi feita · Do chat ao agente</title>
+    <link rel="stylesheet" href="../src/estilo.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="marca">
+        <img src="../marca/logo-inema-club-horizontal.png" alt="INEMA.CLUB" /><span>Do chat ao agente</span>
+      </div>
+      <nav><a href="../index.html">Abrir o curso</a></nav>
+    </header>
+    <main class="pagina-leitura">
+      <nav class="sumario" aria-label="Nesta página">
+        <a href="#passos">Passos</a><a href="#rodadas">Rodadas registradas</a>
+      </nav>
+      <article class="capitulo">
+        <h1 id="passos">Como a casa foi feita</h1>
+        <ol>
+          <li>Reunimos a página do curso, as aulas e os exercícios em uma base comum às duas versões.</li>
+          <li>As referências da serra orientaram a pedra, o forro de madeira, a vista e a luz que entra pelas janelas.</li>
+          <li>Cada sequência ganhou um lugar na sala. O notebook apresenta o Terminal, o celular apresenta Jarvis, o quadro reúne as Filas e as três telas apresentam Redes.</li>
+          <li>Ligamos os exercícios às luzes das estações, aos quatro degraus e à porta do terraço.</li>
+          <li>As capturas e a revisão do percurso orientaram os ajustes de navegação, leitura e enquadramento.</li>
+        </ol>
+        <h2 id="rodadas">Rodadas registradas</h2>
+        <div class="rolar-tabela" tabindex="0" aria-label="Medições por rodada">
+          <table><thead><tr><th scope="col">Rodada</th><th scope="col">Tempo</th><th scope="col">O que fizemos</th></tr></thead>
+          <tbody id="medicoes"></tbody></table>
+        </div>
+        <p id="erro-medicoes" role="status"></p>
+      </article>
+    </main>
+    <script type="module">
+      try {
+        const resposta = await fetch('./dados.json');
+        if (!resposta.ok) throw new Error();
+        const { rodadas } = await resposta.json();
+        const corpo = document.getElementById('medicoes');
+        const trabalho = {
+          '00-ambiente': 'Criamos a paisagem do vale e as texturas da casa.',
+          '00b-vista': 'Montamos a vista de 360° que aparece pelas janelas.',
+          '01-conteudo': 'Organizamos o curso em quatro estações e escrevemos o percurso até o terraço.',
+          '02-casa': 'Construímos a sala em 3D e a versão para leitura. As duas guardam o mesmo progresso.',
+          '03-fidelidade': 'Ajustamos o forro, a pedra, os móveis e a posição da câmera nas estações.',
+          '04-acabamento': 'Refinamos os materiais da sala, a iluminação e a leitura das telas.',
+          '05-revisao': 'Ajustamos a caminhada pelo teclado, o mapa e a disposição dos controles no celular.',
+          '06-revisao2': 'Acrescentamos legendas, explicações nos exercícios e ajuda para usar teclado ou toque.',
+          '07-fechamento': 'Esclarecemos o que é preciso para praticar e ajustamos a chegada às estações e ao terraço.'
+        };
+        for (const { rodada, segundos } of rodadas) {
+          const linha = corpo.insertRow();
+          const tempo = Math.floor(segundos / 60) + ' min ' + segundos % 60 + ' s';
+          for (const valor of [rodada, tempo, trabalho[rodada]]) {
+            linha.insertCell().textContent = valor;
+          }
+        }
+      } catch {
+        document.getElementById('erro-medicoes').textContent = 'Não foi possível carregar as medições das rodadas.';
+      }
+    </script>
+  </body>
+</html>

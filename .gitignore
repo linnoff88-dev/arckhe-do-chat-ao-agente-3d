@@ -1,0 +1,7 @@
+fonte/
+longrun/
+__pycache__/
+*.pyc
+processo/rodadas/*/eventos.jsonl
+processo/rodadas/*/erros.txt
+tools/termos-fora.local.txt

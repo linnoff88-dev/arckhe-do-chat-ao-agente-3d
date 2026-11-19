@@ -1,0 +1,256 @@
+{
+  "rodadas": [
+    {
+      "rodada": "00-ambiente",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T05:28:40-03:00",
+      "segundos": 806,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 640883,
+        "cache": 586624,
+        "saida": 6438
+      },
+      "custo_equivalente_usd": 0.93,
+      "cota_estimada_pct": 0.4,
+      "cota_medida_pct": {
+        "inicio": 89.0,
+        "fim": 89.0
+      },
+      "itens": {
+        "agent_message": 3,
+        "command_execution": 9
+      },
+      "arquivos": [],
+      "prompt": "rodadas/00-ambiente/prompt.md",
+      "resposta": "rodadas/00-ambiente/resposta.md"
+    },
+    {
+      "rodada": "00b-vista",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T05:42:54-03:00",
+      "segundos": 474,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 724638,
+        "cache": 669184,
+        "saida": 4555
+      },
+      "custo_equivalente_usd": 0.89,
+      "cota_estimada_pct": 0.4,
+      "cota_medida_pct": {
+        "inicio": 89.0,
+        "fim": 90.0
+      },
+      "itens": {
+        "agent_message": 3,
+        "command_execution": 281
+      },
+      "arquivos": [],
+      "prompt": "rodadas/00b-vista/prompt.md",
+      "resposta": "rodadas/00b-vista/resposta.md"
+    },
+    {
+      "rodada": "01-conteudo",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T05:29:35-03:00",
+      "segundos": 230,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 330449,
+        "cache": 285824,
+        "saida": 5259
+      },
+      "custo_equivalente_usd": 0.68,
+      "cota_estimada_pct": 0.3,
+      "cota_medida_pct": {
+        "inicio": 89.0,
+        "fim": 89.0
+      },
+      "itens": {
+        "agent_message": 3,
+        "command_execution": 11
+      },
+      "arquivos": [],
+      "prompt": "rodadas/01-conteudo/prompt.md",
+      "resposta": "rodadas/01-conteudo/resposta.md"
+    },
+    {
+      "rodada": "02-casa",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T05:42:58-03:00",
+      "segundos": 2351,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 5549123,
+        "cache": 5407232,
+        "saida": 56680
+      },
+      "custo_equivalente_usd": 5.57,
+      "cota_estimada_pct": 2.4,
+      "cota_medida_pct": {
+        "inicio": 89.0,
+        "fim": 91.0
+      },
+      "itens": {
+        "agent_message": 5,
+        "command_execution": 54
+      },
+      "arquivos": [],
+      "prompt": "rodadas/02-casa/prompt.md",
+      "resposta": "rodadas/02-casa/resposta.md"
+    },
+    {
+      "rodada": "03-fidelidade",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T06:25:26-03:00",
+      "segundos": 1439,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 3646218,
+        "cache": 3504128,
+        "saida": 35419
+      },
+      "custo_equivalente_usd": 3.96,
+      "cota_estimada_pct": 1.7,
+      "cota_medida_pct": {
+        "inicio": 91.0,
+        "fim": 92.0
+      },
+      "itens": {
+        "agent_message": 5,
+        "command_execution": 152
+      },
+      "arquivos": [],
+      "prompt": "rodadas/03-fidelidade/prompt.md",
+      "resposta": "rodadas/03-fidelidade/resposta.md"
+    },
+    {
+      "rodada": "04-acabamento",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T06:55:32-03:00",
+      "segundos": 923,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 3230079,
+        "cache": 3110656,
+        "saida": 23426
+      },
+      "custo_equivalente_usd": 3.14,
+      "cota_estimada_pct": 1.4,
+      "cota_medida_pct": {
+        "inicio": 92.0,
+        "fim": 93.0
+      },
+      "itens": {
+        "agent_message": 4,
+        "command_execution": 30,
+        "file_change": 5
+      },
+      "arquivos": [
+        "FALHAS.md",
+        "src/casa.js",
+        "src/controles.js",
+        "src/dados.js",
+        "src/estacoes.js",
+        "src/estilo.css",
+        "src/interface.js",
+        "src/luz.js",
+        "src/principal.js"
+      ],
+      "prompt": "rodadas/04-acabamento/prompt.md",
+      "resposta": "rodadas/04-acabamento/resposta.md"
+    },
+    {
+      "rodada": "05-revisao",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T07:37:55-03:00",
+      "segundos": 1173,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 5380490,
+        "cache": 5217280,
+        "saida": 37816
+      },
+      "custo_equivalente_usd": 4.91,
+      "cota_estimada_pct": 2.1,
+      "cota_medida_pct": {
+        "inicio": 93.0,
+        "fim": 94.0
+      },
+      "itens": {
+        "agent_message": 5,
+        "command_execution": 50
+      },
+      "arquivos": [],
+      "prompt": "rodadas/05-revisao/prompt.md",
+      "resposta": "rodadas/05-revisao/resposta.md"
+    },
+    {
+      "rodada": "06-revisao2",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T08:35:56-03:00",
+      "segundos": 534,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 3227596,
+        "cache": 3090816,
+        "saida": 18344
+      },
+      "custo_equivalente_usd": 3.06,
+      "cota_estimada_pct": 1.3,
+      "cota_medida_pct": {
+        "inicio": 94.0,
+        "fim": 95.0
+      },
+      "itens": {
+        "agent_message": 4,
+        "command_execution": 104
+      },
+      "arquivos": [],
+      "prompt": "rodadas/06-revisao2/prompt.md",
+      "resposta": "rodadas/06-revisao2/resposta.md"
+    },
+    {
+      "rodada": "07-fechamento",
+      "modelo": "gpt-6.2-astra",
+      "esforco": "high",
+      "inicio": "2026-11-18T09:12:21-03:00",
+      "segundos": 529,
+      "codigo_saida": 0,
+      "tokens": {
+        "entrada": 3639109,
+        "cache": 3502080,
+        "saida": 17025
+      },
+      "custo_equivalente_usd": 3.18,
+      "cota_estimada_pct": 1.4,
+      "cota_medida_pct": {
+        "inicio": 95.0,
+        "fim": 96.0
+      },
+      "itens": {
+        "agent_message": 4,
+        "command_execution": 41
+      },
+      "arquivos": [],
+      "prompt": "rodadas/07-fechamento/prompt.md",
+      "resposta": "rodadas/07-fechamento/resposta.md"
+    }
+  ],
+  "total": {
+    "segundos": 8459,
+    "custo_equivalente_usd": 26.32,
+    "cota_estimada_pct": 11.4,
+    "tokens_entrada": 26368585,
+    "tokens_saida": 204962
+  }
+}

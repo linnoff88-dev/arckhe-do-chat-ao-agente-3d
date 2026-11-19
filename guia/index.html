@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do Chat ao Agente 3D: como um curso virou uma casa, com os erros à mostra</title>
+<meta name="description" content="Veja como o curso Do chat ao agente virou uma casa 3D no navegador: quem fez o quê, o que deu errado, o que foi medido e o que ainda falta.">
+<meta property="og:title" content="Do Chat ao Agente 3D: como um curso virou uma casa">
+<meta property="og:description" content="Os pedidos, as revisões, os erros e os números de um curso construído em 3D com Codex e Claude Code.">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/do-chat-ao-agente-3d/guia/">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/do-chat-ao-agente-3d/guia/en/">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/do-chat-ao-agente-3d/guia/es/">
+<link rel="canonical" href="https://inematds.github.io/do-chat-ao-agente-3d/guia/">
+<meta property="og:image" content="https://inematds.github.io/do-chat-ao-agente-3d/guia/assets/banner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#FACC15; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    --fill:#FACC15; --tint:rgba(250,204,21,.12); --ok:#7CE0C6; --bad:#F0918A;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#a16207; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    --fill:#FACC15; --tint:#FEF9C3; --ok:#0E6B55; --bad:#A83426;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  body.light pre .k{color:#f0c070}
+  body.light nav{background:rgba(246,247,249,.85)}
+  body.light .amb{color:var(--txt);background:linear-gradient(transparent 55%,#FACC15 55%)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  body.light main a:not(.btn),body.light footer a{color:#854d0e;text-decoration:underline;text-decoration-color:#FACC15;text-decoration-thickness:3px}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  p code,li code,td code{font-size:.9em;background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:.05em .35em}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb);white-space:nowrap}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:var(--tint)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--fill);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  nav .links a.sec{white-space:nowrap}
+  @media(max-width:1360px){nav .links a.opt{display:none}}
+  @media(max-width:860px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(250,204,21,.18),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.15rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:44ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;height:auto;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:66ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.95rem;margin:0}
+  .card p+p{margin-top:.6em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0;margin:.4em 0 0}
+  pre .c{color:#7d7d8a} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:28px}
+  .step>div{min-width:0}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--fill);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .5em}
+  .quem{display:inline-block;font-family:Sora;font-size:.75rem;letter-spacing:.06em;color:var(--txt);background:var(--tint);border:1px solid var(--line);border-radius:999px;padding:.1em .7em;margin-left:.5em;vertical-align:middle;font-weight:600}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:4px}
+  /* números */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  @media(max-width:720px){.stats{grid-template-columns:1fr}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .stat b{display:block;font:800 clamp(1.9rem,4vw,2.6rem)/1.05 Sora,sans-serif;letter-spacing:-.02em;color:var(--amb)}
+  body.light .stat b{color:var(--txt)}
+  .stat span{display:block;color:var(--mut);font-size:.93rem;margin-top:.5em}
+  .fonte{font-size:.86rem;color:var(--mut);margin-top:14px;max-width:80ch}
+  /* trocas */
+  .troca{display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;padding:26px 0;border-top:1px solid var(--line)}
+  .troca:first-of-type{border-top:none}
+  .troca .n{width:64px;height:64px;border-radius:14px;border:1px solid var(--line);background:var(--card);display:flex;align-items:center;justify-content:center;font:800 1.6rem Sora,sans-serif;color:var(--amb)}
+  body.light .troca .n{color:var(--txt);background:var(--fill);border-color:var(--fill)}
+  .troca h3{font-size:1.3rem;margin-bottom:.35em}
+  .troca p{margin:.35em 0;max-width:72ch}
+  .troca .ex{margin-top:.8em;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--fill);border-radius:10px;padding:12px 16px;font-size:.95rem;color:var(--mut);max-width:76ch}
+  .troca .ex b{color:var(--txt)}
+  @media(max-width:540px){.troca{grid-template-columns:1fr}}
+  /* três finais */
+  .vs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;max-width:900px}
+  @media(max-width:720px){.vs{grid-template-columns:1fr}}
+  .vs div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:.93rem}
+  .vs strong{display:block;font-family:Sora;margin-bottom:.25em}
+  .vs .r{display:block;margin-top:.5em;font-weight:600}
+  .vs .r.bad{color:var(--bad)} .vs .r.ok{color:var(--ok)}
+  .card ul{margin:8px 0 0;padding-left:20px}.card li{margin:5px 0}
+  /* prova */
+  .prova{background:var(--card);border:1px solid var(--amb);border-radius:16px;padding:26px 26px 22px;margin-top:6px}
+  body.light .prova{border-color:#EAB308}
+  .tl{list-style:none;margin:0;padding:0;counter-reset:t}
+  .tl li{position:relative;padding:0 0 18px 48px;counter-increment:t}
+  .tl li::before{content:counter(t);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:10px;background:var(--fill);color:#1a1206;font:800 .95rem/32px Sora,sans-serif;text-align:center}
+  .tl li::after{content:"";position:absolute;left:15px;top:36px;bottom:4px;width:2px;background:var(--line)}
+  .tl li:last-child::after{display:none}
+  .tl b{font-family:Sora}
+  blockquote{margin:6px 0 0;padding:14px 18px;border-left:3px solid var(--fill);background:var(--bg2);border-radius:0 10px 10px 0;font-size:1.02rem}
+  .prova .rod{font-size:.86rem;color:var(--mut);margin-top:14px}
+  /* parte técnica */
+  .techhead{background:var(--bg2);border-top:3px solid var(--fill);padding:58px 0 8px}
+  .techhead h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em;margin:.3em 0 0}
+  .techhead .sub{color:var(--mut);margin:.6em 0 1.2em;max-width:66ch}
+  .techzone{background:var(--bg2)}
+  .techzone .card{background:var(--card)}
+  .tbl{width:100%;border-collapse:collapse;font-size:.93rem}
+  .tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  .tbl th{font-family:Sora;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+  @media(max-width:600px){.tbl thead{display:none} .tbl tr{display:block;border-bottom:1px solid var(--line);padding:6px 0} .tbl tr:last-child{border-bottom:none} .tbl td{display:block;border:none;padding:4px 14px}}
+  .shot{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+  .shot img{width:100%;height:auto;display:block}
+  .shot figcaption{padding:10px 14px;font-size:.88rem;color:var(--mut)}
+  .palco{display:flex;flex-direction:column;gap:.45em}
+  .palco .num{font:800 1.5rem/1 Sora,sans-serif;color:var(--amb)}
+  body.light .palco .num{color:var(--txt)}
+  .palco .tag{font-size:.82rem;color:var(--mut)}
+  .entrar{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+  .entrar .btn{margin-right:0}
+  img{max-width:100%}
+  @media(max-width:1560px){nav .links a.opt{display:none}}
+  @media(max-width:520px){nav{position:static} nav .brand+.sep{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="emoji">🏠</span> Do Chat ao Agente 3D</a>
+  <span class="sep">|</span>
+  <span class="clubpro">
+    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <span class="sep">-</span>
+    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+  </span>
+  <div class="links">
+    <a class="sec" href="#explicado">O ganho</a>
+    <a class="sec" href="#dia">No seu projeto</a>
+    <a class="sec opt" href="#como">Como foi feito</a>
+    <a class="sec opt" href="#prova">A prova</a>
+    <a class="sec" href="#comecar">Como começar</a>
+    <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
+    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+    <a class="btn ghost" href="https://github.com/inematds/do-chat-ao-agente-3d" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="chip">Do Chat ao Agente 3D · como foi construído</span>
+      <h1>Seu curso pode virar um lugar. Veja como esta casa 3D foi feita, <span class="amb">com os erros à mostra</span></h1>
+      <p class="lead">Em uma lista de aulas, o aluno conclui uma parte e a tela continua igual: o avanço não aparece. Neste curso sobre passar do chat para agentes de IA, cada parte concluída acende um degrau, até a porta amarela abrir. O guia conta quem fez o quê, o que a IA errou e traz um pedido pronto para analisar o seu curso.</p>
+      <div class="cta">
+        <a class="btn" href="https://eventos.inema.club/do-chat-ao-agente-3d/" target="_blank" rel="noopener">Entrar na casa</a>
+        <a class="btn ghost" href="#explicado">O que você ganha</a>
+        <a class="btn ghost" href="#comecar">Como começar</a>
+      </div>
+      <p class="mut" style="font-size:.9rem;margin:14px 0 0;max-width:48ch">Entrar é grátis. Os exercícios do curso pedem computador e assinatura do Claude ou do ChatGPT. Analisar o seu curso não exige programar. Construir uma casa assim exige aprender a usar agentes ou ter ajuda técnica.</p>
+    </div>
+    <figure><img src="assets/banner.jpg" alt="Um curso que virou casa: veja como foi construída, com os erros à mostra"><figcaption style="padding:10px 14px;font-size:.88rem;color:var(--mut)">Arte de divulgação, não a casa real. A casa real aparece na seção O ganho.</figcaption></figure>
+  </div>
+</header>
+
+<main>
+<section id="resumo" class="resumo"><div class="wrap">
+  <span class="chip">Em uma frase</span>
+  <p><strong>Este projeto mostra como o curso "Do chat ao agente" virou uma casa 3D de pedra e madeira, que abre no navegador.</strong> O curso ensina a passar do chat para agentes, IAs que executam tarefas no computador. Ele tem 37 aulas e 23 exercícios, com uma visão geral e 4 partes. Este guia serve para quem cria cursos ou páginas e quer ver um trabalho assim por dentro: os pedidos feitos às IAs, os erros e os números medidos. Para ler, basta o navegador. O curso é grátis, mas os exercícios pedem computador e assinatura do Claude ou do ChatGPT, e alguns usam o terminal, a janela onde se digitam comandos.</p>
+  <figure style="margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="O pedido, quem fez o quê, o que deu errado, as revisões, o que ainda falta e o seu projeto" loading="lazy" style="width:100%;display:block"><figcaption style="padding:10px 14px;font-size:.88rem;color:var(--mut)">Arte de divulgação, não a casa real.</figcaption></figure>
+</div></section>
+
+<!-- VIDEO: entra o explicavideo do projeto quando publicado -->
+
+<section id="explicado"><div class="wrap">
+  <span class="chip">O ganho</span>
+  <h2>Você vê o caminho, <span class="amb">não só o resultado</span></h2>
+  <p class="sub">Uma página pronta esconde as tentativas. Este projeto guarda o que foi pedido, o que voltou e o que precisou ser refeito. Os registros publicados foram limpos de caminhos e links internos, por isso alguns pedidos diferem do texto original.</p>
+  <div class="grid g2">
+    <div class="card"><h3>📄 Um curso em lista</h3><p>As aulas ficam uma embaixo da outra.</p><p>Nada no lugar muda quando o aluno termina uma parte.</p></div>
+    <div class="card"><h3>🏠 O mesmo curso na casa</h3><p>Cada parte tem uma estação na sala: Terminal (comandos), Jarvis (assistente), Filas (tarefas em ordem) e Redes (conteúdo para redes sociais).</p><p>Ao marcar os exercícios de uma parte, a estação liga e um degrau acende. Com as quatro, a porta abre para o terraço.</p></div>
+  </div>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><h3>🧭 Quem fez o quê</h3><p>Você vê o que ficou com cada IA e o que passou por conferência.</p></div>
+    <div class="card"><h3>🔎 O que deu errado</h3><p>As falhas estão listadas, cada uma com a menor correção encontrada.</p></div>
+    <div class="card"><h3>📏 Quanto consumiu</h3><p>O tempo de trabalho da IA em cada etapa e o uso da assinatura estão registrados.</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:16px">
+    <figure class="shot"><img src="assets/sala.jpg" alt="Sala da casa 3D com mesa de vidro, lareira preta, janelões para o vale e a porta amarela fechada" loading="lazy"><figcaption>Nenhuma estação feita: a porta amarela continua fechada.</figcaption></figure>
+    <figure class="shot"><img src="assets/porta.jpg" alt="Quatro degraus acesos levando à porta amarela aberta, com o pôr do sol ao fundo" loading="lazy"><figcaption>Quatro estações feitas: os degraus acendem e a porta abre.</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="dia"><div class="wrap">
+  <span class="chip">No seu projeto</span>
+  <h2>Três problemas que <span class="amb">este registro ajuda a pensar</span></h2>
+  <p class="sub">Você não precisa querer um site em 3D para aproveitar o que está aqui.</p>
+  <div class="grid g3">
+    <div class="card"><h3>🧗 "A página não muda"</h3><p><strong>Hoje:</strong> o aluno conclui uma parte e o lugar continua igual.</p><p><strong>O que olhar aqui:</strong> como cada parte virou um sinal visível na sala.</p></div>
+    <div class="card"><h3>🪞 "A IA disse que ficou pronto"</h3><p><strong>Hoje:</strong> a resposta parece certa, e o erro só aparece na tela.</p><p><strong>O que olhar aqui:</strong> as imagens da tela em um navegador de verdade e o que voltou para correção.</p></div>
+    <div class="card"><h3>🧾 "Quanto isso consome?"</h3><p><strong>Hoje:</strong> você começa sem ideia do tamanho do trabalho.</p><p><strong>O que olhar aqui:</strong> o tempo de cada etapa e quanto do limite semanal da assinatura foi usado. Os números cobrem só a IA que construiu.</p></div>
+  </div>
+  <div class="prova" style="margin-top:22px">
+    <h3 style="margin-bottom:14px">Como um erro foi pego</h3>
+    <ol class="tl">
+      <li><b>Uma IA entrega a sala</b><br><span class="mut">O código roda e a casa aparece.</span></li>
+      <li><b>Outra IA abre o site em um navegador de verdade</b><br><span class="mut">A imagem da tela mostra o forro vermelho, longe da madeira das fotos.</span></li>
+      <li><b>O problema volta como pedido</b><br><span class="mut">A etapa seguinte ajusta as cores do forro e das vigas.</span></li>
+      <li><b>Uma nova imagem confere</b><br><span class="mut">Ela mostra se o forro chegou perto da foto. O piso precisou voltar em mais de uma etapa.</span></li>
+    </ol>
+  </div>
+  <div class="grid g2" style="margin-top:22px">
+    <figure class="shot"><img src="assets/sala-antes.jpg" alt="Primeira versão da sala, com forro vermelho e piso vinho" loading="lazy"><figcaption>Primeira versão conferida: forro vermelho e piso vinho.</figcaption></figure>
+    <figure class="shot"><img src="assets/sala.jpg" alt="Versão final da sala, com forro de madeira clara e piso acobreado" loading="lazy"><figcaption>Versão final: forro de madeira e piso acobreado.</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="como"><div class="wrap">
+  <span class="chip">Como foi feito, sem jargão</span>
+  <h2>Pense em uma obra com <span class="amb">equipe, mestre e vistoria</span></h2>
+  <p class="sub">Um agente é uma IA que, além de responder, executa tarefas no computador. O Codex, da OpenAI, e o Claude Code, da Anthropic, são agentes que escrevem e alteram arquivos. Aqui, cada um teve um papel. Os revisores independentes são novas sessões de IA, sem as anotações de quem construiu.</p>
+  <div class="grid g3">
+    <div class="card"><h3>🧱 A equipe: Codex</h3><p>Usou o modelo de IA GPT-6.2 Astra, no nível alto de esforço, em que ele raciocina por mais tempo, e pela assinatura. Trabalhou em 9 rodadas: cada rodada é um pedido executado do início ao fim. Gerou as imagens das superfícies e da paisagem, os textos e o código.</p></div>
+    <div class="card"><h3>📐 O mestre de obras: Claude Code</h3><p>Escreveu a descrição do projeto, os pedidos e os testes. Conferiu no navegador e devolveu o que não passava.</p></div>
+    <div class="card"><h3>🔍 A vistoria: revisores</h3><p>Usaram o curso como visitantes, sem ver as anotações de quem construiu. Deram uma nota e listaram problemas.</p></div>
+  </div>
+  <div class="prova" style="margin-top:22px">
+    <h3 style="margin-bottom:14px">A ordem do trabalho</h3>
+    <ol class="tl">
+      <li><b>O pedido</b><br><span class="mut">Nei, do INEMA, pediu para partir de um evento 3D anterior, a Imersão Jarvis 3D, e recriar a casa de pedra e madeira de um conjunto de fotos, com o conteúdo deste curso.</span></li>
+      <li><b>A base do curso</b><br><span class="mut">Aulas e exercícios entram em um arquivo comum às versões com e sem 3D.</span></li>
+      <li><b>Imagens, textos e casa</b><br><span class="mut">O Codex cria o ambiente e constrói o curso dentro dele.</span></li>
+      <li><b>Conferência e correção</b><br><span class="mut">Imagens da tela e revisões geram as rodadas seguintes.</span></li>
+      <li><b>Fechamento</b><br><span class="mut">A última rodada é conferida no site publicado, com clique e teclado reais.</span></li>
+    </ol>
+  </div>
+  <div class="grid g2" style="margin-top:22px">
+    <figure class="shot"><img src="assets/estacao.jpg" alt="Notebook na estação Terminal, com comandos na tela, depois de concluída" loading="lazy"><figcaption>A estação Terminal concluída: o notebook do cenário liga.</figcaption></figure>
+    <figure class="shot"><img src="assets/terraco.jpg" alt="Terraço com mesa de mosaico, cadeiras brancas e vista do vale ao pôr do sol" loading="lazy"><figcaption>Do outro lado da porta: o terraço e a pergunta final.</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="prova"><div class="wrap">
+  <span class="chip">A prova</span>
+  <h2>Os números e <span class="amb">o que deu errado</span></h2>
+  <p class="sub">Tempo, custo e limite vêm do registro de cada rodada. As notas dos revisores vêm do acompanhamento do projeto, que não foi publicado.</p>
+  <div class="stats">
+    <div class="stat"><b>9</b><span>rodadas de trabalho do Codex, numeradas de 00 a 07, com uma 00b</span></div>
+    <div class="stat"><b>2 h 21 min</b><span>somando as rodadas do Codex, ou 8.459 segundos. Algumas correram ao mesmo tempo. Não inclui preparação nem revisões</span></div>
+    <div class="stat"><b>US$ 26,32</b><span>custaria só a parte do Codex, se fosse paga por consumo. Esse valor não foi pago: o trabalho usou a assinatura</span></div>
+  </div>
+  <p class="fonte">O uso medido do limite semanal da assinatura do Codex passou de 89% para 96%, ou 7 pontos.</p>
+  <div class="grid g3" style="margin-top:18px">
+    <div class="card"><h3>Revisor 1: nota 6</h3><p>Reprovado. Os problemas viraram a rodada 05.</p></div>
+    <div class="card"><h3>Revisor 2: nota 7</h3><p>Reprovado. Os problemas viraram a rodada 06.</p></div>
+    <div class="card"><h3>Revisor 3: nota 7,5</h3><p>Aprovado, com pontos a ajustar, que viraram a rodada 07. A orientação deste revisor foi mais branda que a das duas primeiras revisões, então a nota não se compara diretamente com as anteriores.</p></div>
+  </div>
+  <p class="fonte">A última rodada foi conferida no site publicado, com clique e teclado reais, sem novo revisor. Os pareceres completos não estão publicados: os pontos apontados aparecem nos pedidos das rodadas 05, 06 e 07.</p>
+  <div class="prova" style="margin-top:22px">
+    <h3 style="margin-bottom:14px">Alguns erros do caminho</h3>
+    <ol class="tl">
+      <li><b>Forro vermelho e piso vinho</b><br><span class="mut">As cores foram ajustadas até se aproximarem das fotos.</span></li>
+      <li><b>Pedra com cara de tijolo pintado, depois de bloco de jogo</b><br><span class="mut">A imagem da parede foi refeita a partir das fotos de referência.</span></li>
+      <li><b>Imagem de teste toda preta</b><br><span class="mut">A tela era apagada logo depois de desenhada.</span></li>
+      <li><b>Clique preso na mureta</b><br><span class="mut">Quem clicava no vão da porta acertava a mureta do terraço.</span></li>
+      <li><b>Aviso antes da hora</b><br><span class="mut">A barra de avisos anunciava a chegada à estação quando a pessoa ainda estava a caminho.</span></li>
+    </ol>
+    <p class="rod">A <a href="https://github.com/inematds/do-chat-ao-agente-3d/blob/main/FALHAS.md" target="_blank" rel="noopener">lista de falhas registradas</a> está no GitHub, o site que guarda o código do projeto.</p>
+  </div>
+  <div class="card" style="margin-top:16px"><h3>🔎 Confira no GitHub</h3><p><a href="https://github.com/inematds/do-chat-ao-agente-3d/tree/main/processo/prompts" target="_blank" rel="noopener">Pedidos</a> · <a href="https://github.com/inematds/do-chat-ao-agente-3d/tree/main/processo/rodadas" target="_blank" rel="noopener">Respostas de cada rodada</a> · <a href="https://github.com/inematds/do-chat-ao-agente-3d/tree/main/processo/revisoes" target="_blank" rel="noopener">Imagens da tela</a> · <a href="https://github.com/inematds/do-chat-ao-agente-3d/blob/main/processo/dados.json" target="_blank" rel="noopener">Tempo e custo</a></p></div>
+  <div class="card" style="margin-top:16px"><h3>⚠️ O que ainda não está provado ou pronto</h3><ul>
+    <li>A fluidez não foi medida em placa de vídeo real nem em celular físico. Os testes simularam os dois no computador.</li>
+    <li>Cadeiras, poltrona e pedra vista de perto ainda são simples.</li>
+    <li>Não foi medido se a casa faz as pessoas aprenderem ou concluírem mais.</li>
+    <li>O curso é grátis, mas os exercícios pedem computador e assinatura do Claude ou do ChatGPT.</li>
+  </ul></div>
+</div></section>
+
+<section id="comecar"><div class="wrap">
+  <span class="chip">Como começar</span>
+  <h2>Leve a análise para <span class="amb">o seu curso</span></h2>
+  <p class="sub">A análise você faz sem programar e sem instalar nada. Construir uma casa assim é outra etapa: pede aprender a usar agentes no computador ou ter ajuda técnica.</p>
+  <div class="grid g3">
+    <div class="card"><h3>1. Abra a sua IA</h3><p>Use um chat de IA que consiga abrir links. Se ele não abrir o GitHub, copie a parte "Como foi construído" da <a href="https://github.com/inematds/do-chat-ao-agente-3d#como-foi-construído" target="_blank" rel="noopener">página do projeto</a> e cole junto.</p></div>
+    <div class="card"><h3>2. Cole o pedido</h3><p>Junte o link do curso ou um arquivo dele, como PDF ou apresentação.</p></div>
+    <div class="card"><h3>3. Decida</h3><p>Leia o plano e diga sim só ao que fizer sentido.</p></div>
+  </div>
+  <div class="pedido" style="position:relative;margin-top:16px">
+<pre id="pedidoTxt" style="white-space:pre-wrap">Leia o projeto "Do Chat ao Agente 3D" em https://github.com/inematds/do-chat-ao-agente-3d (comece pelo README e por FALHAS.md) e veja a casa em https://eventos.inema.club/do-chat-ao-agente-3d/.
+Use esse projeto só como referência. Depois olhe o meu curso ou a minha página (no link ou no arquivo que eu enviar; se você tiver acesso a uma pasta, nela) e me responda em português simples:
+1. O que aqui poderia virar lugares ou etapas, com um sinal claro de "pronto"?
+2. O que a pessoa veria mudar quando avança?
+3. Vale a pena fazer em 3D, ou uma página comum resolve?
+4. Como eu conferiria o resultado em um navegador real antes de aprovar?
+Não mude nada ainda. Mostre o plano e espere eu dizer sim.</pre>
+    <button class="btn" id="copiarPedido" style="margin-top:10px;border:0;cursor:pointer">Copiar o pedido</button>
+  </div>
+  <div class="card" style="margin-top:16px"><h3>🛠️ Quer a parte técnica?</h3><p>Os arquivos, os testes e o passo a passo completo estão na página inicial do projeto no GitHub.</p><p><a class="btn ghost" href="https://github.com/inematds/do-chat-ao-agente-3d#instalação-técnica" target="_blank" rel="noopener">Ver a parte técnica</a></p></div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <span class="chip">Perguntas comuns</span>
+  <h2>Antes de você <span class="amb">entrar</span></h2>
+  <div class="grid g2">
+    <div class="card"><h3>Consigo fazer uma casa assim sem programar?</h3><p>A análise, sim. A construção pede aprender a usar agentes, como o Claude Code ou o Codex, ou ter ajuda técnica. Aqui foram 9 rodadas, com testes e revisões.</p></div>
+    <div class="card"><h3>Preciso programar para ler?</h3><p>Não. Este guia e a casa abrem no navegador. Alguns exercícios do curso usam o terminal, e a primeira estação ensina esse começo.</p></div>
+    <div class="card"><h3>O curso é pago?</h3><p>O curso é grátis. Os exercícios pedem computador e assinatura do Claude ou do ChatGPT.</p></div>
+    <div class="card"><h3>E se o 3D não abrir?</h3><p>Há uma versão sem 3D, com o mesmo curso e o mesmo progresso.</p></div>
+    <div class="card"><h3>Funciona no celular?</h3><p>A casa tem controles de toque e versão sem 3D, testados em simulação, não em um celular físico. Para fazer os exercícios, você precisa de um computador.</p></div>
+    <div class="card"><h3>A IA fez tudo sozinha?</h3><p>Não. Nei, do INEMA, fez o pedido e deu o OK para publicar. As IAs trabalharam em 9 rodadas, com testes, conferência no navegador e três revisões independentes.</p></div>
+    <div class="card"><h3>As fotos da casa estão aqui?</h3><p>Não. Elas serviram só de referência e ficaram fora do site e do repositório.</p></div>
+  </div>
+  <p style="margin:24px 0 0;font-size:1.1rem;max-width:66ch"><strong>E no seu curso: o que a pessoa deveria ver mudar quando termina uma parte?</strong> O curso está grátis no inema.club, direto na internet.</p>
+  <div class="entrar"><a class="btn" href="https://eventos.inema.club/do-chat-ao-agente-3d/" target="_blank" rel="noopener">Entrar na casa</a> <a class="btn ghost" href="https://eventos.inema.club/do-chat-ao-agente-3d/processo/" target="_blank" rel="noopener">Ver o processo no site</a></div>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="pill">Navegador</div><div class="pill">3D</div><div class="pill">Codex</div><div class="pill">Claude Code</div>
+    <p style="margin-top:18px">Do Chat ao Agente 3D · grátis no inema.club, direto na internet ·
+      <a href="https://github.com/inematds/do-chat-ao-agente-3d">inematds/do-chat-ao-agente-3d</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var KEY='do-chat-ao-agente-3d-guia-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    try{ if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; } }catch(e){}
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      try{ localStorage.setItem(KEY, light?'light':'dark'); }catch(e){}
+    });
+  })();
+  (function(){
+    var bt=document.getElementById('copiarPedido'), tx=document.getElementById('pedidoTxt');
+    if(!bt||!tx) return;
+    var rotulo=bt.textContent;
+    bt.addEventListener('click',function(){
+      try{ navigator.clipboard.writeText(tx.textContent).then(function(){ bt.textContent='Copiado ✓'; setTimeout(function(){bt.textContent=rotulo;},2000); }); }catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>

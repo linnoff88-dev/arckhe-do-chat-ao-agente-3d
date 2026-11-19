@@ -1,0 +1,26 @@
+{
+  "rodada": "07-fechamento",
+  "modelo": "gpt-6.2-astra",
+  "esforco": "high",
+  "inicio": "2026-11-18T09:12:21-03:00",
+  "segundos": 529,
+  "codigo_saida": 0,
+  "tokens": {
+    "entrada": 3639109,
+    "cache": 3502080,
+    "saida": 17025
+  },
+  "custo_equivalente_usd": 3.18,
+  "cota_estimada_pct": 1.4,
+  "cota_medida_pct": {
+    "inicio": 95.0,
+    "fim": 96.0
+  },
+  "itens": {
+    "agent_message": 4,
+    "command_execution": 41
+  },
+  "arquivos": [],
+  "prompt": "rodadas/07-fechamento/prompt.md",
+  "resposta": "rodadas/07-fechamento/resposta.md"
+}

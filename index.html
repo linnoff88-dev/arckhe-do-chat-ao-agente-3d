@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Do chat ao agente. Estude e pratique em quatro estações numa casa de pedra e madeira na serra."
+    />
+    <title>Do chat ao agente 3D · INEMA.CLUB</title>
+    <link rel="icon" href="./marca/logo-inema-club-quadrado.png" />
+    <link rel="stylesheet" href="./src/estilo.css" />
+    <script type="module" src="./src/principal.js"></script>
+  </head>
+  <body data-modo="entrada">
+    <svg class="simbolos" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="i-casa" viewBox="0 0 24 24"><path d="m2 11 10-8 10 8M5 10v11h14V10M10 21v-7h4v7" /></symbol>
+      <symbol id="i-livro" viewBox="0 0 24 24">
+        <path d="M12 6c-3-2-6-2-10-1v14c4-1 7-1 10 1 3-2 6-2 10-1V5c-4-1-7-1-10 1Zm0 0v14" />
+      </symbol>
+      <symbol id="i-mapa" viewBox="0 0 24 24">
+        <path d="m2 5 7-2 6 3 7-2v15l-7 2-6-3-7 2V5Zm7-2v15m6-12v15" />
+      </symbol>
+      <symbol id="i-terminal" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="m6 9 3 3-3 3m6 0h5" />
+      </symbol>
+      <symbol id="i-jarvis" viewBox="0 0 24 24">
+        <rect x="6" y="2" width="12" height="20" rx="2.5" />
+        <path d="M10 5h4m-3 14h2" />
+      </symbol>
+      <symbol id="i-filas" viewBox="0 0 24 24">
+        <rect x="2" y="3" width="20" height="18" rx="2" />
+        <path d="M12 3v18M5 8h4m-4 4h4m6-4h4" />
+      </symbol>
+      <symbol id="i-redes" viewBox="0 0 24 24">
+        <rect x="7" y="3" width="10" height="18" rx="1.5" />
+        <path d="M4 6H2v12h2m16-12h2v12h-2m-10-8 3 2-3 2z" />
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 13 8-13 8z" /></symbol>
+      <symbol id="i-seta" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" /></symbol>
+      <symbol id="i-fora" viewBox="0 0 24 24"><path d="M5 19 19 5M7 5h12v12" /></symbol>
+      <symbol id="i-fechar" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19" /></symbol>
+    </svg>
+    <a class="pular" href="#principal">Pular para o conteúdo</a>
+    <header class="cabecalho">
+      <div class="marca">
+        <img src="./marca/logo-inema-club-horizontal.png" alt="INEMA.CLUB" /><span id="marca-titulo"
+          >Do chat ao agente</span
+        >
+      </div>
+      <nav aria-label="Navegação do curso">
+        <a id="ver-percurso" href="#percurso">Ver percurso <span aria-hidden="true">↓</span></a>
+        <button id="botao-modo" class="sutil" hidden></button>
+        <button id="botao-mapa" hidden>
+          <svg class="icone"><use href="#i-mapa" /></svg> Mapa<span class="extra"> do curso</span>
+        </button>
+      </nav>
+    </header>
+    <main id="principal" tabindex="-1">
+      <section id="entrada" aria-labelledby="titulo-entrada">
+        <div class="capa">
+          <div class="vista" role="img" aria-label="Luz do fim da tarde sobre o vale da serra"></div>
+          <div class="convite">
+            <p class="promessa">No chat, cada passo depende de você. Quando você fecha a janela, o trabalho para.</p>
+            <h1 id="titulo-entrada">Do chat<br /><em>ao agente.</em></h1>
+            <p id="subtitulo">Um agente é um programa que recebe uma tarefa e trabalha nos seus arquivos. Você aprende a delegar o trabalho e conferir o resultado.</p>
+            <p id="requisito">Curso grátis. Os exercícios exigem computador e assinatura do Claude ou do ChatGPT.</p>
+            <form id="acesso">
+              <label for="nome">Seu nome <span>(opcional)</span></label>
+              <input id="nome" name="nome" maxlength="60" autocomplete="given-name" />
+              <div class="entradas">
+                <button class="forte" value="3d" aria-labelledby="entrar-nome" aria-describedby="entrar-modo" disabled>
+                  <svg class="icone"><use href="#i-casa" /></svg> <span><span id="entrar-nome">Entrar na casa</span><small id="entrar-modo">Curso em 3D</small></span>
+                </button>
+                <button class="forte" value="sem-3d" aria-labelledby="ler-nome" aria-describedby="ler-modo" disabled>
+                  <svg class="icone"><use href="#i-livro" /></svg> <span><span id="ler-nome">Fazer sem 3D</span><small id="ler-modo">Curso em página</small></span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="legenda-vista"><span class="linha-sol" aria-hidden="true"></span>Vista do terraço</div>
+        </div>
+        <section id="percurso" class="percurso" aria-labelledby="titulo-percurso">
+          <div class="titulo-percurso">
+            <h2 id="titulo-percurso">O percurso</h2>
+            <p id="inventario"></p>
+          </div>
+          <div id="indice-entrada" class="indice"></div>
+          <a class="processo" href="./processo/">Como a casa foi feita</a>
+        </section>
+      </section>
+      <section id="carga" aria-labelledby="titulo-carga" hidden>
+        <h1 id="titulo-carga">Carregando a casa</h1>
+        <progress id="medidor" max="100" value="0" aria-label="Carregamento da casa"></progress>
+        <p id="percentual" role="status">0%</p>
+        <button data-acao="leitura">Fazer sem 3D</button>
+      </section>
+      <section id="sala" aria-label="Casa na serra" hidden>
+        <div id="cena"></div>
+        <button id="marcador" data-acao="ir" hidden></button>
+        <div class="hud-topo">
+          <div class="placa" id="local">Sala</div>
+          <button class="placa" data-acao="ajuda">Como se mover</button>
+        </div>
+        <div class="controles-sala">
+          <div id="toque" aria-label="Controles de movimento">
+            <button data-tecla="w" aria-label="Andar para a frente">↑</button>
+            <button data-tecla="a" aria-label="Andar para a esquerda">←</button>
+            <button data-tecla="s" aria-label="Andar para trás">↓</button>
+            <button data-tecla="d" aria-label="Andar para a direita">→</button>
+          </div>
+          <div class="dock" id="dock">
+            <div class="dock-texto">
+              <span class="meta"></span><strong role="status"></strong><span class="dock-proxima" hidden></span><p class="fecho-longo" hidden></p>
+            </div>
+            <div class="dock-acoes"></div>
+          </div>
+        </div>
+      </section>
+      <section id="leitura" hidden aria-label="Curso sem 3D"></section>
+      <p id="temporario" role="status" hidden>Seu progresso fica disponível enquanto esta página estiver aberta.</p>
+      <div id="erro" role="alert" hidden>
+        <p></p>
+        <button onclick="location.reload()">Tentar de novo</button>
+      </div>
+      <noscript>Ative o JavaScript para abrir o curso e guardar os exercícios marcados.</noscript>
+    </main>
+    <dialog id="painel" aria-labelledby="titulo-painel">
+      <div class="barra-painel">
+        <span id="rotulo-painel"></span
+        ><button id="fechar" aria-label="Fechar painel">
+          <svg class="icone"><use href="#i-fechar" /></svg>
+        </button>
+        <p id="aviso-painel" role="status"></p>
+      </div>
+      <div id="corpo-painel"></div>
+    </dialog>
+    <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "rodada": "03-fidelidade",
+  "modelo": "gpt-6.2-astra",
+  "esforco": "high",
+  "inicio": "2026-11-18T06:25:26-03:00",
+  "segundos": 1439,
+  "codigo_saida": 0,
+  "tokens": {
+    "entrada": 3646218,
+    "cache": 3504128,
+    "saida": 35419
+  },
+  "custo_equivalente_usd": 3.96,
+  "cota_estimada_pct": 1.7,
+  "cota_medida_pct": {
+    "inicio": 91.0,
+    "fim": 92.0
+  },
+  "itens": {
+    "agent_message": 5,
+    "command_execution": 152
+  },
+  "arquivos": [],
+  "prompt": "rodadas/03-fidelidade/prompt.md",
+  "resposta": "rodadas/03-fidelidade/resposta.md"
+}

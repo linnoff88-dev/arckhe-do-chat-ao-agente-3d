@@ -1,0 +1,26 @@
+{
+  "rodada": "05-revisao",
+  "modelo": "gpt-6.2-astra",
+  "esforco": "high",
+  "inicio": "2026-11-18T07:37:55-03:00",
+  "segundos": 1173,
+  "codigo_saida": 0,
+  "tokens": {
+    "entrada": 5380490,
+    "cache": 5217280,
+    "saida": 37816
+  },
+  "custo_equivalente_usd": 4.91,
+  "cota_estimada_pct": 2.1,
+  "cota_medida_pct": {
+    "inicio": 93.0,
+    "fim": 94.0
+  },
+  "itens": {
+    "agent_message": 5,
+    "command_execution": 50
+  },
+  "arquivos": [],
+  "prompt": "rodadas/05-revisao/prompt.md",
+  "resposta": "rodadas/05-revisao/resposta.md"
+}

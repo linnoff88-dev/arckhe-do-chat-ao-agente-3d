@@ -1,0 +1,26 @@
+{
+  "rodada": "02-casa",
+  "modelo": "gpt-6.2-astra",
+  "esforco": "high",
+  "inicio": "2026-11-18T05:42:58-03:00",
+  "segundos": 2351,
+  "codigo_saida": 0,
+  "tokens": {
+    "entrada": 5549123,
+    "cache": 5407232,
+    "saida": 56680
+  },
+  "custo_equivalente_usd": 5.57,
+  "cota_estimada_pct": 2.4,
+  "cota_medida_pct": {
+    "inicio": 89.0,
+    "fim": 91.0
+  },
+  "itens": {
+    "agent_message": 5,
+    "command_execution": 54
+  },
+  "arquivos": [],
+  "prompt": "rodadas/02-casa/prompt.md",
+  "resposta": "rodadas/02-casa/resposta.md"
+}

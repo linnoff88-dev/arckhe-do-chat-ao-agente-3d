@@ -1,0 +1,958 @@
+{
+ "aviso": "Gerado por tools/gerar_base.py. Não edite.",
+ "geral": {
+  "nome": "Do chat ao agente",
+  "sub": "Visão geral da formação",
+  "url": "https://inematds.github.io/do-chat-ao-agente-v72/",
+  "aulas": [
+   {
+    "num": 1,
+    "titulo": "Do chat ao agente: os quatro degraus",
+    "minutos": 6,
+    "lead": "No chat você dirige o tempo todo e, quando fecha a janela, o trabalho para. O agente lê os seus arquivos, executa tarefas e continua enquanto você faz outra coisa. A virada não é trocar de modelo: é mudar de lugar.",
+    "objetivo": "dizer em que degrau você está hoje e qual é o próximo passo concreto.",
+    "aprende": [
+     "Por que o chat tem um teto",
+     "Os quatro degraus e a ordem entre eles",
+     "Achar o seu ponto de partida",
+     "Montar o seu diagnóstico de uma página"
+    ],
+    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/visao-geral/"
+   },
+   {
+    "num": 2,
+    "titulo": "Degrau 1: do chat para o terminal (OSWork)",
+    "minutos": 12,
+    "lead": "O terminal é só outra janela. Com seis comandos você anda pelas suas pastas; com um AGENTS.md o agente sabe quem você é e o que pode fazer; com o Git você desfaz qualquer erro.",
+    "objetivo": "montar a pasta de trabalho do agente com regras, rede de segurança e segredos fora do texto.",
+    "aprende": [
+     "Andar pelas pastas pelo terminal",
+     "Escrever o manual do agente (AGENTS.md)",
+     "Desfazer qualquer mudança com o Git",
+     "Manter chaves fora do texto"
+    ],
+    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/terminal/"
+   },
+   {
+    "num": 3,
+    "titulo": "Degrau 2: o seu Jarvis com o INTELECTO",
+    "minutos": 10,
+    "lead": "Um assistente pessoal escrito do zero em Python, pequeno de propósito: fala com você pelo Telegram, lembra das conversas e usa um modelo na nuvem ou local. Você deixa de abrir um site para conversar: o assistente é seu.",
+    "objetivo": "desenhar, instalar e pôr para trabalhar um assistente com memória e personalidade definidas por você.",
+    "aprende": [
+     "Desenhar o assistente antes de instalar",
+     "Criar o bot no Telegram",
+     "Testar a memória",
+     "Escolher entre nuvem e local"
+    ],
+    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/jarvis/"
+   },
+   {
+    "num": 4,
+    "titulo": "Degrau 3: filas — dez tarefas e vá dormir",
+    "minutos": 12,
+    "lead": "Um agente sozinho faz uma coisa por vez e só enquanto você olha. Com uma fila durável, cada pedido vira uma tarefa guardada, retomada se cair, e os fluxos param num portão antes do que importa.",
+    "objetivo": "decidir o que vai para a fila, onde ficam os portões e como conferir o resultado no dia seguinte.",
+    "aprende": [
+     "Como uma fila durável funciona",
+     "Retomar do ponto onde parou",
+     "Onde pôr o portão humano",
+     "Medir quantas saíram certas"
+    ],
+    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/filas/"
+   },
+   {
+    "num": 5,
+    "titulo": "Degrau 4: redes no automático, com fonte na tela",
+    "minutos": 14,
+    "lead": "O r7e monta o reel em sete etapas de gatilho. O promoavatar faz vídeos com avatar para cada público. Os xviral assistem ao que os maiores do nicho publicaram, conferem cada número e publicam com a fonte na tela. O motor é o mesmo: só muda o tema.",
+    "objetivo": "desenhar o canal do seu nicho com regras, base com fonte, roteiro conferido, agenda e portão antes de publicar.",
+    "aprende": [
+     "O reel em 7 etapas (r7e)",
+     "A base com fonte literal",
+     "As regras do seu nicho",
+     "Agenda com portão"
+    ],
+    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/redes/"
+   },
+   {
+    "num": 6,
+    "titulo": "Seu plano: um degrau de cada vez",
+    "minutos": 10,
+    "lead": "Você já viu os quatro degraus. Agora é montar o plano com datas, fazer os exercícios na ordem e só subir quando o \"pronto quando\" for verdade.",
+    "objetivo": "sair com um plano de execução datado e saber medir se cada degrau ficou firme.",
+    "aprende": [
+     "Montar o plano com datas",
+     "Medir com o \"pronto quando\"",
+     "Rever a jornada inteira em vídeo",
+     "Validar o que aprendeu"
+    ],
+    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/plano/"
+   }
+  ],
+  "video": {
+   "chave": "jornada-ia",
+   "titulo": "Do chat ao agente: a visão geral",
+   "duracao_s": 147.54,
+   "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
+   "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/jornada-ia.vtt",
+   "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/"
+  }
+ },
+ "sequencias": [
+  {
+   "numero": 1,
+   "id": "terminal",
+   "titulo_pagina": "OSWork: do chat para o terminal.",
+   "textos_pagina": [
+    "03 · Sequência 1",
+    "O terminal é só outra janela. Com seis comandos você anda pelas suas pastas; com um AGENTS.md o agente sabe quem você é e o que pode fazer; com o Git você desfaz qualquer erro. Você dá a tarefa, confere o resultado e decide: isso é gestão."
+   ],
+   "cards_pagina": [
+    {
+     "tag": "Curso · PT · EN · ES",
+     "titulo": "Do chat para o terminal",
+     "detalhe": "Terminal sem medo, agente instalado da fonte oficial, pasta com regras, cada versão no Git, chaves fora do texto e a sua página no ar.",
+     "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/"
+    },
+    {
+     "tag": "Curso · rápido",
+     "titulo": "OSWork Quick",
+     "detalhe": "O caminho curto do chat ao agente na sua pasta, em sete aulas.",
+     "url": "https://inematds.github.io/oswork-quick/"
+    },
+    {
+     "tag": "Curso · PT · EN · ES",
+     "titulo": "OSWork v6.2",
+     "detalhe": "Passo a passo para iniciantes, com o cmd do Windows e uma VPS Linux.",
+     "url": "https://inematds.github.io/oswork-v62/"
+    },
+    {
+     "tag": "6 exercícios",
+     "titulo": "Pratique a sequência 1",
+     "detalhe": "Primeira pasta, AGENTS.md, primeira tarefa, Git, segredos fora do texto e o agente lendo os seus arquivos.",
+     "url": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/01-oswork.md"
+    }
+   ],
+   "curso": {
+    "nome": "Do chat para o terminal",
+    "sub": "Degrau 1 da formação Do chat ao agente",
+    "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/",
+    "aulas": [
+     {
+      "num": 1,
+      "titulo": "O terminal começa dizendo onde você está",
+      "minutos": 15,
+      "lead": "O terminal é só outra janela para as mesmas pastas do Explorador. Você escreve uma linha, ele devolve outra. Com seis comandos você sabe onde está, vê o que tem ali, cria a sua pasta de projetos e anda entre elas sem o mouse.",
+      "objetivo": "abrir o cmd, dizer em que pasta você está e andar pelas pastas com seis comandos, sem o mouse.",
+      "aprende": [
+       "Abrir o cmd e ler a linha que termina em >",
+       "Saber onde você está com cd e o que tem ali com dir",
+       "Criar projetos\\meu-primeiro-agente e entrar nela",
+       "Ver a mesma pasta no Explorador com explorer ."
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/terminal/"
+     },
+     {
+      "num": 2,
+      "titulo": "Instalar da fonte oficial e entrar com a sua conta",
+      "minutos": 18,
+      "lead": "Colocar o programa, entrar com a conta e abrir na pasta são três etapas diferentes, cada uma com a sua conferência. O comando vem da página oficial, a conta é a sua assinatura e nenhuma senha passa pelo terminal.",
+      "objetivo": "instalar Git, gh, Node e o agente (Claude Code ou Codex) pelo cmd e confirmar versão e método de entrada.",
+      "aprende": [
+       "Instalar Git, GitHub CLI e Node com o winget",
+       "Instalar o Claude Code ou o Codex pelo endereço oficial",
+       "Confirmar com --version depois de reabrir o cmd",
+       "Entrar pela assinatura e conferir o método, sem expor chave"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/instalar/"
+     },
+     {
+      "num": 3,
+      "titulo": "A pasta é o contexto: README, AGENTS.md e Markdown",
+      "minutos": 16,
+      "lead": "Quando tudo fica numa pasta só, a IA lê material que não tem nada a ver com o pedido e você não sabe de onde veio cada frase. Uma pasta por assunto, com um arquivo para pessoas e outro para o agente, resolve isso antes do primeiro pedido.",
+      "objetivo": "montar a árvore projetos/config e a pasta do projeto com entradas, saídas, README.md e AGENTS.md em Markdown.",
+      "aprende": [
+       "Uma pasta por assunto, e config para o que vale em todos",
+       "As três marcas do Markdown: #, ## e -",
+       "README para pessoas, AGENTS.md para o agente",
+       "Editar com notepad e conferir com type"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/pasta/"
+     },
+     {
+      "num": 4,
+      "titulo": "Primeiro o agente lê, depois ele muda",
+      "minutos": 18,
+      "lead": "\"Arrume o projeto\" mistura diagnóstico e mudança: se algo sai errado, você não sabe em qual parte foi. Separar leitura de alteração, dar a menor permissão que resolve e pedir um fechamento que diz o que foi conferido transforma o agente em alguém que você gerencia.",
+      "objetivo": "dar ao agente uma tarefa com escopo, conferir o que ele leu e mudou, e pedir pelo menos uma correção.",
+      "aprende": [
+       "Pedir leitura sem edição e conferir os arquivos usados",
+       "Autorizar uma mudança pequena e com nome",
+       "Escrever uma autorização em cinco partes",
+       "Exigir o fechamento: feito, conferido, pendente"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/primeira-tarefa/"
+     },
+     {
+      "num": 5,
+      "titulo": "Segredo não entra no texto",
+      "minutos": 14,
+      "lead": "Uma chave colada num documento, num print ou num pedido vira acesso para quem ler, e continua valendo depois que a conversa acaba. Separar o segredo do resto, antes da primeira versão salva, deixa você compartilhar a pasta sem medo.",
+      "objetivo": "criar .env, .env.example e .gitignore antes do primeiro commit e saber o que fazer se uma chave vazar.",
+      "aprende": [
+       "O .env guarda a chave; o .env.example mostra só os nomes",
+       "O .gitignore escrito antes da primeira versão",
+       "Vazou? Trocar a chave na origem primeiro",
+       "A IA precisa do nome da variável, não do valor"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/segredos/"
+     },
+     {
+      "num": 6,
+      "titulo": "Git: a rede de segurança para desfazer qualquer mudança",
+      "minutos": 20,
+      "lead": "Numa tarefa, o agente pode mudar dez arquivos de uma vez. Sem histórico, você não sabe o que mudou nem como voltar. Com o Git, cada versão boa fica guardada com data e explicação, e a mudança que você não aprovou volta com um comando.",
+      "objetivo": "salvar versões com status, add, diff e commit e desfazer uma mudança do agente com git restore, sem pânico.",
+      "aprende": [
+       "Começar o histórico só na pasta do projeto",
+       "Ler o git status e o git diff antes de salvar",
+       "Salvar uma versão com mensagem que diz o que mudou",
+       "Voltar um arquivo com git restore e desfazer uma versão com git revert"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/git/"
+     },
+     {
+      "num": 7,
+      "titulo": "AGENTS.md, Skills e memória que dá para conferir",
+      "minutos": 18,
+      "lead": "Toda conversa nova com o agente começa do zero. Sem arquivo de instruções, você repete os mesmos avisos; com instrução vaga, nada muda. Regra que dá para conferir, roteiro guardado numa Skill e memória curta com data fazem o agente melhorar a cada tarefa.",
+      "objetivo": "reescrever o AGENTS.md com cinco regras conferíveis e transformar uma falha real em regra na próxima execução.",
+      "aprende": [
+       "Escrever regra observável: ação e evidência",
+       "Saber qual AGENTS.md vale: global, projeto, subpasta",
+       "Guardar um procedimento repetido numa Skill",
+       "Memória com data e falha com menor correção"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/agents-md/"
+     },
+     {
+      "num": 8,
+      "titulo": "Página no ar e o mesmo projeto numa VPS",
+      "minutos": 20,
+      "lead": "Salvar, enviar e pôr no ar são três passos e três decisões. Com uma chave SSH e o gh, você envia o projeto ao GitHub, publica a página com um endereço que abre no celular e leva a mesma pasta para uma VPS, onde o agente trabalha mesmo com o seu computador desligado.",
+      "objetivo": "ligar o terminal ao GitHub com chave SSH, publicar a página no GitHub Pages e clonar o projeto numa VPS.",
+      "aprende": [
+       "Criar a chave SSH e entregar só a pública",
+       "Criar o repositório, publicar no Pages e a rotina do push",
+       "Conferir destino, estado, versões e segredos antes de enviar",
+       "Entrar na VPS, clonar o projeto e trazer o que mudou"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/publicar/"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "id": "s1-e1",
+     "titulo": "Sua primeira pasta pelo terminal",
+     "minutos": 10,
+     "passos_md": "1. Abra o terminal.\n2. Crie a pasta `projetos` e, dentro dela, `meu-primeiro-agente`.\n3. Entre nela e liste o conteúdo (vai estar vazia).\n4. Abra a mesma pasta pelo Explorador de Arquivos (ou Finder) e compare.",
+     "pronto_quando": "você chega até a pasta só pelo terminal, sem o mouse, e sabe dizer em que pasta está."
+    },
+    {
+     "id": "s1-e2",
+     "titulo": "O manual do funcionário: AGENTS.md",
+     "minutos": 15,
+     "passos_md": "Crie, dentro da pasta, um arquivo `AGENTS.md` com:\n\n```markdown\n# Quem sou\n<seu nome, sua profissão, para quem você trabalha>\n\n# Regras deste projeto\n- Escreva em português, frases curtas.\n- Não apague arquivos sem perguntar.\n- Antes de terminar, diga o que mudou e como eu confiro.\n\n# O que tem aqui\n- index.html: minha página\n```",
+     "pronto_quando": "o arquivo existe e tem pelo menos três regras suas, escritas por você."
+    },
+    {
+     "id": "s1-e3",
+     "titulo": "A primeira tarefa",
+     "minutos": 15,
+     "passos_md": "Dentro da pasta, chame o agente (`claude` ou `codex`) e peça:\n\n> Leia o AGENTS.md. Crie um index.html com uma página simples sobre mim, usando o que está lá.\n\nAbra a página no navegador. Peça uma mudança (cor, texto, uma seção nova) e confira de novo.",
+     "pronto_quando": "a página abre no navegador e você pediu pelo menos **uma correção** ao agente. Dar a tarefa, conferir e decidir: isso é gestão."
+    },
+    {
+     "id": "s1-e4",
+     "titulo": "A rede de segurança: Git",
+     "minutos": 20,
+     "passos_md": "1. Na pasta: `git init`, depois `git add .` e `git commit -m \"primeira versão\"`.\n2. Peça ao agente uma mudança grande na página.\n3. Não gostou? Volte: `git restore index.html` (ou `git checkout -- index.html`).",
+     "pronto_quando": "você desfez uma mudança do agente com um comando, sem pânico."
+    },
+    {
+     "id": "s1-e5",
+     "titulo": "Segredo não entra no texto",
+     "minutos": 10,
+     "passos_md": "1. Crie um arquivo `.env` com uma linha falsa: `MINHA_CHAVE=teste123`.\n2. Crie um `.gitignore` com a linha `.env`.\n3. Rode `git status`: o `.env` **não** pode aparecer.\n4. Acrescente ao AGENTS.md: \"Nunca escreva chaves ou senhas em arquivo de texto; elas ficam no .env\".",
+     "pronto_quando": "`git status` não mostra o `.env`."
+    },
+    {
+     "id": "s1-e6",
+     "titulo": "O agente lê os seus arquivos",
+     "minutos": 20,
+     "passos_md": "Coloque na pasta três arquivos de texto seus (anotações, uma ata, um e-mail longo). Peça:\n\n> Leia os arquivos .txt desta pasta e escreva resumo.md com 5 decisões e 5 pendências, citando de qual arquivo veio cada uma.\n\nConfira duas citações no arquivo original.",
+     "pronto_quando": "você achou no original pelo menos duas das frases citadas. Se alguma não existir, anote no AGENTS.md a regra que faltou."
+    }
+   ],
+   "video": {
+    "chave": "seq1-oswork",
+    "titulo": "Do chat para o terminal",
+    "duracao_s": 111.94,
+    "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq1-oswork-16x9.mp4",
+    "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq1-oswork.vtt",
+    "pagina": "https://inematds.github.io/jornada-agentes/serie/seq1-oswork/"
+   }
+  },
+  {
+   "numero": 2,
+   "id": "jarvis",
+   "titulo_pagina": "Crie o seu Jarvis com o INTELECTO.",
+   "textos_pagina": [
+    "04 · Sequência 2",
+    "Um assistente pessoal escrito do zero em Python, pequeno de propósito: fala com você pelo Telegram , lembra das conversas e usa um modelo na nuvem (OpenRouter) ou local (Ollama). Você deixa de abrir um site para conversar: o assistente é seu."
+   ],
+   "cards_pagina": [
+    {
+     "tag": "Curso · PT · EN · ES",
+     "titulo": "O seu Jarvis",
+     "detalhe": "As sete peças de um assistente de IA, quem ele é em quatro arquivos de texto, o núcleo construído com testes e ligado no Telegram.",
+     "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/"
+    },
+    {
+     "tag": "Projeto · aberto",
+     "titulo": "INTELECTO",
+     "detalhe": "O assistente pessoal: instalação com ./start.sh e configuração guiada.",
+     "url": "https://inematds.github.io/intelecto/"
+    },
+    {
+     "tag": "Curso · PT · EN · ES",
+     "titulo": "Curso INTELECTO",
+     "detalhe": "Como ele pensa, a memória, as ferramentas e como mudar o seu.",
+     "url": "https://inematds.github.io/intelecto-curso/"
+    },
+    {
+     "tag": "6 exercícios",
+     "titulo": "Pratique a sequência 2",
+     "detalhe": "Desenhe o seu Jarvis, crie o bot, instale, teste a memória, compare nuvem e local e crie uma rotina.",
+     "url": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/02-jarvis.md"
+    }
+   ],
+   "curso": {
+    "nome": "O seu Jarvis",
+    "sub": "Degrau 2 · Do chat ao agente",
+    "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/",
+    "aulas": [
+     {
+      "num": 1,
+      "titulo": "As sete peças de um Jarvis",
+      "minutos": 15,
+      "lead": "Todo agente, do mais simples ao mais caro, tem as mesmas sete peças: uma porta, um coração, uma identidade, um cérebro, uma memória, mãos e um cofre. Quem conhece as peças escolhe melhor, gasta menos e não fica preso a um produto. O INTELECTO é o nosso exemplo: pequeno de propósito, para dar para ler.",
+      "objetivo": "explicar o caminho de uma mensagem e dizer, para cada uma das sete peças, o que ela faz e onde fica no INTELECTO.",
+      "aprende": [
+       "O caminho de uma mensagem, do Telegram ao modelo e de volta",
+       "O que cada uma das sete peças faz",
+       "Por que o loop com freio separa um agente de um chatbot",
+       "Como os contratos deixam trocar uma peça sem mexer no resto"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/pecas/"
+     },
+     {
+      "num": 2,
+      "titulo": "Desenhe o seu Jarvis antes de instalar",
+      "minutos": 20,
+      "lead": "O assistente vira seu nos arquivos de texto, não no código. Antes de instalar qualquer coisa, você escreve quem ele é, o que deve e o que nunca deve fazer, e o que precisa lembrar de você. Esse desenho responde às perguntas da instalação e vira os quatro arquivos da identidade.",
+      "objetivo": "escrever o meu-jarvis.md e transformá-lo nos quatro arquivos da identidade: SOUL, AGENTS, USER e MEMORY.",
+      "aprende": [
+       "Escrever o desenho do assistente numa tela",
+       "O que vai no SOUL, no AGENTS, no USER e no MEMORY",
+       "Diferença entre um SOUL eficaz e um fraco",
+       "Transformar uma vontade vaga num pedido concreto"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/identidade/"
+     },
+     {
+      "num": 3,
+      "titulo": "A porta: o bot no Telegram, com um dono só",
+      "minutos": 15,
+      "lead": "O Telegram é a porta mais simples: você cria o bot em dois minutos e recebe um token. Esse token é a chave da porta. Quem tem o token controla o bot, e qualquer pessoa pode mandar mensagem para um bot. Por isso a aula é metade criar e metade proteger.",
+      "objetivo": "criar o bot no @BotFather, guardar o token só no .env e definir que o assistente responde apenas a você.",
+      "aprende": [
+       "Criar o bot com /newbot no @BotFather",
+       "Por que o token fica só no .env e fora do Git",
+       "Como o canal conversa com o Telegram (long-polling)",
+       "Por que o bot precisa aceitar só o dono"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/telegram/"
+     },
+     {
+      "num": 4,
+      "titulo": "Construir sem programar: você escolhe, o agente constrói, o teste confirma",
+      "minutos": 20,
+      "lead": "Você não escreve código. Escolhe os ingredientes numa página, como numa mercearia, exporta uma lista e pede ao Claude Code ou ao Codex para construir, seguindo o plano de obra do INTELECTO. Depois prova com os testes e com uma conversa no terminal, antes de ligar no Telegram.",
+      "objetivo": "gerar o briefing na mercearia, pedir ao agente de programação a construção com testes e provar o núcleo com os testes e uma conversa.",
+      "aprende": [
+       "A mercearia e o briefing meu-assistente.md",
+       "Por que a lista sozinha não basta: o plano de obra",
+       "O pedido de construção em uma frase",
+       "Provar com os testes e com a conversa no terminal"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/construir/"
+     },
+     {
+      "num": 5,
+      "titulo": "A memória: como ele lembra de você amanhã",
+      "minutos": 15,
+      "lead": "A memória é a diferença entre uma IA que esquece tudo ao reiniciar e uma que te conhece há meses. No INTELECTO ela é um banco no seu computador, com busca por palavras, sem custo de API. Entender como ela busca muda o jeito de você contar as coisas.",
+      "objetivo": "explicar onde o assistente guarda o que você conta e como busca, e provar que ele lembra num outro dia, numa conversa nova.",
+      "aprende": [
+       "Duas camadas: MEMORY.md e o banco memory.db",
+       "Como a busca por palavras escolhe as lembranças",
+       "Categorias e deduplicação",
+       "O teste de dois dias"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/memoria/"
+     },
+     {
+      "num": 6,
+      "titulo": "O cérebro: nuvem ou local, decidido com os seus números",
+      "minutos": 15,
+      "lead": "O modelo de IA é a peça mais fácil de trocar. Na nuvem, o OpenRouter dá acesso a mais de cem modelos com uma chave. No seu computador, o Ollama roda sem custo por mensagem e sem mandar nada para fora. A escolha não é de gosto: é uma tabela com tempo, qualidade e custo.",
+      "objetivo": "comparar um modelo na nuvem e um local com a mesma pergunta e decidir, com os seus números, qual usar para quê.",
+      "aprende": [
+       "O que o OpenRouter e o Ollama fazem",
+       "Por que trocar de cérebro não muda o resto",
+       "Montar a tabela tempo × qualidade × custo",
+       "Onde a chave da nuvem fica guardada"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/cerebro/"
+     },
+     {
+      "num": 7,
+      "titulo": "As mãos e o cofre: ferramentas com limites",
+      "minutos": 15,
+      "lead": "Com ferramentas o assistente faz: lê e escreve arquivos, roda comandos, guarda lembranças. Um agente com mãos precisa de limites. O cofre do INTELECTO tem quatro: segredos cifrados, lista de comandos proibidos, tempo-limite e um log de tudo o que foi executado.",
+      "objetivo": "dizer o que cada ferramenta pode fazer, que limite a segura e conferir no log o que o seu assistente executou.",
+      "aprende": [
+       "As ferramentas do núcleo e como o modelo escolhe",
+       "Os quatro limites do cofre",
+       "Texto de fora que tenta dar ordens",
+       "Os três cuidados antes de ligar"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/cofre/"
+     },
+     {
+      "num": 8,
+      "titulo": "Uma rotina de verdade e o Jarvis no ar",
+      "minutos": 15,
+      "lead": "Assistente que você não usa não serve. Nesta aula você transforma uma tarefa da semana em pedido fixo, usa cinco dias seguidos e anota o que melhorar. Depois vê os degraus para deixá-lo ligado: no seu computador, com reinício automático, e num servidor alugado, 24 horas no ar.",
+      "objetivo": "usar um pedido fixo por cinco dias seguidos e escolher onde o assistente vai ficar ligado, do notebook a um servidor 24 horas.",
+      "aprende": [
+       "Transformar uma tarefa em pedido fixo",
+       "O ciclo semanal de melhoria",
+       "Notebook, reinício automático ou servidor",
+       "A lista de tarefas que leva ao degrau 3"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/rotina/"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "id": "s2-e1",
+     "titulo": "Desenhe o seu Jarvis antes de instalar",
+     "minutos": 15,
+     "passos_md": "Num arquivo `meu-jarvis.md`, responda:\n\n- Nome do assistente e como ele fala (formal, direto, bem-humorado).\n- Três coisas que ele **deve** fazer por você toda semana.\n- Três coisas que ele **nunca** deve fazer.\n- O que ele precisa lembrar de você (profissão, rotina, preferências).",
+     "pronto_quando": "o arquivo cabe numa tela e outra pessoa entenderia quem é o seu assistente."
+    },
+    {
+     "id": "s2-e2",
+     "titulo": "O bot no Telegram",
+     "minutos": 10,
+     "passos_md": "No Telegram, abra o `@BotFather`, mande `/newbot`, escolha nome e @usuário. Guarde o token **só** no `.env` (regra da Sequência 1).",
+     "pronto_quando": "você tem o token e ele não aparece em nenhum arquivo além do `.env`."
+    },
+    {
+     "id": "s2-e3",
+     "titulo": "Construir",
+     "minutos": 30,
+     "passos_md": "O INTELECTO não tem instalador: você entrega um briefing ao agente e ele constrói o assistente, com testes. Primeiro veja o caminho funcionando no exemplo do repositório (9 testes, sem chave e sem internet):\n\n```bash\ngit clone https://github.com/inematds/intelecto.git\ncd intelecto/exemplo-jarvis\npython3 -m unittest discover -s . -p 'test_*.py' -v\npython3 smoke.py\n```\n\n1. Abra a página de comparação do INTELECTO (https://inematds.github.io/intelecto/), marque os ingredientes e exporte o briefing.\n2. Peça ao Claude Code ou ao Codex: \"Construa o meu assistente a partir deste briefing e do doc/intelecto.md, com testes.\"\n3. Use o seu `meu-jarvis.md` para o nome, o jeito de falar e a personalidade. O token do Telegram fica só no `.env`.",
+     "pronto_quando": "você manda \"oi\" no Telegram e ele responde com o nome e o jeito que você definiu."
+    },
+    {
+     "id": "s2-e4",
+     "titulo": "Teste de memória (2 dias)",
+     "minutos": null,
+     "passos_md": "1. Dia 1: conte a ele três fatos seus (ex.: \"toda segunda eu fecho o relatório de vendas\").\n2. Dia 2, numa conversa nova: pergunte \"o que eu faço toda segunda?\".",
+     "pronto_quando": "ele lembra sem você repetir. Se não lembrar, veja no curso como a memória é guardada e ajuste."
+    },
+    {
+     "id": "s2-e5",
+     "titulo": "Nuvem ou local",
+     "minutos": 20,
+     "passos_md": "Rode a mesma pergunta duas vezes: uma com um modelo na nuvem (OpenRouter) e outra com um modelo local (Ollama), se o seu computador aguentar. Anote numa tabela: tempo de resposta, qualidade e custo.",
+     "pronto_quando": "você sabe dizer qual modelo usar para quê, com os seus números."
+    },
+    {
+     "id": "s2-e6",
+     "titulo": "Uma rotina de verdade",
+     "minutos": 20,
+     "passos_md": "Escolha uma das três tarefas do E1 e transforme em pedido fixo (ex.: \"toda manhã, quando eu mandar 'dia', liste as minhas três prioridades a partir do que eu te contei ontem\"). Use por uma semana.",
+     "pronto_quando": "você usou 5 dias seguidos e anotou o que melhorar."
+    }
+   ],
+   "video": {
+    "chave": "seq2-jarvis",
+    "titulo": "Crie o seu Jarvis",
+    "duracao_s": 93.26,
+    "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq2-jarvis-16x9.mp4",
+    "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq2-jarvis.vtt",
+    "pagina": "https://inematds.github.io/jornada-agentes/serie/seq2-jarvis/"
+   }
+  },
+  {
+   "numero": 3,
+   "id": "filas",
+   "titulo_pagina": "Filas: mande dez tarefas e vá dormir.",
+   "textos_pagina": [
+    "05 · Sequência 3",
+    "Um agente sozinho faz uma coisa por vez e só enquanto você olha. O inemaccbot é um bot de Telegram com fila durável: cada pedido vira uma tarefa guardada, retomada se cair, e os fluxos param num portão humano antes do que importa. Transcrever, dublar, vídeo explicativo, curso e reel viram tarefas na fila."
+   ],
+   "cards_pagina": [
+    {
+     "tag": "Curso · PT · EN · ES",
+     "titulo": "Filas: dez tarefas e vá dormir",
+     "detalhe": "O que entra na fila, a fila caseira, o inemaccbot instalado e portões antes do que importa.",
+     "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/"
+    },
+    {
+     "tag": "Projeto · aberto",
+     "titulo": "inemaccbot",
+     "detalhe": "Instalação do zero até o /ping responder no Telegram, e a arquitetura completa.",
+     "url": "https://inematds.github.io/inemaccbot/guia/"
+    },
+    {
+     "tag": "5 exercícios",
+     "titulo": "Pratique a sequência 3",
+     "detalhe": "A fila no papel, uma fila caseira em 30 linhas, o bot instalado, uma noite de tarefas e o portão.",
+     "url": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md"
+    }
+   ],
+   "curso": {
+    "nome": "Filas: dez tarefas e vá dormir",
+    "sub": "Do chat ao agente · degrau 3",
+    "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/",
+    "aulas": [
+     {
+      "num": 1,
+      "titulo": "Do chat à fila: por que guardar as tarefas",
+      "minutos": 12,
+      "lead": "No chat, o agente faz uma coisa por vez e só enquanto a janela está aberta. Uma fila durável guarda cada pedido, executa um de cada vez, retoma depois de uma queda e separa o que deu certo do que falhou.",
+      "objetivo": "explicar as quatro garantias de uma fila durável e por que elas deixam você sair de perto.",
+      "aprende": [
+       "O limite do chat: você precisa estar olhando",
+       "As quatro garantias de uma fila durável",
+       "Os estados de uma tarefa, do pedido ao resultado",
+       "Onde o inemaccbot entra no degrau 3"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/por-que-fila/"
+     },
+     {
+      "num": 2,
+      "titulo": "O que vai para a fila (e o que fica com você)",
+      "minutos": 15,
+      "lead": "Nem toda tarefa deve ir para a fila. Antes de instalar qualquer coisa, você passa a sua lista por três perguntas e sai com uma tabela: roda sozinha, roda com portão ou fica com você.",
+      "objetivo": "classificar dez tarefas suas em sozinha, com portão ou fica com você, e dizer onde fica cada portão.",
+      "aprende": [
+       "As três perguntas da triagem",
+       "Onde o portão faz sentido",
+       "O que não deve ir para a fila",
+       "A sua fila no papel, com dez linhas"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/o-que-vai/"
+     },
+     {
+      "num": 3,
+      "titulo": "A fila caseira em 30 linhas",
+      "minutos": 20,
+      "lead": "Antes do bot, você vê a ideia inteira num script curto do repositório jornada-agentes: quatro pastas, uma tarefa por vez, retomada depois do Ctrl+C e falha separada com o motivo.",
+      "objetivo": "rodar a fila caseira, interromper no meio e explicar por que a segunda rodada não refaz o que já foi feito.",
+      "aprende": [
+       "As quatro pastas e o caminho de uma tarefa",
+       "A retomada, vista na prática",
+       "O script linha por linha",
+       "Trocar o motor: claude ou codex"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/fila-caseira/"
+     },
+     {
+      "num": 4,
+      "titulo": "Instalar o inemaccbot até o /ping responder",
+      "minutos": 20,
+      "lead": "O inemaccbot é um gateway do Telegram com fila durável: você manda o pedido pelo celular e o seu computador (ou uma VPS) executa como agente. Nesta aula você instala, pareia o bot com o seu chat e deixa rodando como serviço.",
+      "objetivo": "instalar o inemaccbot, parear com o seu chat e ver o /ping responder no Telegram.",
+      "aprende": [
+       "As peças: Telegram, fila, trabalhador, agente",
+       "Os pré-requisitos e o que quebra sem cada um",
+       "Token, allowlist e o modo pareamento",
+       "Subir na mão e depois como serviço"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/instalar/"
+     },
+     {
+      "num": 5,
+      "titulo": "Dez tarefas: mandar o lote e ir dormir",
+      "minutos": 18,
+      "lead": "Com o bot no ar, a sua fila no papel vira mensagens. Cada linha é uma skill com uma entrada; o bot põe cada pedido na fila certa, roda dentro do limite de cada uma e avisa no chat quando termina.",
+      "objetivo": "mandar de 5 a 10 tarefas no formato de skill e acompanhar o lote pelo /fila e pelo /jobs.",
+      "aprende": [
+       "O formato de um pedido: skill, entrada e campos",
+       "As cinco filas e por que a de render roda uma por vez",
+       "Acompanhar com /fila, /jobs e /status",
+       "O que não fazer com o lote rodando"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/mandar-tarefas/"
+     },
+     {
+      "num": 6,
+      "titulo": "Onde ficam os portões: parar antes do que importa",
+      "minutos": 18,
+      "lead": "Um fluxo é uma tarefa em várias fases, com estado guardado em cada uma. O portão é a fase que termina e para: o bot mostra o que fez e espera você. Aprovar, corrigir ou recusar é o momento em que você gerencia, em vez de fazer.",
+      "objetivo": "pôr o portão no lugar certo de um fluxo e decidir entre aprovar, reprovar com correção ou cancelar.",
+      "aprende": [
+       "Skill × fluxo: quando vale guardar o estado",
+       "Como o portão para e o que ele mostra",
+       "Aprovar, reprovar com correção, refazer ou cancelar",
+       "Ensaiar com | sombra antes de gastar"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/portoes/"
+     },
+     {
+      "num": 7,
+      "titulo": "O dia seguinte: conferir, medir e criar a regra nova",
+      "minutos": 18,
+      "lead": "A noite de fila só vale se a manhã for curta. Você lê o relatório no chat, confere cada resultado contra o que esperava, anota quantas saíram certas na primeira e transforma a tarefa que mais falhou numa regra nova.",
+      "objetivo": "conferir o lote da noite, medir o acerto na primeira tentativa e escrever uma regra para a tarefa que mais falhou.",
+      "aprende": [
+       "Onde olhar de manhã: chat, /status e /jobs",
+       "A medida que importa: certas na primeira",
+       "Da falha para uma regra no AGENTS.md ou no prompt",
+       "O seu plano para completar o degrau"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/dia-seguinte/"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "id": "s3-e1",
+     "titulo": "A fila no papel",
+     "minutos": 15,
+     "passos_md": "Liste 10 tarefas repetitivas do seu trabalho. Para cada uma, marque:\n\n| Tarefa | Roda sozinha? | Precisa de portão (sua aprovação)? | Onde está o portão |\n|---|---|---|---|\n| Transcrever a reunião | sim | não | — |\n| Post da semana | sim | sim | antes de publicar |",
+     "pronto_quando": "as 10 linhas estão preenchidas e pelo menos duas têm portão."
+    },
+    {
+     "id": "s3-e2",
+     "titulo": "Uma fila caseira em 30 linhas",
+     "minutos": 30,
+     "passos_md": "Antes do bot, entenda a ideia com a `ferramentas/fila-caseira.sh` deste repo:\n\n```bash\nmkdir -p fila/entrada\necho \"Resuma em 5 linhas o que é uma fila de tarefas.\" > fila/entrada/01.md\necho \"Liste 3 riscos de deixar um agente rodando sozinho.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila\n```\n\nCada arquivo de `entrada/` vira uma tarefa. A resposta vai para `feito/`. Se der erro, a tarefa vai para `falhou/`. Rodar de novo só pega o que sobrou.",
+     "pronto_quando": "as duas tarefas estão em `fila/feito/` com a resposta, e você interrompeu (Ctrl+C) uma rodada e viu a fila continuar de onde parou."
+    },
+    {
+     "id": "s3-e3",
+     "titulo": "Instalar o inemaccbot (1 h)",
+     "minutos": null,
+     "passos_md": "Siga o guia até o `/ping` responder no Telegram. Depois: `/ajuda` lista os comandos e `/fila` mostra as filas.",
+     "pronto_quando": "`/ping` responde no seu Telegram."
+    },
+    {
+     "id": "s3-e4",
+     "titulo": "Dez tarefas e vá dormir (1 noite)",
+     "minutos": null,
+     "passos_md": "Mande para o bot 5 a 10 tarefas da sua lista do E1 (transcrever, resumir, explicativo…). Vá fazer outra coisa.",
+     "pronto_quando": "no dia seguinte você confere o resultado de cada uma e anota quantas saíram certas na primeira."
+    },
+    {
+     "id": "s3-e5",
+     "titulo": "O portão",
+     "minutos": 30,
+     "passos_md": "Use um fluxo com portão (como o `/promoavatar`): o bot escreve os textos e **para**. Leia, corrija se precisar, e só então aprove.",
+     "pronto_quando": "você recusou ou corrigiu pelo menos um texto antes de aprovar. Esse é o momento em que você gerencia, em vez de fazer."
+    }
+   ],
+   "video": {
+    "chave": "seq3-filas",
+    "titulo": "Dez tarefas e vá dormir",
+    "duracao_s": 92.82,
+    "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq3-filas-16x9.mp4",
+    "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq3-filas.vtt",
+    "pagina": "https://inematds.github.io/jornada-agentes/serie/seq3-filas/"
+   }
+  },
+  {
+   "numero": 4,
+   "id": "redes",
+   "titulo_pagina": "Redes no automático: o canal viral do seu nicho.",
+   "textos_pagina": [
+    "06 · Sequência 4",
+    "O r7e monta o reel em sete etapas de gatilho. O promoavatar faz vídeos de divulgação com avatar para cada público. Os xviral (finviral, saudeviral, advviral) assistem ao que os maiores do nicho publicaram, conferem cada número e publicam sozinhos, com a fonte na tela. O motor é o mesmo: só muda o tema."
+   ],
+   "cards_pagina": [
+    {
+     "tag": "Curso · PT · EN · ES",
+     "titulo": "Redes no automático",
+     "detalhe": "Reel em 7 etapas, vídeos por público e o canal do seu nicho que confere cada número e só publica o que você aprovou.",
+     "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/"
+    },
+    {
+     "tag": "Reel · 7 etapas",
+     "titulo": "r7e (reel7etapas)",
+     "detalhe": "Gancho, desejo, medo, facilidade, descoberta, benefício e comentário, com portões de qualidade.",
+     "url": "https://inematds.github.io/reel7etapas/guia/"
+    },
+    {
+     "tag": "Divulgação · avatar",
+     "titulo": "promoavatar",
+     "detalhe": "Um vídeo por público, 12 públicos, com portão humano no meio.",
+     "url": "https://inematds.github.io/promoavatar/guia/"
+    },
+    {
+     "tag": "Divulgação · 3 por público",
+     "titulo": "promoavatar3",
+     "detalhe": "Alcance, autoridade e promocional para o mesmo público.",
+     "url": "https://inematds.github.io/promoavatar3/guia/"
+    },
+    {
+     "tag": "xviral · finanças",
+     "titulo": "finviral",
+     "detalhe": "Radar de finanças: diário de madrugada e um longo no fim de semana.",
+     "url": "https://inematds.github.io/finviral/guia/"
+    },
+    {
+     "tag": "xviral · saúde",
+     "titulo": "saudeviral",
+     "detalhe": "O que os maiores de saúde disseram, com carimbo \"sem consenso\" quando é o caso.",
+     "url": "https://inematds.github.io/saudeviral/guia/"
+    },
+    {
+     "tag": "xviral · direito",
+     "titulo": "advviral",
+     "detalhe": "Direitos do consumidor, previdência, trabalho e família, sempre relatado e atribuído.",
+     "url": "https://inematds.github.io/advviral/guia/"
+    }
+   ],
+   "curso": {
+    "nome": "Redes no automático",
+    "sub": "Do chat ao agente · degrau 4 completo",
+    "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/",
+    "aulas": [
+     {
+      "num": 1,
+      "titulo": "A esteira de um canal com fonte na tela",
+      "minutos": 15,
+      "lead": "Os radares finviral, saudeviral e advviral fazem sozinhos um vídeo por dia sobre o que os maiores do nicho publicaram, com a fonte de cada número na tela. O r7e e o promoavatar fazem o reel e os vídeos por público. Antes de montar o seu, veja a esteira inteira e o papel de cada ferramenta.",
+      "objetivo": "explicar as seis estações da esteira de um canal com fonte e escolher por qual ferramenta o seu canal começa.",
+      "aprende": [
+       "As seis estações da esteira",
+       "O que cada ferramenta faz: r7e, promoavatar e os radares",
+       "Por que fila e portão vêm antes da automação",
+       "A ficha do seu canal"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/esteira/"
+     },
+     {
+      "num": 2,
+      "titulo": "O reel em 7 etapas: plano antes da fala",
+      "minutos": 18,
+      "lead": "O r7e dá o roteiro: sete partes de gatilho, do gancho com número ao pedido de comentário. Foram quatro lotes de reels até chegar ao padrão r7ex: o conteúdo acertou quando veio o plano antes da fala, e a forma acertou com o acabamento de telejornal. Aqui você aprende o plano, as sete partes e as regras da fala.",
+      "objetivo": "escrever um reel de 30 a 45 s em 7 etapas a partir de um plano com público, desejo, gancho com número, nota e destino.",
+      "aprende": [
+       "O plano em cinco campos, antes de escrever a fala",
+       "As sete partes, com o exemplo real do reel do hacker",
+       "As regras da fala: tamanho, números por extenso, CTA",
+       "O que os quatro lotes ensinaram"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/reel-7-etapas/"
+     },
+     {
+      "num": 3,
+      "titulo": "Os 5 do seu nicho e as regras que nunca se quebram",
+      "minutos": 16,
+      "lead": "Um radar é tão bom quanto as fontes que ele assiste e as regras que ele obedece. Finanças, saúde e direito usam o mesmo motor, mas cada nicho tem o seu aviso obrigatório, o que conta como fato e o que nunca vai ao ar. Nesta aula você escolhe as suas referências e escreve as regras do seu nicho.",
+      "objetivo": "montar canais.md e regras.md do seu nicho: 5 referências consolidadas, o que conta como fato, o aviso obrigatório e o que nunca publica.",
+      "aprende": [
+       "Como escolher as referências (e quem nunca entra)",
+       "As quatro partes de regras.md",
+       "Como finanças, saúde e direito resolveram cada uma",
+       "Como uma recusa vira regra nova"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/nicho-e-regras/"
+     },
+     {
+      "num": 4,
+      "titulo": "A base com fonte: cada número com o trecho literal",
+      "minutos": 18,
+      "lead": "A base.md é o coração do canal com fonte. Cada número que vai para a tela entra com quem disse, o vídeo, a data e um trecho copiado da transcrição, sem editar. Um script confere cada trecho; se algum não estiver lá, o vídeo é descartado. Aqui você monta a sua base e o seu conferidor.",
+      "objetivo": "montar a base.md de um vídeo do seu nicho, com trecho literal em cada linha, e conferir cada trecho na transcrição com um script.",
+      "aprende": [
+       "Do vídeo à transcrição, no seu computador",
+       "As cinco colunas da base.md",
+       "O que é um trecho literal (e o que não é)",
+       "Um conferidor de 15 linhas, como o checar.py"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/base-com-fonte/"
+     },
+     {
+      "num": 5,
+      "titulo": "Roteiro de 60 s com fonte na tela",
+      "minutos": 17,
+      "lead": "Com a base pronta, o agente escreve o roteiro, e só com o que está na base. O radar abre com a data e o número mais forte, conta cada assunto com a ficha de quem disse, termina com uma pergunta e o convite. Antes de virar vídeo, o roteiro passa pela conferência: número fora da base, o roteiro volta.",
+      "objetivo": "pedir ao agente um roteiro de 60 s a partir da base.md e devolvê-lo sempre que um número não estiver na base.",
+      "aprende": [
+       "A estrutura do curto: quadro 0, sumário, assuntos, pergunta, CTA",
+       "As regras da fala no tom de quem apresenta",
+       "O pedido ao agente, pronto para copiar",
+       "A lista do que reprova um roteiro"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/roteiro-conferido/"
+     },
+     {
+      "num": 6,
+      "titulo": "Um assunto, vários públicos: promoavatar e promoavatar3",
+      "minutos": 17,
+      "lead": "O mesmo assunto não convence um jovem e um aposentado do mesmo jeito. O promoavatar escreve um roteiro para cada um de 12 públicos; o promoavatar3 escreve três para o mesmo público: alcance, autoridade e promocional. Nos dois, o bot escreve e para. Você aprova antes de gastar avatar e render.",
+      "objetivo": "planejar 3 vídeos para o mesmo público (alcance, autoridade, promocional) com os dois portões e o título-contrato de cada avatar.",
+      "aprende": [
+       "Os 12 públicos e o gatilho de cada um",
+       "Alcance, autoridade e promocional",
+       "Os dois portões: antes do avatar e antes do render",
+       "Por que o título do vídeo é um contrato"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/videos-por-publico/"
+     },
+     {
+      "num": 7,
+      "titulo": "Agenda com portão: o canal roda sozinho, você decide",
+      "minutos": 18,
+      "lead": "A agenda transforma a esteira num canal: uma rodada por dia, em horário fixo, sem você lembrar. Mas agenda sem portão é postar errado mais rápido. Nesta aula você escreve o timer, decide o que acontece num dia sem assunto e roda uma semana aprovando cada vídeo, até as recusas pararem.",
+      "objetivo": "escrever o agendamento do seu canal e rodar uma semana com aprovação manual, transformando cada recusa numa regra.",
+      "aprende": [
+       "Frequência: diário, semanal e domingo",
+       "O timer do systemd (ou o cron)",
+       "As três mensagens: vídeo, sem pauta, falhou",
+       "A semana com portão e quando tirá-lo"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/agenda-e-portao/"
+     },
+     {
+      "num": 8,
+      "titulo": "O seu canal, na ordem certa",
+      "minutos": 12,
+      "lead": "Você viu a esteira inteira. Agora junte as peças na ordem em que elas dependem uma da outra: o reel no papel, as regras, a base, o roteiro conferido, a agenda e a semana com portão. Gere o seu plano com datas e volte à visão geral da formação para ver como este degrau se apoia nos outros três.",
+      "objetivo": "sair com um plano datado dos 7 exercícios do degrau 4 e saber dizer, em cada etapa, o que prova que ela ficou pronta.",
+      "aprende": [
+       "A ordem das peças e por que ela importa",
+       "O seu plano com datas (.md e calendário)",
+       "O que prova cada etapa",
+       "Onde este degrau se encaixa na formação"
+      ],
+      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/seu-plano/"
+     }
+    ]
+   },
+   "exercicios": [
+    {
+     "id": "s4-e1",
+     "titulo": "Um reel em 7 etapas, no papel",
+     "minutos": 20,
+     "passos_md": "Escreva um reel de 30 a 45 segundos do seu nicho no modelo r7e:\n\n| # | Etapa | Sua frase |\n|---|---|---|\n| 1 | Gancho (o resultado em 2 s) | |\n| 2 | Desejo | |\n| 3 | Medo | |\n| 4 | Facilidade | |\n| 5 | Descoberta (o nome da solução) | |\n| 6 | Benefício | |\n| 7 | Comentário (\"comenta PALAVRA\") | |",
+     "pronto_quando": "você lê em voz alta em menos de 45 s e a primeira frase já diz o ganho."
+    },
+    {
+     "id": "s4-e2",
+     "titulo": "Os 5 do seu nicho",
+     "minutos": 20,
+     "passos_md": "Escolha 5 canais de referência do seu nicho (imóveis, agro, beleza, educação…). Para cada um: nome, link, frequência de vídeos, assunto que mais rende. Escreva também as **regras do nicho**: o que conta como fato, o aviso obrigatório (ex.: \"não é recomendação de investimento\", \"não substitui consulta\") e o que você nunca publica.",
+     "pronto_quando": "você tem `canais.md` e `regras.md` do seu nicho."
+    },
+    {
+     "id": "s4-e3",
+     "titulo": "A base com fonte",
+     "minutos": 30,
+     "passos_md": "Pegue a transcrição de um vídeo de um dos 5 canais (o inemavox ou outro transcritor local resolve). Monte `base.md`:\n\n| Número ou fato | Quem disse | Vídeo | Trecho literal |\n|---|---|---|---|",
+     "pronto_quando": "cada linha tem o trecho literal e você achou cada trecho na transcrição. É exatamente o que o `checar.py` do finviral faz sozinho."
+    },
+    {
+     "id": "s4-e4",
+     "titulo": "Roteiro de 60 s com fonte na tela",
+     "minutos": 30,
+     "passos_md": "Com a `base.md`, peça ao agente um roteiro de 60 s: abertura com o número mais forte, três fatos com quem disse, o aviso do nicho e o convite final. Números por extenso na fala.",
+     "pronto_quando": "todo número do roteiro está na `base.md`. Se algum não estiver, o roteiro volta."
+    },
+    {
+     "id": "s4-e5",
+     "titulo": "A agenda",
+     "minutos": 20,
+     "passos_md": "Decida a frequência (ex.: segunda a sexta às 2 h, um longo no sábado) e escreva o agendamento (cron ou timer do systemd), como o finviral faz. Regra: **dia fraco não vira vídeo**, e falha avisa você no Telegram.",
+     "pronto_quando": "o agendamento está escrito e você sabe o que acontece num dia sem assunto."
+    },
+    {
+     "id": "s4-e6",
+     "titulo": "O portão antes de publicar (uma semana)",
+     "minutos": null,
+     "passos_md": "Rode uma semana com aprovação manual antes de cada publicação. Anote o que você recusou e por quê. Cada recusa vira uma regra em `regras.md`.",
+     "pronto_quando": "você passou 3 dias seguidos sem precisar recusar. Só então pense em tirar o portão de alguma etapa."
+    }
+   ],
+   "video": {
+    "chave": "seq4-redes",
+    "titulo": "Redes no automático",
+    "duracao_s": 101.86,
+    "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq4-redes-16x9.mp4",
+    "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq4-redes.vtt",
+    "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/"
+   }
+  }
+ ],
+ "links_pagina": [
+  "https://github.com/inematds/jornada-agentes",
+  "https://github.com/inematds/jornada-agentes/blob/main/exercicios/01-oswork.md",
+  "https://github.com/inematds/jornada-agentes/blob/main/exercicios/02-jarvis.md",
+  "https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md",
+  "https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md",
+  "https://inema.club/",
+  "https://inema.pro/",
+  "https://inematds.github.io/advviral/guia/",
+  "https://inematds.github.io/do-chat-ao-agente-filas-v72/",
+  "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/",
+  "https://inematds.github.io/do-chat-ao-agente-redes-v72/",
+  "https://inematds.github.io/do-chat-ao-agente-terminal-v72/",
+  "https://inematds.github.io/do-chat-ao-agente-v71/",
+  "https://inematds.github.io/do-chat-ao-agente-v72/",
+  "https://inematds.github.io/finviral/guia/",
+  "https://inematds.github.io/inemaccbot/guia/",
+  "https://inematds.github.io/intelecto-curso/",
+  "https://inematds.github.io/intelecto-instalacao/videos/",
+  "https://inematds.github.io/intelecto/",
+  "https://inematds.github.io/jornada-agentes/guia/",
+  "https://inematds.github.io/jornada-agentes/serie/jornada-ia/",
+  "https://inematds.github.io/jornada-agentes/serie/seq1-oswork/",
+  "https://inematds.github.io/jornada-agentes/serie/seq2-jarvis/",
+  "https://inematds.github.io/jornada-agentes/serie/seq3-filas/",
+  "https://inematds.github.io/jornada-agentes/serie/seq4-redes/",
+  "https://inematds.github.io/oswork-quick/",
+  "https://inematds.github.io/oswork-terminal/videos/",
+  "https://inematds.github.io/oswork-v62/",
+  "https://inematds.github.io/promoavatar/guia/",
+  "https://inematds.github.io/promoavatar3/guia/",
+  "https://inematds.github.io/reel7etapas/guia/",
+  "https://inematds.github.io/saudeviral/guia/",
+  "https://t.me/apoioinema",
+  "https://www.youtube.com/shorts/FSf-jUT_n6U",
+  "https://www.youtube.com/shorts/V92t50ceCRg",
+  "https://www.youtube.com/shorts/Vk76Iyu6wUE",
+  "https://www.youtube.com/shorts/eB_tYjz1lD0"
+ ]
+}

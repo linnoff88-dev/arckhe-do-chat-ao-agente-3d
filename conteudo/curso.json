@@ -1,0 +1,371 @@
+{
+  "titulo": "Do Chat ao Agente 3D",
+  "subtitulo": "Um agente é um programa que recebe uma tarefa e trabalha nos seus arquivos. Você aprende a delegar o trabalho e conferir o resultado.",
+  "chamada": {
+    "dor_ou_desejo": "desejo",
+    "quem": "Você, que hoje pergunta, copia e cola no chat.",
+    "nucleo": "Você aprende, em quatro degraus, a criar agentes que trabalham por você enquanto você faz outra coisa.",
+    "por_que_importa": "No chat, cada passo depende de você. Quando você fecha a janela, o trabalho para.",
+    "metodo": "Do chat ao agente",
+    "formato": "promessa"
+  },
+  "abertura": {
+    "titulo": "Quem fica ao volante?",
+    "texto": "No chat, você é o motorista. Você faz a pergunta, copia a resposta e decide o que digitar em seguida. A virada é mudar de lugar. Você entrega uma tarefa ao agente. Ele lê os arquivos e faz o trabalho. Você confere o resultado e decide o que precisa mudar.",
+    "sem_milagre": "Quem pula a sequência 1 sem saber usar o terminal empaca nas outras três. Comece por criar uma pasta e aprender a encontrá-la de novo.",
+    "percurso": "Cada estação da casa corresponde a uma sequência do curso. Ao concluir os exercícios dela, você acende um degrau.",
+    "requisito": "Curso grátis. Os exercícios exigem computador e assinatura do Claude ou do ChatGPT."
+  },
+  "por_onde_comecar": [
+    {
+      "situacao": "Só uso o chat, como ChatGPT, Claude ou Gemini.",
+      "comece_por": "Abra o OSWork Quick e faça os exercícios da sequência 1.",
+      "estacao": 1,
+      "url": "https://inematds.github.io/oswork-quick/",
+      "rotulo": "Abrir OSWork Quick"
+    },
+    {
+      "situacao": "Já uso o terminal com Claude Code ou Codex.",
+      "comece_por": "Comece pelo INTELECTO e pelo curso para montar o seu Jarvis.",
+      "estacao": 2,
+      "url": "https://inematds.github.io/intelecto-curso/",
+      "rotulo": "Abrir curso INTELECTO"
+    },
+    {
+      "situacao": "Já tenho um assistente funcionando.",
+      "comece_por": "Monte a fila caseira. Depois, leve as tarefas para o inemaccbot.",
+      "estacao": 3
+    },
+    {
+      "situacao": "Já tenho uma fila e quero publicar.",
+      "comece_por": "Use o r7e para montar um reel e o finviral como modelo para o canal do seu nicho.",
+      "estacao": 4
+    }
+  ],
+  "estacoes": [
+    {
+      "numero": 1,
+      "id": "terminal",
+      "nome": "Terminal",
+      "titulo": "Dê ao agente uma tarefa na sua pasta",
+      "por_que": "O terminal abre as mesmas pastas que você já usa no computador. No arquivo AGENTS.md, você deixa as regras que o agente deve seguir ao trabalhar ali.",
+      "ganho": "Você abre no navegador a página que o agente criou e confere uma correção que pediu.",
+      "objeto": "Na escrivaninha, o notebook fica em espera. Ao concluir a estação, você vê como entrar na pasta, listar os arquivos, conferir o Git e abrir o agente.",
+      "fala_entrada": "A pasta de trabalho do agente",
+      "fala_conclusao": "O notebook e o primeiro degrau acenderam.",
+      "materiais": [
+        {
+          "titulo": "Do chat para o terminal",
+          "tipo": "Curso · PT · EN · ES",
+          "detalhe": "Terminal sem medo, agente instalado da fonte oficial, pasta com regras, cada versão no Git, chaves fora do texto e a sua página no ar.",
+          "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/"
+        },
+        {
+          "titulo": "OSWork Quick",
+          "tipo": "Curso · rápido",
+          "detalhe": "O caminho curto do chat ao agente na sua pasta, em sete aulas.",
+          "url": "https://inematds.github.io/oswork-quick/"
+        },
+        {
+          "titulo": "OSWork v6.2",
+          "tipo": "Curso · PT · EN · ES",
+          "detalhe": "Passo a passo para iniciantes, com o cmd do Windows e uma VPS Linux.",
+          "url": "https://inematds.github.io/oswork-v62/"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "id": "jarvis",
+      "nome": "Jarvis",
+      "titulo": "Converse com um assistente que lembra de você",
+      "por_que": "Com o INTELECTO, você escolhe como o seu assistente fala no Telegram. Ele guarda o que você contou e usa essa memória em outra conversa.",
+      "ganho": "Você abre uma conversa nova no Telegram e o Jarvis lembra um fato que você contou antes.",
+      "objeto": "O celular fica no suporte ao lado da poltrona. Quando a estação acende, a conversa com o Jarvis lembra o relatório de vendas de segunda-feira.",
+      "fala_entrada": "A memória do assistente",
+      "fala_conclusao": "O celular e o segundo degrau acenderam.",
+      "materiais": [
+        {
+          "titulo": "O seu Jarvis",
+          "tipo": "Curso · PT · EN · ES",
+          "detalhe": "As sete peças de um assistente de IA, quem ele é em quatro arquivos de texto, o núcleo construído com testes e ligado no Telegram.",
+          "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/"
+        },
+        {
+          "titulo": "INTELECTO",
+          "tipo": "Projeto · aberto",
+          "detalhe": "Escolha as peças do assistente e leve as instruções para o agente construir o seu Jarvis.",
+          "url": "https://inematds.github.io/intelecto/"
+        },
+        {
+          "titulo": "Curso INTELECTO",
+          "tipo": "Curso · PT · EN · ES",
+          "detalhe": "Como ele pensa, a memória, as ferramentas e como mudar o seu.",
+          "url": "https://inematds.github.io/intelecto-curso/"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "id": "filas",
+      "nome": "Filas",
+      "titulo": "Deixe as próximas tarefas na fila",
+      "por_que": "O inemaccbot guarda cada pedido e retoma a fila depois de uma queda. Você escolhe em que passo o agente deve parar e pedir sua aprovação.",
+      "ganho": "Você encontra as respostas na pasta da fila e corrige ou recusa um texto antes de aprová-lo no bot.",
+      "objeto": "Dez cartões ocupam a coluna “Na fila” do quadro. Ao concluir a estação, eles passam para “Feito”.",
+      "fala_entrada": "Tarefas em fila e aprovação",
+      "fala_conclusao": "O quadro e o terceiro degrau acenderam.",
+      "materiais": [
+        {
+          "titulo": "Filas: dez tarefas e vá dormir",
+          "tipo": "Curso · PT · EN · ES",
+          "detalhe": "O que entra na fila, a fila caseira, o inemaccbot instalado e portões antes do que importa.",
+          "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/"
+        },
+        {
+          "titulo": "inemaccbot",
+          "tipo": "Projeto · aberto",
+          "detalhe": "Instalação do zero até o /ping responder no Telegram, e a arquitetura completa.",
+          "url": "https://inematds.github.io/inemaccbot/guia/"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "id": "redes",
+      "nome": "Redes",
+      "titulo": "Prepare um canal que publica com fonte",
+      "por_que": "O r7e ajuda a montar um reel, e o promoavatar adapta a divulgação a cada público. O finviral mostra de onde veio cada número para você conferir o roteiro antes de aprovar a publicação.",
+      "ganho": "Você tem um roteiro com a fonte de cada número e uma agenda que reserva a decisão de publicar para você.",
+      "objeto": "As três telas verticais da bancada ficam escuras. Ao concluir a estação, você vê os reels com o título e a fonte na tela.",
+      "fala_entrada": "A fonte de cada número",
+      "fala_conclusao": "As telas e o quarto degrau acenderam.",
+      "materiais": [
+        {
+          "titulo": "Redes no automático",
+          "tipo": "Curso · PT · EN · ES",
+          "detalhe": "Reel em 7 etapas, vídeos por público e o canal do seu nicho que confere cada número e só publica o que você aprovou.",
+          "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/"
+        },
+        {
+          "titulo": "r7e (reel7etapas)",
+          "tipo": "Reel · 7 etapas",
+          "detalhe": "Gancho, desejo, medo, facilidade, descoberta, benefício e comentário, com portões de qualidade.",
+          "url": "https://inematds.github.io/reel7etapas/guia/"
+        },
+        {
+          "titulo": "promoavatar",
+          "tipo": "Divulgação · avatar",
+          "detalhe": "Um vídeo por público, 12 públicos, com portão humano no meio.",
+          "url": "https://inematds.github.io/promoavatar/guia/"
+        },
+        {
+          "titulo": "promoavatar3",
+          "tipo": "Divulgação · 3 por público",
+          "detalhe": "Alcance, autoridade e promocional para o mesmo público.",
+          "url": "https://inematds.github.io/promoavatar3/guia/"
+        },
+        {
+          "titulo": "finviral",
+          "tipo": "xviral · finanças",
+          "detalhe": "Radar de finanças: diário de madrugada e um longo no fim de semana.",
+          "url": "https://inematds.github.io/finviral/guia/"
+        },
+        {
+          "titulo": "saudeviral",
+          "tipo": "xviral · saúde",
+          "detalhe": "O que os maiores de saúde disseram, com carimbo \"sem consenso\" quando é o caso.",
+          "url": "https://inematds.github.io/saudeviral/guia/"
+        },
+        {
+          "titulo": "advviral",
+          "tipo": "xviral · direito",
+          "detalhe": "Direitos do consumidor, previdência, trabalho e família, sempre relatado e atribuído.",
+          "url": "https://inematds.github.io/advviral/guia/"
+        }
+      ]
+    }
+  ],
+  "fecho": {
+    "titulo": "Do outro lado da porta",
+    "texto": "Daqui do terraço, pense numa tarefa que sempre faz você voltar ao chat. Você já sabe onde deixar o pedido e em que ponto quer conferir o resultado.",
+    "pergunta": "Qual tarefa do seu dia você vai delegar primeiro?",
+    "cta": "Os cursos estão grátis no inema.club, direto na internet."
+  },
+  "ui": {
+    "nome": "Seu nome (opcional)",
+    "entrar": "Entrar na casa",
+    "sem_3d": "Fazer sem 3D",
+    "carregando": "Carregando a casa · {percentual}%",
+    "erro_conteudo": "O conteúdo do curso não carregou.",
+    "tentar_novamente": "Tentar de novo",
+    "alternativa_3d": "A casa em 3D não abriu. Continue o curso nesta página.",
+    "progresso_temporario": "Seu progresso fica disponível enquanto esta página estiver aberta.",
+    "pular_conteudo": "Pular para o conteúdo",
+    "visao_geral": "Visão geral",
+    "video_geral": "Vídeo de abertura",
+    "por_onde_comecar": "Por onde começar?",
+    "sem_milagre": "Sem milagre",
+    "mapa": "Mapa do curso",
+    "abrir_mapa": "Abrir mapa",
+    "fechar_mapa": "Fechar mapa",
+    "controles": "Como se mover",
+    "andar": "Use W, A, S e D ou as setas para andar.",
+    "olhar": "Arraste para olhar ao redor.",
+    "ir_por_clique": "Clique no chão ou em uma estação para ir até lá.",
+    "ir_por_toque": "Toque em uma estação para ir até ela.",
+    "avancar": "Andar para a frente",
+    "recuar": "Andar para trás",
+    "esquerda": "Andar para a esquerda",
+    "direita": "Andar para a direita",
+    "ir_ate_la": "Ir até lá",
+    "estacao": "Estação {numero} · {nome}",
+    "abrir_estacao": "Abrir estação",
+    "fechar_estacao": "Fechar estação",
+    "voltar_sala": "Voltar à sala",
+    "voltar_mapa": "Voltar ao mapa",
+    "recomendada": "Próxima estação recomendada",
+    "progresso": "Seu progresso",
+    "progresso_estacoes": "{feitas} de {total} estações",
+    "progresso_exercicios": "{feitos} de {total} exercícios",
+    "a_iniciar": "A começar",
+    "em_andamento": "Em andamento",
+    "concluida": "Concluída",
+    "conclusao_fora_de_ordem": "A estação {nome} e o degrau {numero} acenderam.",
+    "porta_fechada": "Porta fechada",
+    "como_abrir_porta": "Conclua as quatro estações para abrir a porta.",
+    "porta_aberta": "Porta aberta",
+    "caminho_livre": "Os quatro degraus estão acesos. A porta amarela abriu. Suba até o terraço.",
+    "ir_terraco": "Ir ao terraço",
+    "por_que": "Por que fazer esta estação?",
+    "ganho": "O que você vai conseguir fazer",
+    "video": "Vídeo da estação",
+    "assistir": "Assistir ao vídeo",
+    "erro_video": "O vídeo não carregou aqui.",
+    "pagina_video": "Abrir página do vídeo",
+    "aulas": "Aulas",
+    "aula": "Aula {numero}",
+    "duracao": "{minutos} min",
+    "resumo": "Resumo",
+    "objetivo": "Objetivo",
+    "aprende": "O que você aprende",
+    "abrir_aula": "Abrir aula completa",
+    "exercicios": "Exercícios",
+    "passos": "Passos",
+    "pronto_quando": "Pronto quando",
+    "marcar": "Marcar como feito",
+    "desmarcar": "Desmarcar exercício",
+    "feito": "Feito",
+    "na_fila": "Na fila",
+    "copiar": "Copiar código",
+    "copiado": "Código copiado",
+    "copiar_manualmente": "Selecione o código e copie.",
+    "materiais": "Cursos e projetos",
+    "abrir_material": "Abrir {titulo}",
+    "terraco": "Terraço",
+    "rever": "Rever as estações"
+  },
+  "ajuda_exercicios": {
+    "s1-e1": {
+      "antes": "No Windows, abra o menu Iniciar, digite cmd e pressione Enter. Digite uma linha por vez. O último comando abre a mesma pasta no Explorador.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/terminal/",
+      "rotulo": "Aula 1 do Terminal · Abrir o terminal",
+      "codigo": "cd %USERPROFILE%\nmkdir projetos\ncd projetos\nmkdir meu-primeiro-agente\ncd meu-primeiro-agente\ncd\ndir\nexplorer ."
+    },
+    "s1-e2": {
+      "antes": "No cmd, dentro de meu-primeiro-agente, digite `notepad AGENTS.md` e confirme a criação do arquivo. Cole o modelo abaixo, escreva suas regras e salve com Ctrl+S. Confira com `type AGENTS.md`.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/pasta/",
+      "rotulo": "Aula 3 do Terminal · A pasta do agente"
+    },
+    "s1-e3": {
+      "antes": "Instale o agente antes de começar esta tarefa.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/instalar/",
+      "rotulo": "Aula 2 do Terminal · Instalar o agente"
+    },
+    "s1-e4": {
+      "antes": "Na pasta do projeto, `git init` inicia o histórico, `git add` seleciona as mudanças que entram na próxima versão e `git commit` salva essa versão com uma mensagem.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/git/",
+      "rotulo": "Aula 6 do Terminal · Salvar versões com Git"
+    },
+    "s1-e5": {
+      "antes": "Abra o cmd na pasta meu-primeiro-agente. Use `notepad .env` para criar o arquivo e digite a linha de treino do passo 1. Salve com Ctrl+S. Abra `notepad .gitignore`, acrescente uma linha com .env e salve. Se aparecer a janela Salvar como, escolha “Todos os arquivos” para manter os nomes sem .txt. Confira com `dir /b`.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/segredos/",
+      "rotulo": "Aula 5 do Terminal · Guardar chaves no projeto"
+    },
+    "s2-e2": {
+      "antes": "A regra da Sequência 1 está no E5 da estação Terminal, “Segredo não entra no texto”."
+    },
+    "s2-e6": {
+      "antes": "Use uma das tarefas que você escolheu no E1 desta estação Jarvis, “Desenhe o seu Jarvis antes de instalar”."
+    },
+    "s3-e2": {
+      "antes": "Para executar a fila de verdade, use um ambiente Linux com Bash, Git e Claude Code ou Codex instalado. Para deixá-la rodando com seu computador desligado, use um servidor Linux ou uma VPS. No Windows, você pode acessar esse servidor pelo cmd com SSH. Sem servidor, a aula oferece um simulador no navegador para iniciar, interromper e retomar a fila. Para a prática no Linux, baixe o projeto e entre na pasta com os comandos abaixo.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/fila-caseira/",
+      "rotulo": "Ler a aula · A fila caseira em 30 linhas",
+      "codigo": "git clone https://github.com/inematds/jornada-agentes.git\ncd jornada-agentes"
+    },
+    "s3-e3": {
+      "antes": "O guia citado nos passos é o guia de instalação do inemaccbot.",
+      "link": "https://inematds.github.io/inemaccbot/guia/",
+      "rotulo": "Abrir o guia do inemaccbot"
+    },
+    "s3-e4": {
+      "antes": "Retome a lista que você escreveu no E1 desta estação Filas, “A fila no papel”."
+    },
+    "s2-e3": {
+      "antes": "Você precisa de git para baixar o repositório e de python3 para rodar os testes. O briefing é o arquivo meu-assistente.md que você exporta ao escolher as peças no INTELECTO. Coloque-o na pasta intelecto. Ali, doc/intelecto.md descreve como as peças devem funcionar juntas. Entregue os dois arquivos ao agente.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/construir/",
+      "rotulo": "Ler a aula · Construir sem programar: você escolhe, o agente constrói, o teste confirma"
+    },
+    "s2-e5": {
+      "antes": "O OpenRouter dá acesso a modelos na nuvem com uma chave. O Ollama roda o modelo no seu computador, se houver memória suficiente. Faça a mesma pergunta nos dois e anote o tempo, a qualidade da resposta e o custo.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/cerebro/",
+      "rotulo": "Ler a aula · O cérebro: nuvem ou local, decidido com os seus números"
+    },
+    "s3-e5": {
+      "antes": "No inemaccbot, /promoavatar prepara textos por público e espera sua aprovação. Acrescente | sombra ao pedido para ver as fases sem colocar tarefas na fila. No fluxo em execução, leia e corrija o texto antes de enviar /pronto.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/portoes/",
+      "rotulo": "Ler a aula · Onde ficam os portões: parar antes do que importa"
+    },
+    "s4-e3": {
+      "antes": "O inemavox transforma o áudio em texto no próprio computador. Você também pode usar outro transcritor local. Guarde transcript.txt e copie dele o trecho literal para cada linha de base.md. O checar.py procura o trecho na transcrição do vídeo citado. Se ele faltar, volte à transcrição e corrija a linha.",
+      "link": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/base-com-fonte/",
+      "rotulo": "Ler a aula · A base com fonte: cada número com o trecho literal"
+    }
+  },
+  "glossario": {
+    "agente": "Programa que recebe uma tarefa, lê os arquivos da pasta e trabalha neles seguindo as suas instruções.",
+    "terminal": "Janela onde você escreve comandos para abrir pastas e executar programas.",
+    "cmd": "Programa do Windows que recebe os comandos digitados no terminal.",
+    "VPS": "Computador alugado na internet que pode executar suas tarefas mesmo quando você desliga o seu.",
+    "token": "Chave secreta que permite controlar o bot do Telegram.",
+    "SSH": "Forma segura de conectar seu computador a outra máquina usando uma chave.",
+    "cron": "Agendador que inicia uma tarefa nos dias e horários escolhidos.",
+    "timer do systemd": "Agendador do Linux que inicia um serviço na hora combinada.",
+    "portão": "Ponto em que a tarefa para e espera sua aprovação para continuar.",
+    "fila": "Lista de tarefas que ficam guardadas até o programa executar cada uma.",
+    "xviral": "Família de canais que acompanham um assunto, conferem os números e mostram a fonte na tela.",
+    "r7e": "Roteiro de sete etapas para montar um vídeo curto, do gancho inicial ao convite para comentar.",
+    "Skills": "Roteiros salvos em arquivos que ensinam o agente a repetir um procedimento.",
+    "Bash": "Programa que interpreta os comandos do script da fila no terminal Linux.",
+    "fila-caseira.sh": "Script da pasta ferramentas que executa uma tarefa da fila por vez.",
+    "git": "Programa que guarda versões dos arquivos e permite copiar um repositório com git clone.",
+    "python3": "Comando que inicia o Python 3 para executar programas e testes.",
+    "briefing": "Lista das peças que você escolheu para o assistente, exportada como meu-assistente.md.",
+    "doc/intelecto.md": "Plano do INTELECTO que descreve o que cada peça recebe, faz e entrega.",
+    "OpenRouter": "Serviço que permite usar modelos na nuvem com uma chave.",
+    "Ollama": "Programa que executa um modelo de IA no seu computador.",
+    "/promoavatar": "Comando do inemaccbot que inicia a produção de vídeos por público, com aprovação dos textos.",
+    "inemavox": "Ferramenta que transcreve áudio no próprio computador.",
+    "transcritor local": "Programa que converte a fala de um áudio em texto no seu computador.",
+    "checar.py": "Script do finviral que verifica se o trecho citado aparece na transcrição do vídeo.",
+    "repositório": "Pasta de um projeto com seus arquivos e o histórico de versões guardado pelo Git.",
+    "commit": "Versão que o Git salva com as mudanças selecionadas e uma mensagem sobre o que mudou.",
+    "script": "Arquivo com uma sequência de comandos que o computador executa, como os que movem cada pedido pela fila.",
+    ".env": "Arquivo local que guarda valores como chaves e senhas. O projeto lê esses valores pelo nome da variável.",
+    "bot": "Programa que recebe mensagens e responde ou executa pedidos pelo Telegram.",
+    "inemaccbot": "Bot que recebe tarefas pelo Telegram, guarda a fila e chama o agente para executar cada pedido.",
+    "INTELECTO": "Projeto em que você escolhe as peças do seu assistente e leva as instruções para o agente construí-lo.",
+    "OSWork": "Sequência de cursos para sair do chat e usar Claude Code ou Codex pelo terminal na sua pasta de trabalho."
+  }
+}

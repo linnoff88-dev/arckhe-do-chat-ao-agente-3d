@@ -1,0 +1,26 @@
+{
+  "rodada": "06-revisao2",
+  "modelo": "gpt-6.2-astra",
+  "esforco": "high",
+  "inicio": "2026-11-18T08:35:56-03:00",
+  "segundos": 534,
+  "codigo_saida": 0,
+  "tokens": {
+    "entrada": 3227596,
+    "cache": 3090816,
+    "saida": 18344
+  },
+  "custo_equivalente_usd": 3.06,
+  "cota_estimada_pct": 1.3,
+  "cota_medida_pct": {
+    "inicio": 94.0,
+    "fim": 95.0
+  },
+  "itens": {
+    "agent_message": 4,
+    "command_execution": 104
+  },
+  "arquivos": [],
+  "prompt": "rodadas/06-revisao2/prompt.md",
+  "resposta": "rodadas/06-revisao2/resposta.md"
+}
