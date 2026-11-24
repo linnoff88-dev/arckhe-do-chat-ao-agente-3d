@@ -9,7 +9,7 @@ Leia `AGENTS.md`, `src/` e `conteudo/curso.json`. Não edite `conteudo/base.json
 5. **Toque:** mensagens em dispositivo de toque dizem "Toque". O cursor de mão só aparece em piso alcançável.
 6. **Celular deitado:** setas e barra ficam sobrepostas à cena com fundo translúcido, para a casa ocupar a tela. Em pé, deixe as setas menores e mais perto da borda, para cobrirem menos o objeto da estação.
 7. **`ajuda_exercicios` da estação 1:** usando as aulas em `fonte/cursos/terminal/aulas/`, mostre os comandos em `s1-e1`; diga como criar os arquivos em `s1-e2` e `s1-e5`; explique em uma frase `git init`, `git add` e `git commit` em `s1-e4`, com link para a aula.
-8. **Glossário:** inclua repositório, commit, script, `.env`, bot, inemaccbot, INTELECTO e OSWork, com explicação tirada das aulas ou da página.
+8. **Glossário:** inclua repositório, commit, script, `.env`, bot, ARCKHÉccbot, INTELECTO e OSWork, com explicação tirada das aulas ou da página.
 9. **Vídeo com falha:** a mensagem e o link ficam visíveis junto do player, sem precisar rolar; esconda o player quebrado.
 10. **Pedra:** reduza o laranja. Tom bege-areia levemente acinzentado, como `chale-porta-amarela.jpg`, sem perder a variação da textura. Nos pilares, alinhe as fiadas entre as faces quando for simples.
 11. **Câmera:** mantenha distância mínima de 45 cm das paredes, para a tela não encher de textura borrada. Afaste o ponto inicial do quadro de Filas se ele estiver a menos de 1,5 m.

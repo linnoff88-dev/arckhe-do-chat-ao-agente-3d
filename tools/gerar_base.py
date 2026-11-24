@@ -78,7 +78,7 @@ def video(chave, nome):
     c = json.loads((FONTE / "cursos" / nome / "curso.json").read_text(encoding="utf-8"))
     v = c["videos"].get(chave)
     geral = json.loads((FONTE / "videos.json").read_text(encoding="utf-8"))[chave]
-    pagina = f"https://inematds.github.io/jornada-agentes/serie/{chave}/"
+    pagina = f"https://linnoff88-dev.github.io/
     titulo = v["titulo"] if v else None
     return {"chave": chave, "titulo": titulo, "duracao_s": geral["duration"], "mp4": geral["url"], "vtt": geral.get("vtt"), "pagina": pagina}
 

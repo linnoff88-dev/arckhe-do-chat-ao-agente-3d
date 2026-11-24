@@ -54,7 +54,7 @@ Se a pessoa fizer as estações em outra ordem, o mapa recomenda a primeira que 
 
 Com as quatro estações concluídas, a pessoa sobe os degraus e atravessa a porta aberta. Do lado de fora, passa pela mesa de mosaico e vê o vale além da mureta de pedra. O sol está se pondo.
 
-O fecho traz a pergunta “Qual tarefa do seu dia você vai delegar primeiro?”. Ela fica à vista, com tempo para pensar. Abaixo aparece “grátis no inema.club, direto na internet”. “Rever as estações” leva de volta ao mapa.
+O fecho traz a pergunta “Qual tarefa do seu dia você vai delegar primeiro?”. Ela fica à vista, com tempo para pensar. Abaixo aparece “grátis no ARCKHÉ AI, direto na internet”. “Rever as estações” leva de volta ao mapa.
 
 ## O mesmo percurso sem 3D
 

@@ -24,7 +24,7 @@ Leia `AGENTS.md`, `processo/BRIEFING.md`, `src/`, `conteudo/curso.json`. Não ed
     - `s2-e3`: o que precisa estar instalado (`git`, `python3`), o que é o briefing e o `doc/intelecto.md`.
     - `s2-e5`: OpenRouter e Ollama.
     - `s3-e5`: `/promoavatar`.
-    - `s4-e3`: inemavox, transcritor local e `checar.py`.
+    - `s4-e3`: ARCKHÉvox, transcritor local e `checar.py`.
     Inclua esses termos no glossário. Se a fonte não explicar algo, diga só o que ela permite afirmar.
 
 ## Materiais: fidelidade às fotos

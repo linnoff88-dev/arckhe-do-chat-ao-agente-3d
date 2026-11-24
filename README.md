@@ -1,4 +1,4 @@
-﻿# Do Chat ao Agente 3D
+# Do Chat ao Agente 3D
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,7 +6,7 @@
 </div>
 
 
-[![Do Chat ao Agente 3D](guia/assets/banner.jpg)](https://inematds.github.io/do-chat-ao-agente-3d/guia/)
+[![Do Chat ao Agente 3D](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
 
 **ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
 
@@ -14,19 +14,19 @@
 
 Este repositÃ³rio mostra como o curso "Do chat ao agente" virou uma casa 3D de pedra e madeira, aberta no navegador. Serve para quem cria cursos ou pÃ¡ginas e quer ver um projeto assim por dentro. VocÃª encontra os pedidos feitos Ã s IAs, as respostas, os testes, as revisÃµes, os erros e os nÃºmeros medidos. O curso tem 4 estaÃ§Ãµes, 37 aulas e 23 exercÃ­cios. Cada sequÃªncia concluÃ­da acende um degrau e, com as 4, a porta amarela abre para o terraÃ§o. HÃ¡ tambÃ©m uma versÃ£o sem 3D.
 
-- **Entrar na casa:** https://eventos.inema.club/do-chat-ao-agente-3d/
-- **Como foi feito, no site:** https://eventos.inema.club/do-chat-ao-agente-3d/processo/
+- **Entrar na casa:** https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/
+- **Como foi feito, no site:** https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/processo/
 
 ## ðŸ“– Guia
 
-Guia completo: **https://inematds.github.io/do-chat-ao-agente-3d/guia/**
+Guia completo: **https://linnoff88-dev.github.io/
 
 ## Quer analisar um curso ou uma pÃ¡gina sua?
 
 Cole este pedido em um chat de IA que consiga abrir links, junto com o link ou um arquivo do seu curso. Para a IA alterar arquivos, use o Claude Code ou o Codex na pasta do projeto.
 
 ```text
-Leia o projeto "Do Chat ao Agente 3D" em https://github.com/inematds/do-chat-ao-agente-3d (comece pelo README e por FALHAS.md) e veja a casa em https://eventos.inema.club/do-chat-ao-agente-3d/.
+Leia o projeto "Do Chat ao Agente 3D" em https://github.com/linnoff88-dev/do-chat-ao-agente-3d (comece pelo README e por FALHAS.md) e veja a casa em https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/.
 Use esse projeto sÃ³ como referÃªncia. Depois olhe o meu curso ou a minha pÃ¡gina (no link ou no arquivo que eu enviar; se vocÃª tiver acesso a uma pasta, nela) e me responda em portuguÃªs simples:
 1. O que aqui poderia virar lugares ou etapas, com um sinal claro de "pronto"?
 2. O que a pessoa veria mudar quando avanÃ§a?
@@ -37,7 +37,7 @@ NÃ£o mude nada ainda. Mostre o plano e espere eu dizer sim.
 
 ## Como foi construÃ­do
 
-Nei, do INEMA, pediu para partir de um evento 3D anterior, a [ImersÃ£o Jarvis 3D](https://github.com/inematds/imersao-jarvis-3d), e recriar a casa de pedra e madeira de um conjunto de fotos, com o conteÃºdo do curso "Do chat ao agente".
+Nei, do ARCKHÉ, pediu para partir de um evento 3D anterior, a [ImersÃ£o Jarvis 3D](https://github.com/linnoff88-dev/imersao-jarvis-3d), e recriar a casa de pedra e madeira de um conjunto de fotos, com o conteÃºdo do curso "Do chat ao agente".
 
 - **Codex com GPT-6.2 Astra**, em esforÃ§o alto e pela assinatura, gerou imagens, texturas, textos e cÃ³digo em 9 rodadas.
 - **Claude Code** escreveu o briefing, os pedidos e os testes, conferiu o resultado em navegador real e devolveu o que nÃ£o passava.
@@ -79,7 +79,7 @@ A lista completa, com a correÃ§Ã£o de cada item, estÃ¡ em [FALHAS.md](FALH
 O site Ã© estÃ¡tico, sem etapa de build. VocÃª precisa de Python 3 para servir os arquivos e de um navegador com WebGL para o modo 3D. Sem WebGL, o curso abre na versÃ£o sem 3D.
 
 ```bash
-git clone https://github.com/inematds/do-chat-ao-agente-3d.git
+git clone https://github.com/linnoff88-dev/do-chat-ao-agente-3d.git
 cd do-chat-ao-agente-3d
 python3 -m http.server 8792
 ```
@@ -124,7 +124,7 @@ O validador aceita uma lista opcional de termos proibidos em `tools/termos-fora.
 
 ## O processo, do inÃ­cio ao fim
 
-ðŸ§  Ã© o trabalho de Nei, do INEMA, com o Claude Code. âš™ï¸ Ã© um script. ðŸ¤– Ã© o Codex ou um revisor independente.
+ðŸ§  Ã© o trabalho de Nei, do ARCKHÉ, com o Claude Code. âš™ï¸ Ã© um script. ðŸ¤– Ã© o Codex ou um revisor independente.
 
 | Passo | O que acontece | Comando | Quem faz |
 |---|---|---|---|
@@ -145,7 +145,7 @@ O validador aceita uma lista opcional de termos proibidos em `tools/termos-fora.
 | 15 | Conferir a Ãºltima rodada com clique e teclado reais | navegador + `node tools/capturar.mjs r7` | ðŸ§  sessÃ£o com o Nei |
 | 16 | Validar | `python3 tools/validar_conteudo.py` e `node --check` em `src/*.js` | âš™ï¸ script |
 | 17 | Publicar o site, com o OK do Nei | script de publicaÃ§Ã£o, fora deste repositÃ³rio | ðŸ§  sessÃ£o com o Nei |
-| 18 | Montar esta cÃ³pia pÃºblica, saneada, e escrever o guia | branch `publico`, `guia/`, `inema-traduz` | ðŸ§  sessÃ£o com o Nei |
+| 18 | Montar esta cÃ³pia pÃºblica, saneada, e escrever o guia | branch `publico`, `guia/`, `ARCKHÉ-traduz` | ðŸ§  sessÃ£o com o Nei |
 
 ---
 

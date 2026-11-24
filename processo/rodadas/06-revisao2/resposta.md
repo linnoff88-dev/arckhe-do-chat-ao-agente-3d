@@ -16,7 +16,7 @@ Implementei as correções dos 19 itens da rodada 6. O validador confirmou **4 e
 10. **Tabela.** Em telas estreitas, o exercício exibe “Deslize a tabela para ver todas as colunas”.
 11. **Glossário.** As definições aparecem apenas no texto corrido. O primeiro Esc fecha a definição e o segundo fecha o painel.
 12. **Objetos e estados.** As quatro descrições acompanham o que aparece na cena. O notebook mostra “em espera” antes da conclusão e depois exibe `cd`, `dir`, `git status` e `codex`.
-13. **Redes.** Os reels citam o INEMA.CLUB e o título da aula. O título do reel e o sol ocupam áreas distintas.
+13. **Redes.** Os reels citam o ARCKHÉ AI e o título da aula. O título do reel e o sol ocupam áreas distintas.
 14. **Nomes.** A abertura e o mapa explicam a relação entre estação, sequência e degrau. Aulas e exercícios continuam usando o texto original.
 15. **Ajuda dos exercícios.** Completei `s3-e2`, `s2-e3`, `s2-e5`, `s3-e5` e `s4-e3`, com os termos no glossário e cinco links conferidos na base. Para a fila no Windows, usei o caminho documentado no curso: abrir o cmd, entrar por SSH na VPS Linux e executar ali o bloco copiável com `git clone` e `cd jornada-agentes`.
 16. **Pedra.** Gerei o arenito com `image_gen` a partir das duas fotos. O pedido descreveu uma amostra frontal de 2,4 m, com arenito cor de areia, fiadas irregulares, algumas pedras rosadas, argamassa cinza saliente e luz difusa. Refiz normal e rugosidade, retirei a recoloração uniforme do shader e abri tanto a [textura final](../../../assets/ambiente/pedra.jpg) quanto a [repetição 2 × 2](/tmp/r6-pedra-2x2.jpg).

@@ -37,7 +37,7 @@ Olhe as fotos antes de modelar. Ele precisa ser reconhecível como aquele lugar:
 7. **Aulas:** todas as aulas de `base.json`, com título, duração, resumo, objetivo, o que aprende e link para a aula completa.
 8. **Exercícios:** os 23, com passos completos e "pronto quando" em destaque. A pessoa marca cada um. A estação fica concluída quando todos estiverem marcados.
 9. **Ordem:** a fonte diz que quem pula a sequência 1 empaca. Mostre a próxima recomendada, sem bloquear quem já sabe.
-10. **Final:** porta abre, caminho até o terraço, pergunta de verdade + "grátis no inema.club, direto na internet".
+10. **Final:** porta abre, caminho até o terraço, pergunta de verdade + "grátis no ARCKHÉ AI, direto na internet".
 11. **Modo sem 3D:** mesmo curso e mesmo progresso em página comum. Abre sozinho se o WebGL falhar. Bom em 360 px.
 12. **Progresso:** `localStorage` com `try/catch`; o site funciona sem ele.
 

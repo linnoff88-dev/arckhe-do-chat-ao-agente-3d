@@ -1,6 +1,6 @@
 # Do Chat ao Agente 3D
 
-[![Do Chat ao Agente 3D](guia/assets/banner-en.jpg)](https://inematds.github.io/do-chat-ao-agente-3d/guia/en/)
+[![Do Chat ao Agente 3D](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -8,19 +8,19 @@
 
 This repository shows how the “Do chat ao agente” course (From chat to agent) became a 3D stone and wood house that loads in a browser. It is for people who create courses or pages and want to see a project like this from the inside. You can find the requests sent to the AIs, their answers, the tests, the reviews, the errors, and the measured figures. The course has 4 stations, 37 lessons, and 23 exercises. Each completed sequence lights up a step. Once you complete all 4, the yellow door opens to the terrace. There is also a version without 3D.
 
-- **Enter the house:** https://eventos.inema.club/do-chat-ao-agente-3d/
-- **How it was made, on the site:** https://eventos.inema.club/do-chat-ao-agente-3d/processo/
+- **Enter the house:** https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/
+- **How it was made, on the site:** https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/processo/
 
 ## 📖 Guide
 
-Complete guide: **https://inematds.github.io/do-chat-ao-agente-3d/guia/en/**
+Complete guide: **https://linnoff88-dev.github.io/
 
 ## Want to analyze your course or page?
 
 Paste this request into an AI chat that can open links, along with a link to your course or a file. To have the AI change files, use Claude Code or Codex in the project folder.
 
 ```text
-Read the "Do Chat ao Agente 3D" project at https://github.com/inematds/do-chat-ao-agente-3d (start with the README and FALHAS.md, which is in Portuguese) and view the house at https://eventos.inema.club/do-chat-ao-agente-3d/.
+Read the "Do Chat ao Agente 3D" project at https://github.com/linnoff88-dev/do-chat-ao-agente-3d (start with the README and FALHAS.md, which is in Portuguese) and view the house at https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/.
 Use this project only as a reference. Then look at my course or page (at the link or in the file I send; if you can access a folder, look there) and reply in simple English:
 1. What here could become places or steps, with a clear sign that each is "done"?
 2. What would the person see change as they move forward?
@@ -31,7 +31,7 @@ Do not change anything yet. Show me the plan and wait for me to say yes.
 
 ## How it was built
 
-Nei, from INEMA, asked to start from an earlier 3D event, [Imersão Jarvis 3D](https://github.com/inematds/imersao-jarvis-3d), and recreate a stone and wood house from a set of photos, using the content of the “Do chat ao agente” course.
+Nei, from ARCKHÉ, asked to start from an earlier 3D event, [Imersão Jarvis 3D](https://github.com/linnoff88-dev/imersao-jarvis-3d), and recreate a stone and wood house from a set of photos, using the content of the “Do chat ao agente” course.
 
 - **Codex with GPT-6.2 Astra**, at high effort and through the subscription, generated images, textures, text, and code in 9 rounds.
 - **Claude Code** wrote the brief, requests, and tests, checked the result in a real browser, and reported what did not pass.
@@ -73,7 +73,7 @@ The full list, with the fix for each item, is in [FALHAS.md](FALHAS.md) (in Port
 The site is static and has no build step. You need Python 3 to serve the files and a browser with WebGL for 3D mode. Without WebGL, the course loads in the version without 3D.
 
 ```bash
-git clone https://github.com/inematds/do-chat-ao-agente-3d.git
+git clone https://github.com/linnoff88-dev/do-chat-ao-agente-3d.git
 cd do-chat-ao-agente-3d
 python3 -m http.server 8792
 ```
@@ -139,4 +139,4 @@ The validator accepts an optional list of forbidden terms in `tools/termos-fora.
 | 15 | Check the last round with real mouse and keyboard input | browser + `node tools/capturar.mjs r7` | 🧠 session with Nei |
 | 16 | Validate | `python3 tools/validar_conteudo.py` and `node --check` in `src/*.js` | ⚙️ script |
 | 17 | Publish the site, with Nei’s OK | publishing script, outside this repository | 🧠 session with Nei |
-| 18 | Create this cleaned-up public copy and write the guide | `publico` branch, `guia/`, `inema-traduz` | 🧠 session with Nei |
+| 18 | Create this cleaned-up public copy and write the guide | `publico` branch, `guia/`, `ARCKHÉ-traduz` | 🧠 session with Nei |

@@ -1,4 +1,4 @@
-const chave = 'inema.do-chat-ao-agente.1';
+const chave = 'ARCKHÉ.do-chat-ao-agente.1';
 
 export function criarProgresso(estacoes) {
   const ids = new Map(estacoes.map((e) => [e.numero, new Set(e.exercicios.map((x) => x.id))]));

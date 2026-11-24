@@ -20,12 +20,12 @@ Leia `AGENTS.md`, `processo/BRIEFING.md`, `src/`, `conteudo/curso.json`. Não ed
     - `s1-e1`: como abrir o terminal, apontando a aula 1 da sequência 1.
     - `s1-e3`: é preciso ter o agente instalado antes, apontando a aula de instalação.
     - `s3-e2`: o arquivo `ferramentas/fila-caseira.sh` fica no repositório `jornada-agentes`, com o link dele.
-    - `s3-e3`: "o guia" é o guia do inemaccbot, com o link dele.
+    - `s3-e3`: "o guia" é o guia do ARCKHÉccbot, com o link dele.
     - exercícios que citam "E1" ou "Sequência 1": diga a que exercício e estação isso corresponde na tela.
     Na tela, numere os exercícios como `E1`, `E2`... para os textos originais baterem.
 13. **Glossário:** `glossario` em `curso.json` com explicações de uma frase, tiradas das aulas, para: agente, terminal, cmd, VPS, token, SSH, cron, timer do systemd, portão, fila, xviral, r7e, Skills. Na interface, a primeira ocorrência de cada termo em cada painel vira um termo sublinhado com explicação por toque, clique e foco de teclado, sem alterar o texto.
 14. Objetivos das aulas com inicial maiúscula na exibição.
-15. **Remova o material `INEMACCBOT com Promoavatar`** da estação 3: ele leva a uma página fora do escopo. O validador agora recusa esse link em materiais.
+15. **Remova o material `ARCKHÉCCBOT com Promoavatar`** da estação 3: ele leva a uma página fora do escopo. O validador agora recusa esse link em materiais.
 
 ## Ambiente
 16. **Pedra (mais importante do visual):** ainda parece tijolinho rosa e amarelo. Elimine a variação de cor por bloco e o mosaico de tons. Blocos largos de arenito claro cor de areia, cerca de 50 x 20 cm, rejunte cinza largo e visível, como nas duas fotos anexadas. Use `pedra.jpg` com repetição grande e uma variação geral muito suave, de baixa frequência.

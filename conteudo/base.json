@@ -3,7 +3,7 @@
  "geral": {
   "nome": "Do chat ao agente",
   "sub": "Visão geral da formação",
-  "url": "https://inematds.github.io/do-chat-ao-agente-v72/",
+  "url": "https://linnoff88-dev.github.io/
   "aulas": [
    {
     "num": 1,
@@ -17,7 +17,7 @@
      "Achar o seu ponto de partida",
      "Montar o seu diagnóstico de uma página"
     ],
-    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/visao-geral/"
+    "url": "https://linnoff88-dev.github.io/
    },
    {
     "num": 2,
@@ -31,7 +31,7 @@
      "Desfazer qualquer mudança com o Git",
      "Manter chaves fora do texto"
     ],
-    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/terminal/"
+    "url": "https://linnoff88-dev.github.io/
    },
    {
     "num": 3,
@@ -45,7 +45,7 @@
      "Testar a memória",
      "Escolher entre nuvem e local"
     ],
-    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/jarvis/"
+    "url": "https://linnoff88-dev.github.io/
    },
    {
     "num": 4,
@@ -59,7 +59,7 @@
      "Onde pôr o portão humano",
      "Medir quantas saíram certas"
     ],
-    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/filas/"
+    "url": "https://linnoff88-dev.github.io/
    },
    {
     "num": 5,
@@ -73,7 +73,7 @@
      "As regras do seu nicho",
      "Agenda com portão"
     ],
-    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/redes/"
+    "url": "https://linnoff88-dev.github.io/
    },
    {
     "num": 6,
@@ -87,16 +87,16 @@
      "Rever a jornada inteira em vídeo",
      "Validar o que aprendeu"
     ],
-    "url": "https://inematds.github.io/do-chat-ao-agente-v72/aulas/plano/"
+    "url": "https://linnoff88-dev.github.io/
    }
   ],
   "video": {
    "chave": "jornada-ia",
    "titulo": "Do chat ao agente: a visão geral",
    "duracao_s": 147.54,
-   "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
-   "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/jornada-ia.vtt",
-   "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/"
+   "mp4": "https://github.com/linnoff88-dev/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
+   "vtt": "https://linnoff88-dev.github.io/
+   "pagina": "https://linnoff88-dev.github.io/
   }
  },
  "sequencias": [
@@ -113,31 +113,31 @@
      "tag": "Curso · PT · EN · ES",
      "titulo": "Do chat para o terminal",
      "detalhe": "Terminal sem medo, agente instalado da fonte oficial, pasta com regras, cada versão no Git, chaves fora do texto e a sua página no ar.",
-     "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "Curso · rápido",
      "titulo": "OSWork Quick",
      "detalhe": "O caminho curto do chat ao agente na sua pasta, em sete aulas.",
-     "url": "https://inematds.github.io/oswork-quick/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "Curso · PT · EN · ES",
      "titulo": "OSWork v6.2",
      "detalhe": "Passo a passo para iniciantes, com o cmd do Windows e uma VPS Linux.",
-     "url": "https://inematds.github.io/oswork-v62/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "6 exercícios",
      "titulo": "Pratique a sequência 1",
      "detalhe": "Primeira pasta, AGENTS.md, primeira tarefa, Git, segredos fora do texto e o agente lendo os seus arquivos.",
-     "url": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/01-oswork.md"
+     "url": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/01-oswork.md"
     }
    ],
    "curso": {
     "nome": "Do chat para o terminal",
     "sub": "Degrau 1 da formação Do chat ao agente",
-    "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/",
+    "url": "https://linnoff88-dev.github.io/
     "aulas": [
      {
       "num": 1,
@@ -151,7 +151,7 @@
        "Criar projetos\\meu-primeiro-agente e entrar nela",
        "Ver a mesma pasta no Explorador com explorer ."
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/terminal/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 2,
@@ -165,7 +165,7 @@
        "Confirmar com --version depois de reabrir o cmd",
        "Entrar pela assinatura e conferir o método, sem expor chave"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/instalar/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 3,
@@ -179,7 +179,7 @@
        "README para pessoas, AGENTS.md para o agente",
        "Editar com notepad e conferir com type"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/pasta/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 4,
@@ -193,7 +193,7 @@
        "Escrever uma autorização em cinco partes",
        "Exigir o fechamento: feito, conferido, pendente"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/primeira-tarefa/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 5,
@@ -207,7 +207,7 @@
        "Vazou? Trocar a chave na origem primeiro",
        "A IA precisa do nome da variável, não do valor"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/segredos/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 6,
@@ -221,7 +221,7 @@
        "Salvar uma versão com mensagem que diz o que mudou",
        "Voltar um arquivo com git restore e desfazer uma versão com git revert"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/git/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 7,
@@ -235,7 +235,7 @@
        "Guardar um procedimento repetido numa Skill",
        "Memória com data e falha com menor correção"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/agents-md/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 8,
@@ -249,7 +249,7 @@
        "Conferir destino, estado, versões e segredos antes de enviar",
        "Entrar na VPS, clonar o projeto e trazer o que mudou"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-terminal-v72/aulas/publicar/"
+      "url": "https://linnoff88-dev.github.io/
      }
     ]
    },
@@ -301,9 +301,9 @@
     "chave": "seq1-oswork",
     "titulo": "Do chat para o terminal",
     "duracao_s": 111.94,
-    "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq1-oswork-16x9.mp4",
-    "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq1-oswork.vtt",
-    "pagina": "https://inematds.github.io/jornada-agentes/serie/seq1-oswork/"
+    "mp4": "https://github.com/linnoff88-dev/jornada-agentes/releases/download/video-v2.0.0/jornada-seq1-oswork-16x9.mp4",
+    "vtt": "https://linnoff88-dev.github.io/
+    "pagina": "https://linnoff88-dev.github.io/
    }
   },
   {
@@ -319,31 +319,31 @@
      "tag": "Curso · PT · EN · ES",
      "titulo": "O seu Jarvis",
      "detalhe": "As sete peças de um assistente de IA, quem ele é em quatro arquivos de texto, o núcleo construído com testes e ligado no Telegram.",
-     "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "Projeto · aberto",
      "titulo": "INTELECTO",
      "detalhe": "O assistente pessoal: instalação com ./start.sh e configuração guiada.",
-     "url": "https://inematds.github.io/intelecto/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "Curso · PT · EN · ES",
      "titulo": "Curso INTELECTO",
      "detalhe": "Como ele pensa, a memória, as ferramentas e como mudar o seu.",
-     "url": "https://inematds.github.io/intelecto-curso/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "6 exercícios",
      "titulo": "Pratique a sequência 2",
      "detalhe": "Desenhe o seu Jarvis, crie o bot, instale, teste a memória, compare nuvem e local e crie uma rotina.",
-     "url": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/02-jarvis.md"
+     "url": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/02-jarvis.md"
     }
    ],
    "curso": {
     "nome": "O seu Jarvis",
     "sub": "Degrau 2 · Do chat ao agente",
-    "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/",
+    "url": "https://linnoff88-dev.github.io/
     "aulas": [
      {
       "num": 1,
@@ -357,7 +357,7 @@
        "Por que o loop com freio separa um agente de um chatbot",
        "Como os contratos deixam trocar uma peça sem mexer no resto"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/pecas/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 2,
@@ -371,7 +371,7 @@
        "Diferença entre um SOUL eficaz e um fraco",
        "Transformar uma vontade vaga num pedido concreto"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/identidade/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 3,
@@ -385,7 +385,7 @@
        "Como o canal conversa com o Telegram (long-polling)",
        "Por que o bot precisa aceitar só o dono"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/telegram/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 4,
@@ -399,7 +399,7 @@
        "O pedido de construção em uma frase",
        "Provar com os testes e com a conversa no terminal"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/construir/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 5,
@@ -413,7 +413,7 @@
        "Categorias e deduplicação",
        "O teste de dois dias"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/memoria/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 6,
@@ -427,7 +427,7 @@
        "Montar a tabela tempo × qualidade × custo",
        "Onde a chave da nuvem fica guardada"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/cerebro/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 7,
@@ -441,7 +441,7 @@
        "Texto de fora que tenta dar ordens",
        "Os três cuidados antes de ligar"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/cofre/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 8,
@@ -455,7 +455,7 @@
        "Notebook, reinício automático ou servidor",
        "A lista de tarefas que leva ao degrau 3"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/aulas/rotina/"
+      "url": "https://linnoff88-dev.github.io/
      }
     ]
    },
@@ -478,7 +478,7 @@
      "id": "s2-e3",
      "titulo": "Construir",
      "minutos": 30,
-     "passos_md": "O INTELECTO não tem instalador: você entrega um briefing ao agente e ele constrói o assistente, com testes. Primeiro veja o caminho funcionando no exemplo do repositório (9 testes, sem chave e sem internet):\n\n```bash\ngit clone https://github.com/inematds/intelecto.git\ncd intelecto/exemplo-jarvis\npython3 -m unittest discover -s . -p 'test_*.py' -v\npython3 smoke.py\n```\n\n1. Abra a página de comparação do INTELECTO (https://inematds.github.io/intelecto/), marque os ingredientes e exporte o briefing.\n2. Peça ao Claude Code ou ao Codex: \"Construa o meu assistente a partir deste briefing e do doc/intelecto.md, com testes.\"\n3. Use o seu `meu-jarvis.md` para o nome, o jeito de falar e a personalidade. O token do Telegram fica só no `.env`.",
+     "passos_md": "O INTELECTO não tem instalador: você entrega um briefing ao agente e ele constrói o assistente, com testes. Primeiro veja o caminho funcionando no exemplo do repositório (9 testes, sem chave e sem internet):\n\n```bash\ngit clone https://github.com/linnoff88-dev/intelecto.git\ncd intelecto/exemplo-jarvis\npython3 -m unittest discover -s . -p 'test_*.py' -v\npython3 smoke.py\n```\n\n1. Abra a página de comparação do INTELECTO (https://linnoff88-dev.github.io/ marque os ingredientes e exporte o briefing.\n2. Peça ao Claude Code ou ao Codex: \"Construa o meu assistente a partir deste briefing e do doc/intelecto.md, com testes.\"\n3. Use o seu `meu-jarvis.md` para o nome, o jeito de falar e a personalidade. O token do Telegram fica só no `.env`.",
      "pronto_quando": "você manda \"oi\" no Telegram e ele responde com o nome e o jeito que você definiu."
     },
     {
@@ -507,9 +507,9 @@
     "chave": "seq2-jarvis",
     "titulo": "Crie o seu Jarvis",
     "duracao_s": 93.26,
-    "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq2-jarvis-16x9.mp4",
-    "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq2-jarvis.vtt",
-    "pagina": "https://inematds.github.io/jornada-agentes/serie/seq2-jarvis/"
+    "mp4": "https://github.com/linnoff88-dev/jornada-agentes/releases/download/video-v2.0.0/jornada-seq2-jarvis-16x9.mp4",
+    "vtt": "https://linnoff88-dev.github.io/
+    "pagina": "https://linnoff88-dev.github.io/
    }
   },
   {
@@ -518,32 +518,32 @@
    "titulo_pagina": "Filas: mande dez tarefas e vá dormir.",
    "textos_pagina": [
     "05 · Sequência 3",
-    "Um agente sozinho faz uma coisa por vez e só enquanto você olha. O inemaccbot é um bot de Telegram com fila durável: cada pedido vira uma tarefa guardada, retomada se cair, e os fluxos param num portão humano antes do que importa. Transcrever, dublar, vídeo explicativo, curso e reel viram tarefas na fila."
+    "Um agente sozinho faz uma coisa por vez e só enquanto você olha. O ARCKHÉccbot é um bot de Telegram com fila durável: cada pedido vira uma tarefa guardada, retomada se cair, e os fluxos param num portão humano antes do que importa. Transcrever, dublar, vídeo explicativo, curso e reel viram tarefas na fila."
    ],
    "cards_pagina": [
     {
      "tag": "Curso · PT · EN · ES",
      "titulo": "Filas: dez tarefas e vá dormir",
-     "detalhe": "O que entra na fila, a fila caseira, o inemaccbot instalado e portões antes do que importa.",
-     "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/"
+     "detalhe": "O que entra na fila, a fila caseira, o ARCKHÉccbot instalado e portões antes do que importa.",
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "Projeto · aberto",
-     "titulo": "inemaccbot",
+     "titulo": "ARCKHÉccbot",
      "detalhe": "Instalação do zero até o /ping responder no Telegram, e a arquitetura completa.",
-     "url": "https://inematds.github.io/inemaccbot/guia/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "5 exercícios",
      "titulo": "Pratique a sequência 3",
      "detalhe": "A fila no papel, uma fila caseira em 30 linhas, o bot instalado, uma noite de tarefas e o portão.",
-     "url": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md"
+     "url": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md"
     }
    ],
    "curso": {
     "nome": "Filas: dez tarefas e vá dormir",
     "sub": "Do chat ao agente · degrau 3",
-    "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/",
+    "url": "https://linnoff88-dev.github.io/
     "aulas": [
      {
       "num": 1,
@@ -555,9 +555,9 @@
        "O limite do chat: você precisa estar olhando",
        "As quatro garantias de uma fila durável",
        "Os estados de uma tarefa, do pedido ao resultado",
-       "Onde o inemaccbot entra no degrau 3"
+       "Onde o ARCKHÉccbot entra no degrau 3"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/por-que-fila/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 2,
@@ -571,7 +571,7 @@
        "O que não deve ir para a fila",
        "A sua fila no papel, com dez linhas"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/o-que-vai/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 3,
@@ -585,21 +585,21 @@
        "O script linha por linha",
        "Trocar o motor: claude ou codex"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/fila-caseira/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 4,
-      "titulo": "Instalar o inemaccbot até o /ping responder",
+      "titulo": "Instalar o ARCKHÉccbot até o /ping responder",
       "minutos": 20,
-      "lead": "O inemaccbot é um gateway do Telegram com fila durável: você manda o pedido pelo celular e o seu computador (ou uma VPS) executa como agente. Nesta aula você instala, pareia o bot com o seu chat e deixa rodando como serviço.",
-      "objetivo": "instalar o inemaccbot, parear com o seu chat e ver o /ping responder no Telegram.",
+      "lead": "O ARCKHÉccbot é um gateway do Telegram com fila durável: você manda o pedido pelo celular e o seu computador (ou uma VPS) executa como agente. Nesta aula você instala, pareia o bot com o seu chat e deixa rodando como serviço.",
+      "objetivo": "instalar o ARCKHÉccbot, parear com o seu chat e ver o /ping responder no Telegram.",
       "aprende": [
        "As peças: Telegram, fila, trabalhador, agente",
        "Os pré-requisitos e o que quebra sem cada um",
        "Token, allowlist e o modo pareamento",
        "Subir na mão e depois como serviço"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/instalar/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 5,
@@ -613,7 +613,7 @@
        "Acompanhar com /fila, /jobs e /status",
        "O que não fazer com o lote rodando"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/mandar-tarefas/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 6,
@@ -627,7 +627,7 @@
        "Aprovar, reprovar com correção, refazer ou cancelar",
        "Ensaiar com | sombra antes de gastar"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/portoes/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 7,
@@ -641,7 +641,7 @@
        "Da falha para uma regra no AGENTS.md ou no prompt",
        "O seu plano para completar o degrau"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/aulas/dia-seguinte/"
+      "url": "https://linnoff88-dev.github.io/
      }
     ]
    },
@@ -662,7 +662,7 @@
     },
     {
      "id": "s3-e3",
-     "titulo": "Instalar o inemaccbot (1 h)",
+     "titulo": "Instalar o ARCKHÉccbot (1 h)",
      "minutos": null,
      "passos_md": "Siga o guia até o `/ping` responder no Telegram. Depois: `/ajuda` lista os comandos e `/fila` mostra as filas.",
      "pronto_quando": "`/ping` responde no seu Telegram."
@@ -686,9 +686,9 @@
     "chave": "seq3-filas",
     "titulo": "Dez tarefas e vá dormir",
     "duracao_s": 92.82,
-    "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq3-filas-16x9.mp4",
-    "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq3-filas.vtt",
-    "pagina": "https://inematds.github.io/jornada-agentes/serie/seq3-filas/"
+    "mp4": "https://github.com/linnoff88-dev/jornada-agentes/releases/download/video-v2.0.0/jornada-seq3-filas-16x9.mp4",
+    "vtt": "https://linnoff88-dev.github.io/
+    "pagina": "https://linnoff88-dev.github.io/
    }
   },
   {
@@ -704,49 +704,49 @@
      "tag": "Curso · PT · EN · ES",
      "titulo": "Redes no automático",
      "detalhe": "Reel em 7 etapas, vídeos por público e o canal do seu nicho que confere cada número e só publica o que você aprovou.",
-     "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "Reel · 7 etapas",
      "titulo": "r7e (reel7etapas)",
      "detalhe": "Gancho, desejo, medo, facilidade, descoberta, benefício e comentário, com portões de qualidade.",
-     "url": "https://inematds.github.io/reel7etapas/guia/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "Divulgação · avatar",
      "titulo": "promoavatar",
      "detalhe": "Um vídeo por público, 12 públicos, com portão humano no meio.",
-     "url": "https://inematds.github.io/promoavatar/guia/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "Divulgação · 3 por público",
      "titulo": "promoavatar3",
      "detalhe": "Alcance, autoridade e promocional para o mesmo público.",
-     "url": "https://inematds.github.io/promoavatar3/guia/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "xviral · finanças",
      "titulo": "finviral",
      "detalhe": "Radar de finanças: diário de madrugada e um longo no fim de semana.",
-     "url": "https://inematds.github.io/finviral/guia/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "xviral · saúde",
      "titulo": "saudeviral",
      "detalhe": "O que os maiores de saúde disseram, com carimbo \"sem consenso\" quando é o caso.",
-     "url": "https://inematds.github.io/saudeviral/guia/"
+     "url": "https://linnoff88-dev.github.io/
     },
     {
      "tag": "xviral · direito",
      "titulo": "advviral",
      "detalhe": "Direitos do consumidor, previdência, trabalho e família, sempre relatado e atribuído.",
-     "url": "https://inematds.github.io/advviral/guia/"
+     "url": "https://linnoff88-dev.github.io/
     }
    ],
    "curso": {
     "nome": "Redes no automático",
     "sub": "Do chat ao agente · degrau 4 completo",
-    "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/",
+    "url": "https://linnoff88-dev.github.io/
     "aulas": [
      {
       "num": 1,
@@ -760,7 +760,7 @@
        "Por que fila e portão vêm antes da automação",
        "A ficha do seu canal"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/esteira/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 2,
@@ -774,7 +774,7 @@
        "As regras da fala: tamanho, números por extenso, CTA",
        "O que os quatro lotes ensinaram"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/reel-7-etapas/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 3,
@@ -788,7 +788,7 @@
        "Como finanças, saúde e direito resolveram cada uma",
        "Como uma recusa vira regra nova"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/nicho-e-regras/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 4,
@@ -802,7 +802,7 @@
        "O que é um trecho literal (e o que não é)",
        "Um conferidor de 15 linhas, como o checar.py"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/base-com-fonte/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 5,
@@ -816,7 +816,7 @@
        "O pedido ao agente, pronto para copiar",
        "A lista do que reprova um roteiro"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/roteiro-conferido/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 6,
@@ -830,7 +830,7 @@
        "Os dois portões: antes do avatar e antes do render",
        "Por que o título do vídeo é um contrato"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/videos-por-publico/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 7,
@@ -844,7 +844,7 @@
        "As três mensagens: vídeo, sem pauta, falhou",
        "A semana com portão e quando tirá-lo"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/agenda-e-portao/"
+      "url": "https://linnoff88-dev.github.io/
      },
      {
       "num": 8,
@@ -858,7 +858,7 @@
        "O que prova cada etapa",
        "Onde este degrau se encaixa na formação"
       ],
-      "url": "https://inematds.github.io/do-chat-ao-agente-redes-v72/aulas/seu-plano/"
+      "url": "https://linnoff88-dev.github.io/
      }
     ]
    },
@@ -881,7 +881,7 @@
      "id": "s4-e3",
      "titulo": "A base com fonte",
      "minutos": 30,
-     "passos_md": "Pegue a transcrição de um vídeo de um dos 5 canais (o inemavox ou outro transcritor local resolve). Monte `base.md`:\n\n| Número ou fato | Quem disse | Vídeo | Trecho literal |\n|---|---|---|---|",
+     "passos_md": "Pegue a transcrição de um vídeo de um dos 5 canais (o ARCKHÉvox ou outro transcritor local resolve). Monte `base.md`:\n\n| Número ou fato | Quem disse | Vídeo | Trecho literal |\n|---|---|---|---|",
      "pronto_quando": "cada linha tem o trecho literal e você achou cada trecho na transcrição. É exatamente o que o `checar.py` do finviral faz sozinho."
     },
     {
@@ -910,46 +910,46 @@
     "chave": "seq4-redes",
     "titulo": "Redes no automático",
     "duracao_s": 101.86,
-    "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq4-redes-16x9.mp4",
-    "vtt": "https://inematds.github.io/jornada-agentes/serie/vtt/seq4-redes.vtt",
-    "pagina": "https://inematds.github.io/jornada-agentes/serie/seq4-redes/"
+    "mp4": "https://github.com/linnoff88-dev/jornada-agentes/releases/download/video-v2.0.0/jornada-seq4-redes-16x9.mp4",
+    "vtt": "https://linnoff88-dev.github.io/
+    "pagina": "https://linnoff88-dev.github.io/
    }
   }
  ],
  "links_pagina": [
-  "https://github.com/inematds/jornada-agentes",
-  "https://github.com/inematds/jornada-agentes/blob/main/exercicios/01-oswork.md",
-  "https://github.com/inematds/jornada-agentes/blob/main/exercicios/02-jarvis.md",
-  "https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md",
-  "https://github.com/inematds/jornada-agentes/blob/main/exercicios/04-redes.md",
-  "https://inema.club/",
-  "https://inema.pro/",
-  "https://inematds.github.io/advviral/guia/",
-  "https://inematds.github.io/do-chat-ao-agente-filas-v72/",
-  "https://inematds.github.io/do-chat-ao-agente-jarvis-v72/",
-  "https://inematds.github.io/do-chat-ao-agente-redes-v72/",
-  "https://inematds.github.io/do-chat-ao-agente-terminal-v72/",
-  "https://inematds.github.io/do-chat-ao-agente-v71/",
-  "https://inematds.github.io/do-chat-ao-agente-v72/",
-  "https://inematds.github.io/finviral/guia/",
-  "https://inematds.github.io/inemaccbot/guia/",
-  "https://inematds.github.io/intelecto-curso/",
-  "https://inematds.github.io/intelecto-instalacao/videos/",
-  "https://inematds.github.io/intelecto/",
-  "https://inematds.github.io/jornada-agentes/guia/",
-  "https://inematds.github.io/jornada-agentes/serie/jornada-ia/",
-  "https://inematds.github.io/jornada-agentes/serie/seq1-oswork/",
-  "https://inematds.github.io/jornada-agentes/serie/seq2-jarvis/",
-  "https://inematds.github.io/jornada-agentes/serie/seq3-filas/",
-  "https://inematds.github.io/jornada-agentes/serie/seq4-redes/",
-  "https://inematds.github.io/oswork-quick/",
-  "https://inematds.github.io/oswork-terminal/videos/",
-  "https://inematds.github.io/oswork-v62/",
-  "https://inematds.github.io/promoavatar/guia/",
-  "https://inematds.github.io/promoavatar3/guia/",
-  "https://inematds.github.io/reel7etapas/guia/",
-  "https://inematds.github.io/saudeviral/guia/",
-  "https://t.me/apoioinema",
+  "https://github.com/linnoff88-dev/jornada-agentes",
+  "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/01-oswork.md",
+  "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/02-jarvis.md",
+  "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md",
+  "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/04-redes.md",
+  "https://ARCKHÉ AI/",
+  "https://ARCKHÉ.pro/",
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://linnoff88-dev.github.io/
+  "https://t.me/apoioARCKHÉ",
   "https://www.youtube.com/shorts/FSf-jUT_n6U",
   "https://www.youtube.com/shorts/V92t50ceCRg",
   "https://www.youtube.com/shorts/Vk76Iyu6wUE",

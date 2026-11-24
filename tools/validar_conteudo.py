@@ -95,7 +95,7 @@ def principal():
     f = d["fecho"]
     if "?" not in f.get("pergunta", ""):
         erro("fecho.pergunta precisa ser pergunta")
-    if "grátis no inema.club, direto na internet" not in f.get("cta", ""):
+    if "grátis no ARCKHÉ AI, direto na internet" not in f.get("cta", ""):
         erro("fecho.cta sem a frase combinada")
     for onde, t in textos(d):
         b = t.lower()

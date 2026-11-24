@@ -11,7 +11,7 @@ Leia, nesta ordem: `README.md`, `processo/BRIEFING.md` e a tarefa da rodada.
 - Sem `npm install`, sem CDN e sem download. Vídeos e links do curso só carregam no navegador do visitante, depois do clique.
 - Sem chave de API e sem serviço externo.
 - Só caminhos relativos: o site é servido em subpasta.
-- Design: padrão INEMA, escuro com acento amarelo, títulos em Sora e texto em Inter.
+- Design: padrão ARCKHÉ, escuro com acento amarelo, títulos em Sora e texto em Inter.
 - Só diga que terminou com a saída real dos testes. O que não conseguiu rodar, escreva como não verificado.
 
 ## Testes

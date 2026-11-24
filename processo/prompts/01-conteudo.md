@@ -1,6 +1,6 @@
 Rodada 1: escreva os textos do curso. Não crie o site nesta rodada.
 
-Leia `AGENTS.md`, `processo/BRIEFING.md`, `conteudo/base.json`, `fonte/do-chat-ao-agente.html`, as regras de texto e de chamada do design INEMA.
+Leia `AGENTS.md`, `processo/BRIEFING.md`, `conteudo/base.json`, `fonte/do-chat-ao-agente.html`, as regras de texto e de chamada do design ARCKHÉ.
 
 `conteudo/base.json` já traz, sem reescrita, as aulas, os exercícios, os vídeos e os cards. O site vai ler a base diretamente. Você escreve só a camada que costura o curso dentro da casa.
 
@@ -18,7 +18,7 @@ Crie `conteudo/curso.json` com:
   - `fala_entrada` e `fala_conclusao`: frases curtas para ler na tela; a de conclusão diz o que acendeu e qual é o próximo passo.
   - `materiais`: lista com `titulo`, `tipo`, `detalhe`, `url`, escolhida entre os `cards_pagina` daquela sequência, com a URL exata. Inclua todos os cursos e projetos; deixe de fora só o card de exercícios, que já estão dentro da estação.
   - Não copie `aulas`, `exercicios` nem `video`: o site usa a base.
-- `fecho`: `titulo`, `texto`, `pergunta` (uma pergunta de verdade sobre o que a pessoa vai delegar primeiro) e `cta` contendo exatamente "grátis no inema.club, direto na internet".
+- `fecho`: `titulo`, `texto`, `pergunta` (uma pergunta de verdade sobre o que a pessoa vai delegar primeiro) e `cta` contendo exatamente "grátis no ARCKHÉ AI, direto na internet".
 - `ui`: todos os rótulos fixos da interface em português.
 
 Crie `conteudo/roteiro.md` com o percurso da pessoa, da entrada ao terraço, indicando o que acontece na tela em cada momento.

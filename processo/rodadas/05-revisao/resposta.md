@@ -21,7 +21,7 @@ Rodada 5 implementada. O validador passou com **4 estações, 37 aulas e 23 exer
 12. **Exercícios.** Sete ajudas em `curso.json` esclarecem instalação, arquivos, guia e referências a outras atividades. Os quatro links de ajuda existem na base. A numeração visível segue E1, E2 e assim por diante.
 13. **Glossário.** Os 13 termos pedidos têm definição por toque, clique e foco. A primeira ocorrência no texto visível recebe sublinhado, inclusive quando uma aula ou exercício é expandido.
 14. **Objetivos.** Os 37 objetivos começam com maiúscula na exibição. O conteúdo literal permanece em `base.json`.
-15. **Materiais.** Removi “INEMACCBOT com Promoavatar” da estação Filas.
+15. **Materiais.** Removi “ARCKHÉCCBOT com Promoavatar” da estação Filas.
 
 ### Ambiente e processo
 

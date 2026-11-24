@@ -230,7 +230,7 @@ function quadroReel(c, nicho, formato, quadro) {
   c.fillStyle = sombra;
   c.fillRect(0, 440, w, h - 440);
   escrever(c, 'FONTE NA TELA', 22, 499, 38, claro);
-  escrever(c, 'INEMA.CLUB', 22, 552, 48, '#fff6e9');
+  escrever(c, 'ARCKHÉ AI', 22, 552, 48, '#fff6e9');
   escrever(c, fonte, 22, 603, 40, '#fff6e9');
   escrever(c, 'BENEFÍCIO', 22, 666, 34, claro);
   escrever(c, beneficio, 22, 725, 48, '#fff6e9');

@@ -1,6 +1,6 @@
 Rodada 2: construa a casa e o curso. O nível esperado é o de uma experiência web premiada, não de um protótipo.
 
-Leia `AGENTS.md`, `processo/BRIEFING.md` (é o contrato: cumpra tudo), `conteudo/curso.json`, `conteudo/base.json`, `conteudo/roteiro.md`, o guia de design INEMA (seções 1 e 2) e as regras de texto. As fotos anexadas são o lugar a recriar. Texturas e panorama prontos estão em `assets/ambiente/`. Como referência de arquitetura de código e de interface, leia `index.html` e `src/` do projeto-modelo público `inematds/imersao-jarvis-3d`. Melhore o que achar fraco lá; não copie o hangar nem o robô.
+Leia `AGENTS.md`, `processo/BRIEFING.md` (é o contrato: cumpra tudo), `conteudo/curso.json`, `conteudo/base.json`, `conteudo/roteiro.md`, o guia de design ARCKHÉ (seções 1 e 2) e as regras de texto. As fotos anexadas são o lugar a recriar. Texturas e panorama prontos estão em `assets/ambiente/`. Como referência de arquitetura de código e de interface, leia `index.html` e `src/` do projeto-modelo público `linnoff88-dev/imersao-jarvis-3d`. Melhore o que achar fraco lá; não copie o hangar nem o robô.
 
 Crie:
 - `index.html`: entrada, carregamento com progresso real, sala, mapa do curso, painel da estação e modo sem 3D.

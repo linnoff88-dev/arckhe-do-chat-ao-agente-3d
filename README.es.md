@@ -1,6 +1,6 @@
 # Do Chat ao Agente 3D
 
-[![Do Chat ao Agente 3D](guia/assets/banner-es.jpg)](https://inematds.github.io/do-chat-ao-agente-3d/guia/es/)
+[![Do Chat ao Agente 3D](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -8,19 +8,19 @@
 
 Este repositorio muestra cómo el curso «Do chat ao agente» (Del chat al agente) se convirtió en una casa 3D de piedra y madera que carga en el navegador. Es útil para quienes crean cursos o páginas y quieren ver un proyecto así por dentro. Aquí encuentras los pedidos hechos a las IA, las respuestas, las pruebas, las revisiones, los errores y las cifras medidas. El curso tiene 4 estaciones, 37 clases y 23 ejercicios. Cada secuencia completada ilumina un escalón y, al completar las 4, la puerta amarilla se abre hacia la terraza. También hay una versión sin 3D.
 
-- **Entrar en la casa:** https://eventos.inema.club/do-chat-ao-agente-3d/
-- **Cómo se hizo, en el sitio:** https://eventos.inema.club/do-chat-ao-agente-3d/processo/
+- **Entrar en la casa:** https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/
+- **Cómo se hizo, en el sitio:** https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/processo/
 
 ## 📖 Guía
 
-Guía completa: **https://inematds.github.io/do-chat-ao-agente-3d/guia/es/**
+Guía completa: **https://linnoff88-dev.github.io/
 
 ## ¿Quieres analizar un curso o una página tuya?
 
 Pega este pedido en un chat de IA que pueda abrir enlaces, junto con el enlace o un archivo de tu curso. Para que la IA modifique archivos, usa Claude Code o Codex en la carpeta del proyecto.
 
 ```text
-Lee el proyecto «Do Chat ao Agente 3D» en https://github.com/inematds/do-chat-ao-agente-3d (empieza por el README y por FALHAS.md, que está en portugués) y mira la casa en https://eventos.inema.club/do-chat-ao-agente-3d/.
+Lee el proyecto «Do Chat ao Agente 3D» en https://github.com/linnoff88-dev/do-chat-ao-agente-3d (empieza por el README y por FALHAS.md, que está en portugués) y mira la casa en https://eventos.ARCKHÉ AI/do-chat-ao-agente-3d/.
 Usa este proyecto solo como referencia. Luego revisa mi curso o mi página (en el enlace o en el archivo que te envíe; si tienes acceso a una carpeta, revísala) y respóndeme en español sencillo:
 1. ¿Qué podría convertirse aquí en lugares o etapas, cada uno con una señal clara de que está «listo»?
 2. ¿Qué vería cambiar la persona al avanzar?
@@ -31,7 +31,7 @@ Todavía no cambies nada. Muéstrame el plan y espera a que te diga que sí.
 
 ## Cómo se construyó
 
-Nei, de INEMA, pidió partir de un evento 3D anterior, [Imersão Jarvis 3D](https://github.com/inematds/imersao-jarvis-3d), y recrear la casa de piedra y madera a partir de un conjunto de fotos, con el contenido del curso «Do chat ao agente».
+Nei, de ARCKHÉ, pidió partir de un evento 3D anterior, [Imersão Jarvis 3D](https://github.com/linnoff88-dev/imersao-jarvis-3d), y recrear la casa de piedra y madera a partir de un conjunto de fotos, con el contenido del curso «Do chat ao agente».
 
 - **Codex con GPT-6.2 Astra**, con esfuerzo alto y mediante la suscripción, generó imágenes, texturas, textos y código en 9 rondas.
 - **Claude Code** escribió el briefing, los pedidos y las pruebas, revisó el resultado en un navegador real y señaló lo que no funcionaba.
@@ -73,7 +73,7 @@ La lista completa, con la corrección de cada problema, está en [FALHAS.md](FAL
 El sitio es estático y no requiere una etapa de compilación. Necesitas Python 3 para servir los archivos y un navegador con WebGL para el modo 3D. Sin WebGL, el curso carga en la versión sin 3D.
 
 ```bash
-git clone https://github.com/inematds/do-chat-ao-agente-3d.git
+git clone https://github.com/linnoff88-dev/do-chat-ao-agente-3d.git
 cd do-chat-ao-agente-3d
 python3 -m http.server 8792
 ```
@@ -118,7 +118,7 @@ El validador acepta una lista opcional de términos prohibidos en `tools/termos-
 
 ## El proceso, de principio a fin
 
-🧠 es el trabajo de Nei, de INEMA, con Claude Code. ⚙️ es un script. 🤖 es Codex o un revisor independiente.
+🧠 es el trabajo de Nei, de ARCKHÉ, con Claude Code. ⚙️ es un script. 🤖 es Codex o un revisor independiente.
 
 | Paso | Qué ocurre | Comando | Quién lo hace |
 |---|---|---|---|
@@ -139,4 +139,4 @@ El validador acepta una lista opcional de términos prohibidos en `tools/termos-
 | 15 | Revisar la última ronda con clics y uso real del teclado | navegador + `node tools/capturar.mjs r7` | 🧠 sesión con Nei |
 | 16 | Validar | `python3 tools/validar_conteudo.py` y `node --check` en `src/*.js` | ⚙️ script |
 | 17 | Publicar el sitio con la aprobación de Nei | script de publicación, fuera de este repositorio | 🧠 sesión con Nei |
-| 18 | Preparar esta copia pública, depurada, y escribir la guía | rama `publico`, `guia/`, `inema-traduz` | 🧠 sesión con Nei |
+| 18 | Preparar esta copia pública, depurada, y escribir la guía | rama `publico`, `guia/`, `ARCKHÉ-traduz` | 🧠 sesión con Nei |
