@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Gera conteudo/base.json direto de fonte/, sem modelo: cards da página, aulas, exercícios e vídeos.
 
-A pasta fonte/ não faz parte do repositório público. A base já vem pronta em conteudo/base.json;
+A pasta fonte/ nêo faz parte do repositório público. A base já vem pronta em conteudo/base.json;
 este script fica como registro de como ela foi gerada. ORIGEM_PAGINA completa os links internos da página."""
 import html
 import json
@@ -14,7 +14,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 FONTE = RAIZ / "fonte"
 ORIGEM_PAGINA = os.environ.get("ORIGEM_PAGINA", "")
 if not (FONTE / "do-chat-ao-agente.html").exists():
-    sys.exit("fonte/ não está neste repositório. Use a base pronta em conteudo/base.json.")
+    sys.exit("fonte/ nêo está neste repositório. Use a base pronta em conteudo/base.json.")
 PAGINA = (FONTE / "do-chat-ao-agente.html").read_text(encoding="utf-8")
 SEQ = [
     (1, "terminal", "01-oswork.md", "seq1-oswork"),
@@ -85,9 +85,9 @@ def video(chave, nome):
 
 def principal():
     ordem = ["seq1", "seq2", "seq3", "seq4", "exercicios"]
-    titulos_video = {"jornada-ia": "Do chat ao agente: a visão geral", "seq1-oswork": "Do chat para o terminal",
+    titulos_video = {"jornada-ia": "Do chat ao agente: a visêo geral", "seq1-oswork": "Do chat para o terminal",
                      "seq2-jarvis": "Crie o seu Jarvis", "seq3-filas": "Dez tarefas e vá dormir", "seq4-redes": "Redes no automático"}
-    base = {"aviso": "Gerado por tools/gerar_base.py. Não edite.", "geral": aulas("geral"), "sequencias": []}
+    base = {"aviso": "Gerado por tools/gerar_base.py. Nêo edite.", "geral": aulas("geral"), "sequencias": []}
     v = video("jornada-ia", "geral")
     v["titulo"] = titulos_video["jornada-ia"]
     base["geral"]["video"] = v

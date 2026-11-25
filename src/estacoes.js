@@ -134,10 +134,10 @@ function filas(g, mat, e) {
   faixa('Na fila', .70, .184, -1.16, 2.59, '#43392e', 61);
   const feito = faixa('Feito', .70, .184, 1.16, 2.59, '#43392e', 61);
   const divisor = bloco(g, mat, .78, 1.65, .081, .012, 1.65, .01, 0);
-  faixa('Portão · aprovar antes de publicar', 3.01, .172, 0, .675, '#51412e', 49);
+  faixa('Portêo · aprovar antes de publicar', 3.01, .172, 0, .675, '#51412e', 49);
   const tarefas = [
-    'Transcrever reunião', 'Dublar vídeo', 'Vídeo explicativo', 'Criar curso', 'Criar reel',
-    'Transcrever vídeo', 'Dublar reel', 'Resumir reunião', 'Roteiro de reel', 'Post da semana'
+    'Transcrever reuniêo', 'Dublar vídeo', 'Vídeo explicativo', 'Criar curso', 'Criar reel',
+    'Transcrever vídeo', 'Dublar reel', 'Resumir reuniêo', 'Roteiro de reel', 'Post da semana'
   ];
   const fichas = grupo(g, 0, 0, .097);
   const papel = pbr(0xe4d4ab, .92);
@@ -220,7 +220,7 @@ function quadroReel(c, nicho, formato, quadro) {
   const exemplos = [
     ['Quem disse', 'isso?', 'A base com fonte', 'Ache o trecho'],
     ['De onde vem', 'o número?', 'Roteiro de 60 s', 'Confira a fala'],
-    ['Já dá para', 'publicar?', 'Agenda com portão', 'Revise antes']
+    ['Já dá para', 'publicar?', 'Agenda com portêo', 'Revise antes']
   ];
   const [linha1, linha2, fonte, beneficio] = exemplos[nicho];
   c.fillStyle = sombra;

@@ -1,7 +1,7 @@
 // Marca texto de leitura uma vez por painel. Links, comandos copiáveis e botões
-// conservam a ação original. A definição fica junto ao termo, inclusive no modal.
+// conservam a açêo original. A definiçêo fica junto ao termo, inclusive no modal.
 const paineis = new WeakMap();
-const flexoes = { agentes: 'agente', terminais: 'terminal', tokens: 'token', portões: 'portão', filas: 'fila', skill: 'skills' };
+const flexoes = { agentes: 'agente', terminais: 'terminal', tokens: 'token', portões: 'portêo', filas: 'fila', skill: 'skills' };
 
 export function aplicarGlossario(raiz, glossario) {
   paineis.set(raiz, glossario);

@@ -31,7 +31,7 @@ Todavía no cambies nada. Muéstrame el plan y espera a que te diga que sí.
 
 ## Cómo se construyó
 
-Nei, de ARCKHÉ, pidió partir de un evento 3D anterior, [Imersão Jarvis 3D](https://github.com/linnoff88-dev/imersao-jarvis-3d), y recrear la casa de piedra y madera a partir de un conjunto de fotos, con el contenido del curso «Do chat ao agente».
+Nei, de ARCKHÉ, pidió partir de un evento 3D anterior, [Imersêo Jarvis 3D](https://github.com/linnoff88-dev/imersao-jarvis-3d), y recrear la casa de piedra y madera a partir de un conjunto de fotos, con el contenido del curso «Do chat ao agente».
 
 - **Codex con GPT-6.2 Astra**, con esfuerzo alto y mediante la suscripción, generó imágenes, texturas, textos y código en 9 rondas.
 - **Claude Code** escribió el briefing, los pedidos y las pruebas, revisó el resultado en un navegador real y señaló lo que no funcionaba.

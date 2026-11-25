@@ -71,7 +71,7 @@ export function construirCasa(cena, materiais) {
   parede(.9, 3.12, planta.sul, 10.45, 0.16, 0.34, concreto);
   const beiral = 3.16,
     declive = 0.285;
-  function oitão(z) {
+  function oitêo(z) {
     const s = new T.Shape();
     s.moveTo(planta.oeste, beiral);
     s.lineTo(6, beiral);
@@ -80,8 +80,8 @@ export function construirCasa(cena, materiais) {
     const g = new T.ExtrudeGeometry(s, { depth: 0.26, bevelEnabled: false });
     malha(raiz, g, pedra, 0, 0, z - 0.13);
   }
-  oitão(-4.8);
-  oitão(planta.sul);
+  oitêo(-4.8);
+  oitêo(planta.sul);
   const telha = pbr(0x88492f, 0.89);
   for (const lado of [-1, 1]) {
     const ang = -lado * Math.atan(declive);

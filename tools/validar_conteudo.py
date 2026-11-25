@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Confere conteudo/curso.json contra conteudo/base.json e o site contra o escopo. Sai com 1 se houver erro.
 
-Termos fora do escopo são opcionais: tools/termos-fora.local.txt, fora do Git, uma expressão regular por linha."""
+Termos fora do escopo sêo opcionais: tools/termos-fora.local.txt, fora do Git, uma expressêo regular por linha."""
 import json
 import re
 import sys
@@ -10,8 +10,8 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 PROIBIDAS = """revolucionar revolucionário revolucionária mergulhar desvendar potencializar alavancar robusto
 sinergia holístico transformador desbloquear game-changer""".split()
-EXPRESSOES = ["sem esforço", "sem complicação", "de ponta", "divisor de águas", "mudar o jogo", "é importante destacar",
-              "vale ressaltar", "cabe mencionar", "em suma", "nesse sentido", "não é apenas", "mais do que apenas",
+EXPRESSOES = ["sem esforço", "sem complicaçêo", "de ponta", "divisor de águas", "mudar o jogo", "é importante destacar",
+              "vale ressaltar", "cabe mencionar", "em suma", "nesse sentido", "nêo é apenas", "mais do que apenas",
               "é aí que entra", "diga adeus", "link na bio", "me pede o link"]
 FOTOS_REFERENCIA = {"casa-anoitecer.jpg", "chale-porta-amarela.jpg", "lago-pasto.jpg", "sala-vazia.jpg",
                     "terraco-vale.jpg", "terraco-vista.jpg", "vale-aereo.jpg", "vale-drone.jpg"}
@@ -58,7 +58,7 @@ def principal():
     base = json.loads((RAIZ / "conteudo/base.json").read_text(encoding="utf-8"))
     arq = RAIZ / "conteudo/curso.json"
     if not arq.exists():
-        print("ERRO: conteudo/curso.json não existe")
+        print("ERRO: conteudo/curso.json nêo existe")
         return 1
     d = json.loads(arq.read_text(encoding="utf-8"))
     for k in "titulo subtitulo chamada abertura por_onde_comecar estacoes fecho".split():
@@ -77,18 +77,18 @@ def principal():
         n = b["numero"]
         for c in "numero id nome titulo por_que ganho objeto fala_entrada fala_conclusao".split():
             if not e.get(c):
-                erro(f"estação {n}: falta {c}")
+                erro(f"estaçêo {n}: falta {c}")
         if e.get("numero") != n or e.get("id") != b["id"]:
-            erro(f"estação {n}: numero ou id fora da base")
+            erro(f"estaçêo {n}: numero ou id fora da base")
         for c in "aulas exercicios video".split():
             if c in e:
-                erro(f"estação {n}: '{c}' vem da base; não copie para curso.json")
+                erro(f"estaçêo {n}: '{c}' vem da base; nêo copie para curso.json")
         cards = e.get("materiais", [])
         if not cards:
-            erro(f"estação {n}: sem materiais")
+            erro(f"estaçêo {n}: sem materiais")
         for m in cards:
             if m.get("url") not in {c["url"] for c in b["cards_pagina"]}:
-                erro(f"estação {n}: material fora dos cards da sequência: {m.get('url')}")
+                erro(f"estaçêo {n}: material fora dos cards da sequência: {m.get('url')}")
     for u in urls(d):
         if u not in validos:
             erro(f"url fora da fonte: {u}")
@@ -104,7 +104,7 @@ def principal():
                 erro(f"{onde}: palavra proibida '{p}'")
         for p in EXPRESSOES:
             if p in b:
-                erro(f"{onde}: expressão proibida '{p}'")
+                erro(f"{onde}: expressêo proibida '{p}'")
         if "!!" in t:
             erro(f"{onde}: '!!'")
     alvos = [arq, RAIZ / "conteudo/roteiro.md", RAIZ / "index.html", RAIZ / "processo/index.html"] + sorted((RAIZ / "src").glob("*"))

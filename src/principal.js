@@ -38,7 +38,7 @@ async function criarMundo(ui, callbacks) {
   const canvas = renderer.domElement;
   canvas.tabIndex = 0;
   canvas.setAttribute('aria-label', controlesDeToque()
-    ? 'Sala em 3D. Toque no chão para andar ou arraste para olhar.'
+    ? 'Sala em 3D. Toque no chêo para andar ou arraste para olhar.'
     : 'Sala em 3D. Use WASD ou as setas para caminhar. Arraste para olhar ou gire com Q e E.');
   container.replaceChildren(canvas);
   const cena = new T.Scene(),
@@ -283,7 +283,7 @@ async function criarMundo(ui, callbacks) {
         farol.position.y += i === 2 ? 1.27 : .55;
         farol.userData.estacao = i + 1;
         marcador.dataset.n = i + 1;
-        marcador.setAttribute('aria-label', 'Ir até ' + marcador.textContent + ', próxima estação recomendada');
+        marcador.setAttribute('aria-label', 'Ir até ' + marcador.textContent + ', próxima estaçêo recomendada');
       }
       postos.progresso(feitas, moveis.chamas);
       luz.definir(feitas.length, inicial);
@@ -410,7 +410,7 @@ async function iniciar() {
           abrir: n => ui.abrirEstacao(n),
           impedir(porta) {
             const gesto = controlesDeToque() ? 'Toque' : 'Clique';
-            ui.anunciar(porta && p.feitas().length < 4 ? portaFechada() : `Não dá para chegar ali. ${gesto} no piso livre.`);
+            ui.anunciar(porta && p.feitas().length < 4 ? portaFechada() : `Nêo dá para chegar ali. ${gesto} no piso livre.`);
           },
           mover(n, z) {
             if (noTerraco && z >= planta.norte) {
@@ -459,7 +459,7 @@ async function iniciar() {
   }
   function portaFechada() {
     const faltam = 4 - p.feitas().length;
-    return faltam === 1 ? 'Porta fechada. Falta uma estação.' : `Porta fechada. Faltam ${faltam} estações.`;
+    return faltam === 1 ? 'Porta fechada. Falta uma estaçêo.' : `Porta fechada. Faltam ${faltam} estações.`;
   }
   function irTerraco(aPe = false) {
     if (p.feitas().length !== 4) {
@@ -553,6 +553,6 @@ async function iniciar() {
 iniciar().catch((erro) => {
   const caixa = document.getElementById('erro');
   caixa.hidden = false;
-  caixa.querySelector('p').textContent = erro.message || 'O conteúdo do curso não carregou.';
+  caixa.querySelector('p').textContent = erro.message || 'O conteúdo do curso nêo carregou.';
   caixa.scrollIntoView();
 });

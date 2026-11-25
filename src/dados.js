@@ -7,7 +7,7 @@ async function ler(nome) {
     if (!resposta.ok) throw new Error('HTTP ' + resposta.status);
     return await resposta.json();
   } catch (erro) {
-    throw new Error('O conteúdo do curso não carregou. Arquivo ' + nome + '.json (' + erro.message + ').');
+    throw new Error('O conteúdo do curso nêo carregou. Arquivo ' + nome + '.json (' + erro.message + ').');
   }
 }
 
@@ -24,7 +24,7 @@ export async function carregarCurso() {
   const estacoes = curso.estacoes.map((estacao) => {
     const fonte = base.sequencias.find((s) => s.id === estacao.id && s.numero === estacao.numero);
     if (!fonte?.curso?.aulas?.length || !fonte.exercicios?.length || !fonte.video?.mp4) {
-      throw new Error('Faltam dados da estação ' + estacao.nome + ' na base do curso.');
+      throw new Error('Faltam dados da estaçêo ' + estacao.nome + ' na base do curso.');
     }
     return { ...estacao, aulas: fonte.curso.aulas, exercicios: fonte.exercicios, video: fonte.video };
   });

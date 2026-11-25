@@ -1,6 +1,6 @@
-Gerei o panorama, as sete texturas e os oito mapas em [assets/ambiente/](../../../assets/ambiente). Os **16 JPEGs** estão em qualidade 88 e somam **5.469.947 bytes**.
+Gerei o panorama, as sete texturas e os oito mapas em [assets/ambiente/](../../../assets/ambiente). Os **16 JPEGs** estêo em qualidade 88 e somam **5.469.947 bytes**.
 
-Abri cada arquivo final. Na repetição 2 × 2, os rejuntes, as réguas de madeira e o desenho do kilim continuam entre as peças sem emenda visível. Conferi o panorama com a costura deslocada para o centro. O vale e o céu continuam de um lado ao outro, sem casas, estradas, pessoas ou texto visíveis.
+Abri cada arquivo final. Na repetiçêo 2 × 2, os rejuntes, as réguas de madeira e o desenho do kilim continuam entre as peças sem emenda visível. Conferi o panorama com a costura deslocada para o centro. O vale e o céu continuam de um lado ao outro, sem casas, estradas, pessoas ou texto visíveis.
 
 | Arquivo | Dimensões (px) | Tamanho (bytes) |
 |---|---:|---:|
@@ -21,6 +21,6 @@ Abri cada arquivo final. Na repetição 2 × 2, os rejuntes, as réguas de madei
 | `concreto-rugosidade.jpg` | 1024 × 1024 | 149.402 |
 | `tecido-taupe.jpg` | 1024 × 1024 | 471.360 |
 
-**Limite da geração.** Pedi o panorama na maior resolução disponível. O `image_gen` devolveu 1774 × 887, e preservei essa resolução nativa, com proporção exata de 2:1. A linha de referência do horizonte está a 50% da altura, com as cristas variando naturalmente ao redor dela.
+**Limite da geraçêo.** Pedi o panorama na maior resoluçêo disponível. O `image_gen` devolveu 1774 × 887, e preservei essa resoluçêo nativa, com proporçêo exata de 2:1. A linha de referência do horizonte está a 50% da altura, com as cristas variando naturalmente ao redor dela.
 
 Executei [gerar_mapas.py](../../../processo/gerar_mapas.py) e conferi dimensões, tamanhos e qualidade diretamente nos JPEGs gravados. O validador do projeto também retornou `OK: 4 estações, 37 aulas, 23 exercícios, 16 links conferidos`.

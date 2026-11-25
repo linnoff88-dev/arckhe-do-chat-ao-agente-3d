@@ -31,7 +31,7 @@ Do not change anything yet. Show me the plan and wait for me to say yes.
 
 ## How it was built
 
-Nei, from ARCKHÉ, asked to start from an earlier 3D event, [Imersão Jarvis 3D](https://github.com/linnoff88-dev/imersao-jarvis-3d), and recreate a stone and wood house from a set of photos, using the content of the “Do chat ao agente” course.
+Nei, from ARCKHÉ, asked to start from an earlier 3D event, [Imersêo Jarvis 3D](https://github.com/linnoff88-dev/imersao-jarvis-3d), and recreate a stone and wood house from a set of photos, using the content of the “Do chat ao agente” course.
 
 - **Codex with GPT-6.2 Astra**, at high effort and through the subscription, generated images, textures, text, and code in 9 rounds.
 - **Claude Code** wrote the brief, requests, and tests, checked the result in a real browser, and reported what did not pass.

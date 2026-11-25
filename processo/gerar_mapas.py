@@ -23,7 +23,7 @@ ORIGINAIS = {
     "tecido-taupe": "exec-da013021-8162-4f7f-8fd5-9c44c679eab5.png",
 }
 
-# (relevo por texel, rugosidade de base, variação de rugosidade)
+# (relevo por texel, rugosidade de base, variaçêo de rugosidade)
 MATERIAIS = {
     "pedra": (4.0, 0.84, 0.30),
     "madeira-forro": (1.9, 0.55, 0.27),

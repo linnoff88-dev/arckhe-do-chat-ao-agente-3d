@@ -74,7 +74,7 @@ def montar(pasta):
     peso[:2 * MARGEM] = rampa
     peso[-2 * MARGEM:] = rampa[::-1]
 
-    # O disco solar e o halo imediato ficam na posição da fotografia aprovada.
+    # O disco solar e o halo imediato ficam na posiçêo da fotografia aprovada.
     y, x = np.ogrid[:ALTURA, :LARGURA]
     distancia = np.hypot((x / LARGURA - 0.351) * LARGURA,
                          (y / ALTURA - 0.373) * ALTURA)
@@ -87,7 +87,7 @@ def montar(pasta):
             detalhe = np.asarray(foto.convert("RGB").resize((TRECHO, ALTURA),
                                                             Image.Resampling.LANCZOS))
         alinhado = registrar(trecho, detalhe).astype(np.float32)
-        # A referência fornece iluminação e cor locais. O trecho fornece textura.
+        # A referência fornece iluminaçêo e cor locais. O trecho fornece textura.
         diferenca = alinhado - trecho
         textura = diferenca - cv2.GaussianBlur(diferenca, (0, 0), 8)
         corrigido = trecho + textura * ganho[:, cols, None]

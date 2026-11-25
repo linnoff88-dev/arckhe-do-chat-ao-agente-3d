@@ -1,4 +1,4 @@
-// Metros no plano do piso. A parede norte e a passagem para o terraço são fixas.
+// Metros no plano do piso. A parede norte e a passagem para o terraço sêo fixas.
 export const planta = {
   oeste: -4.2, leste: 6, norte: -4.8, sul: 3.36,
   portaX: 3.2, larguraPorta: 1.48, patamar: 0.68

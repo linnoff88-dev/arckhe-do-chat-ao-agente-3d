@@ -132,7 +132,7 @@ export function criarInterface(curso, progresso, acoes) {
       <div class="video-convite">
         <div>
           <span class="meta"
-            >${n ? 'Vídeo da estação' : 'Vídeo de abertura'} · ${Math.floor(dur / 60)} min ${dur % 60} s</span
+            >${n ? 'Vídeo da estaçêo' : 'Vídeo de abertura'} · ${Math.floor(dur / 60)} min ${dur % 60} s</span
           >
           <h3>${escapar(v.titulo)}</h3>
         </div>
@@ -159,13 +159,13 @@ export function criarInterface(curso, progresso, acoes) {
     </section>`;
   }
   function tituloEst(e, painelAberto) {
-    return /* HTML */ `<p class="sequencia">${ico(e.id)} Estação ${numero(e.numero)} · ${escapar(e.nome)}</p>
+    return /* HTML */ `<p class="sequencia">${ico(e.id)} Estaçêo ${numero(e.numero)} · ${escapar(e.nome)}</p>
       <h2 ${painelAberto ? 'id="titulo-painel"' : `id="titulo-${e.id}"`} tabindex="-1">${escapar(e.titulo)}</h2>
-      <p class="entrada-est"><strong>Nesta estação</strong> · ${escapar(e.fala_entrada)}</p>
+      <p class="entrada-est"><strong>Nesta estaçêo</strong> · ${escapar(e.fala_entrada)}</p>
       <p class="contagem" data-conta="${e.numero}">${contagem(e)}</p>`;
   }
   function conteudoEst(e, painelAberto = false) {
-    return `${tituloEst(e, painelAberto)}<h3>Por que fazer esta estação?</h3><p>${escapar(e.por_que)}</p><h3>O que você vai conseguir fazer</h3><p>${escapar(e.ganho)}</p>${video(e.video, e.numero)}${aulas(e.aulas)}${exercicios(e)}<section class="grupo-leitura"><h3>Cursos e projetos</h3>${e.materiais.map((m) => `<article class="material"><span class="meta">${escapar(m.tipo)}</span><h4>${link(m.url, m.titulo)}</h4><p>${escapar(m.detalhe)}</p></article>`).join('')}</section><div class="retorno" role="status"></div><div class="acoes-finais">${botao('mapa', 'Voltar ao mapa', { icone: 'mapa' })}<button data-acao="terraco" data-final hidden>Ir ao terraço</button></div>`;
+    return `${tituloEst(e, painelAberto)}<h3>Por que fazer esta estaçêo?</h3><p>${escapar(e.por_que)}</p><h3>O que você vai conseguir fazer</h3><p>${escapar(e.ganho)}</p>${video(e.video, e.numero)}${aulas(e.aulas)}${exercicios(e)}<section class="grupo-leitura"><h3>Cursos e projetos</h3>${e.materiais.map((m) => `<article class="material"><span class="meta">${escapar(m.tipo)}</span><h4>${link(m.url, m.titulo)}</h4><p>${escapar(m.detalhe)}</p></article>`).join('')}</section><div class="retorno" role="status"></div><div class="acoes-finais">${botao('mapa', 'Voltar ao mapa', { icone: 'mapa' })}<button data-acao="terraco" data-final hidden>Ir ao terraço</button></div>`;
   }
   function geralHTML(noPainel) {
     return /* HTML */ `<h2 ${noPainel ? 'id="titulo-painel"' : 'id="geral-titulo"'} tabindex="-1">
@@ -179,7 +179,7 @@ export function criarInterface(curso, progresso, acoes) {
       </div>
       <h3>Por onde começar?</h3>
       <div class="partidas">
-        ${curso.por_onde_comecar.map((p) => `<div class="partida"><div><strong>${escapar(p.situacao)}</strong><p>${escapar(p.comece_por)}</p></div>${p.url ? link(p.url, p.rotulo) : botao('estacao', 'Abrir estação ' + est(p.estacao).nome, { n: p.estacao })}</div>`).join('')}
+        ${curso.por_onde_comecar.map((p) => `<div class="partida"><div><strong>${escapar(p.situacao)}</strong><p>${escapar(p.comece_por)}</p></div>${p.url ? link(p.url, p.rotulo) : botao('estacao', 'Abrir estaçêo ' + est(p.estacao).nome, { n: p.estacao })}</div>`).join('')}
       </div>`;
   }
   function planta() {
@@ -225,7 +225,7 @@ export function criarInterface(curso, progresso, acoes) {
         </div>
         ${recomendada() ? '' : botao('terraco', 'Ir ao terraço', { classe: 'forte' })}
       </div>
-      ${botao('geral', 'Visão geral', { icone: 'livro' })}`;
+      ${botao('geral', 'Visêo geral', { icone: 'livro' })}`;
   }
   function pausar(el) {
     el.querySelectorAll('video').forEach((v) => v.pause());
@@ -255,7 +255,7 @@ export function criarInterface(curso, progresso, acoes) {
       player.append(track);
       track.track.mode = 'showing';
     } catch {
-      // As legendas são opcionais e independentes da reprodução do MP4.
+      // As legendas sêo opcionais e independentes da reproduçêo do MP4.
     }
   }
   function liberarVideosPainel() {
@@ -306,7 +306,7 @@ export function criarInterface(curso, progresso, acoes) {
       <aside class="sumario">
         <h2>Seu percurso</h2>
         <p data-global></p>
-        ${botao('geral', 'Visão geral', { icone: 'livro' })}${estacoes.map((e) => botao('ir', e.nome, { n: e.numero, icone: e.id })).join('')}<button
+        ${botao('geral', 'Visêo geral', { icone: 'livro' })}${estacoes.map((e) => botao('ir', e.nome, { n: e.numero, icone: e.id })).join('')}<button
           data-final
           data-acao="terraco"
           hidden
@@ -330,7 +330,7 @@ export function criarInterface(curso, progresso, acoes) {
   }
   function geralAbrir() {
     if (modo === 'sem-3d') focarLeitura(0);
-    else abrir('geral', 'Visão geral', geralHTML(true));
+    else abrir('geral', 'Visêo geral', geralHTML(true));
   }
   function dock() {
     if (modo !== '3d') return;
@@ -340,24 +340,24 @@ export function criarInterface(curso, progresso, acoes) {
     $('local').textContent = onde;
     const feitas = progresso.feitas().length;
     const ultima = feitas === 3;
-    const nomeFinal = ultima ? ['o Terminal', 'o Jarvis', 'a estação Filas', 'a estação Redes'][proxima.numero - 1] : '';
+    const nomeFinal = ultima ? ['o Terminal', 'o Jarvis', 'a estaçêo Filas', 'a estaçêo Redes'][proxima.numero - 1] : '';
     const seguinteEstacao = proxima === e ? estacoes.find(posto => posto !== e && !progresso.feitas().includes(posto.numero)) : proxima;
-    const percurso = ultima ? 'Falta ' + nomeFinal : seguinteEstacao ? 'Próxima estação · ' + seguinteEstacao.nome : '';
+    const percurso = ultima ? 'Falta ' + nomeFinal : seguinteEstacao ? 'Próxima estaçêo · ' + seguinteEstacao.nome : '';
     const detalhe = naVaranda ? fecho.pergunta : e ? e.fala_entrada :
-      !proxima ? 'Os quatro degraus estão acesos.' : ultima ? percurso :
+      !proxima ? 'Os quatro degraus estêo acesos.' : ultima ? percurso :
       proxima.numero === 1 ? 'Comece pelo Terminal' : 'Continue em ' + proxima.nome;
-    const meta = e ? 'Nesta estação' : `${feitas} de 4 estações`;
+    const meta = e ? 'Nesta estaçêo' : `${feitas} de 4 estações`;
     let principal, secundario;
     if (destino) {
-      principal = botao('geral', 'Visão geral');
+      principal = botao('geral', 'Visêo geral');
     } else if (naVaranda) {
       principal = botao('fecho', 'Ler o fecho', { classe: 'forte' });
       secundario = botao('rever', 'Rever estações');
     } else if (!proxima) principal = botao('terraco', 'Ir ao terraço', { classe: 'forte' });
-    else if (e && !concluida) principal = botao('estacao', 'Abrir estação', { n: atual, classe: 'forte' });
-    else principal = botao('ir', e ? 'Ir para a próxima estação' : 'Ir até lá', { n: proxima.numero, classe: 'forte' });
-    if (!naVaranda && e && (concluida || !proxima)) secundario = botao('estacao', 'Abrir estação', { n: atual });
-    if (!destino && !naVaranda && !e) secundario = botao('geral', 'Visão geral');
+    else if (e && !concluida) principal = botao('estacao', 'Abrir estaçêo', { n: atual, classe: 'forte' });
+    else principal = botao('ir', e ? 'Ir para a próxima estaçêo' : 'Ir até lá', { n: proxima.numero, classe: 'forte' });
+    if (!naVaranda && e && (concluida || !proxima)) secundario = botao('estacao', 'Abrir estaçêo', { n: atual });
+    if (!destino && !naVaranda && !e) secundario = botao('geral', 'Visêo geral');
     const dock = $('dock');
     dock.querySelector('.meta').textContent = naVaranda ? fecho.titulo : meta;
     const seguinte = dock.querySelector('.dock-proxima');
@@ -444,8 +444,8 @@ export function criarInterface(curso, progresso, acoes) {
     else if (acao === 'previa')
       abrir(
         'previa',
-        'Estação ' + numero(n),
-        `<h2 id="titulo-painel" tabindex="-1">${est(n).nome}</h2><p>${escapar(est(n).objeto)}</p><h3>${escapar(est(n).titulo)}</h3><p>${escapar(est(n).ganho)}</p>${botao('iniciar-estacao', 'Fazer estação sem 3D', { n, classe: 'forte' })}`
+        'Estaçêo ' + numero(n),
+        `<h2 id="titulo-painel" tabindex="-1">${est(n).nome}</h2><p>${escapar(est(n).objeto)}</p><h3>${escapar(est(n).titulo)}</h3><p>${escapar(est(n).ganho)}</p>${botao('iniciar-estacao', 'Fazer estaçêo sem 3D', { n, classe: 'forte' })}`
       );
     else if (acao === 'iniciar-estacao') {
       progresso.identificar($('nome').value);
@@ -457,8 +457,8 @@ export function criarInterface(curso, progresso, acoes) {
         'ajuda',
         'Casa na serra',
         `<h2 id="titulo-painel" tabindex="-1">Como se mover</h2><p>${controlesDeToque()
-          ? 'Use as setas na tela para andar. Arraste para olhar. Toque no chão ou numa estação para ir até lá. De perto, toque no objeto para abrir a estação.'
-          : curso.ui.andar + ' Gire com Q e E ou arraste para olhar. ' + curso.ui.ir_por_clique + ' De perto, clique no objeto ou pressione Enter para abrir a estação.'}</p>${botao('mapa', 'Abrir mapa', { icone: 'mapa' })}`
+          ? 'Use as setas na tela para andar. Arraste para olhar. Toque no chêo ou numa estaçêo para ir até lá. De perto, toque no objeto para abrir a estaçêo.'
+          : curso.ui.andar + ' Gire com Q e E ou arraste para olhar. ' + curso.ui.ir_por_clique + ' De perto, clique no objeto ou pressione Enter para abrir a estaçêo.'}</p>${botao('mapa', 'Abrir mapa', { icone: 'mapa' })}`
       );
     else if (acao === 'terraco') {
       fechar();
